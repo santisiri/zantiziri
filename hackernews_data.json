@@ -1,0 +1,242 @@
+[
+  {
+    "rank": 1,
+    "title": "USGS uses machine learning to show large lithium potential in Arkansas",
+    "link": "https://www.usgs.gov/news/national-news-release/unlocking-arkansas-hidden-treasure-usgs-uses-machine-learning-show-large",
+    "score": 190,
+    "author": "antidnan",
+    "comments": 110
+  },
+  {
+    "rank": 2,
+    "title": "Computer use, a new Claude 3.5 Sonnet, and Claude 3.5 Haiku",
+    "link": "https://www.anthropic.com/news/3-5-models-and-computer-use",
+    "score": 857,
+    "author": "weirdcat",
+    "comments": 458
+  },
+  {
+    "rank": 3,
+    "title": "The Tragedy of Google Books (2017)",
+    "link": "https://www.theatlantic.com/technology/archive/2017/04/the-tragedy-of-google-books/523320/",
+    "score": 144,
+    "author": "lispybanana",
+    "comments": 66
+  },
+  {
+    "rank": 4,
+    "title": "Show HN: Rust Web Framework",
+    "link": "https://github.com/levkk/rwf",
+    "score": 323,
+    "author": "levkk",
+    "comments": 130
+  },
+  {
+    "rank": 5,
+    "title": "Meta Bans Accounts Tracking Private Jets for Zuckerberg, Musk",
+    "link": "https://www.bloomberg.com/news/articles/2024-10-22/meta-bans-accounts-tracking-private-jets-for-zuckerberg-musk",
+    "score": 81,
+    "author": "JumpCrisscross",
+    "comments": 40
+  },
+  {
+    "rank": 6,
+    "title": "Show HN: Open-source Counter-Strike-like game",
+    "link": "https://github.com/solcloud/Counter-Strike",
+    "score": 154,
+    "author": "solcloud",
+    "comments": 56
+  },
+  {
+    "rank": 7,
+    "title": "DRAM Changed the World",
+    "link": "https://www.micron.com/about/blog/memory/dram/how-dram-changed-the-world",
+    "score": 7,
+    "author": "sandwichsphinx",
+    "comments": 0
+  },
+  {
+    "rank": 8,
+    "title": "We built a new powerful JSON data type for ClickHouse",
+    "link": "https://clickhouse.com/blog/a-new-powerful-json-data-type-for-clickhouse",
+    "score": 212,
+    "author": "markhneedham",
+    "comments": 40
+  },
+  {
+    "rank": 9,
+    "title": "What It's Like to Experience Polar Night in the Northernmost Town",
+    "link": "https://www.smithsonianmag.com/travel/what-its-like-to-experience-polar-night-in-the-worlds-northernmost-town-180985271/",
+    "score": 26,
+    "author": "Brajeshwar",
+    "comments": 2
+  },
+  {
+    "rank": 10,
+    "title": "Tog's Paradox",
+    "link": "https://www.votito.com/methods/togs-paradox/",
+    "score": 194,
+    "author": "adzicg",
+    "comments": 90
+  },
+  {
+    "rank": 11,
+    "title": "An Illustrated Guide to Maritime Signal Flags",
+    "link": "https://rabbitwaves.ca/site/flags_maritime.html",
+    "score": 68,
+    "author": "gaws",
+    "comments": 15
+  },
+  {
+    "rank": 12,
+    "title": "The PlanetScale vectors public beta",
+    "link": "https://planetscale.com/blog/announcing-planetscale-vectors-public-beta",
+    "score": 74,
+    "author": "ksec",
+    "comments": 16
+  },
+  {
+    "rank": 13,
+    "title": "FTC's rule banning fake online reviews goes into effect",
+    "link": "https://abcnews.go.com/US/wireStory/ftcs-rule-banning-fake-online-reviews-effect-115009298",
+    "score": 356,
+    "author": "indus",
+    "comments": 217
+  },
+  {
+    "rank": 14,
+    "title": "Coreboot port for 486 motherboard (UM8881/6)",
+    "link": "https://github.com/pc2005cz/TheUltimate486Upgrade/blob/main/main.md",
+    "score": 7,
+    "author": "rasz",
+    "comments": 0
+  },
+  {
+    "rank": 15,
+    "title": "A Report from the 2024 Image-Based Linux Summit",
+    "link": "https://lwn.net/SubscriberLink/994704/0356b274aa959853/",
+    "score": 11,
+    "author": "Foxboron",
+    "comments": 1
+  },
+  {
+    "rank": 16,
+    "title": "Ask HN: What's the most creative 'useless' program you've ever written?",
+    "link": "https://news.ycombinator.com/item?id=41894765",
+    "score": 47,
+    "author": "reverseCh",
+    "comments": 55
+  },
+  {
+    "rank": 17,
+    "title": "Show HN: Ambulate – Detailed Trip Planning",
+    "link": "https://ambulate.app",
+    "score": 67,
+    "author": "_phnd_",
+    "comments": 32
+  },
+  {
+    "rank": 18,
+    "title": "Show HN: I made a tool for curating and sharing links as lists",
+    "link": "https://snack.xyz/",
+    "score": 13,
+    "author": "chshux",
+    "comments": 4
+  },
+  {
+    "rank": 19,
+    "title": "How fast is quantum entanglement? Scientists investigate it at attosecond scale",
+    "link": "https://phys.org/news/2024-10-fast-quantum-entanglement-scientists-attosecond.html",
+    "score": 14,
+    "author": "bookofjoe",
+    "comments": 2
+  },
+  {
+    "rank": 20,
+    "title": "One Plus One Equals Two (2006)",
+    "link": "https://blog.plover.com/math/PM.html",
+    "score": 85,
+    "author": "lemper",
+    "comments": 48
+  },
+  {
+    "rank": 21,
+    "title": "Understanding Gaussians",
+    "link": "https://gestalt.ink/gaussians",
+    "score": 134,
+    "author": "lapnect",
+    "comments": 27
+  },
+  {
+    "rank": 22,
+    "title": "Rustls Outperforms OpenSSL and BoringSSL",
+    "link": "https://www.memorysafety.org/blog/rustls-performance-outperforms/",
+    "score": 63,
+    "author": "jaas",
+    "comments": 17
+  },
+  {
+    "rank": 23,
+    "title": "TSMC told US of chip in Huawei product after TechInsights finding, source says",
+    "link": "https://www.reuters.com/technology/tsmc-told-us-chip-huawei-device-after-techinsights-finding-source-says-2024-10-22/",
+    "score": 40,
+    "author": "mikhael",
+    "comments": 15
+  },
+  {
+    "rank": 24,
+    "title": "NIST Standard Reference Materials Catalog [pdf]",
+    "link": "https://tsapps.nist.gov/srmext/certificates/documents/Current_SRM_Catalog.pdf",
+    "score": 10,
+    "author": "NaOH",
+    "comments": 3
+  },
+  {
+    "rank": 25,
+    "title": "MixRank (YC S11) Is Hiring Software Engineers and Ex-Founders Globally",
+    "link": "https://news.ycombinator.com/item?id=41913403",
+    "score": 0,
+    "author": "Unknown",
+    "comments": 0
+  },
+  {
+    "rank": 26,
+    "title": "Show HN: I made a Sonic runner game in JavaScript",
+    "link": "https://jslegend.itch.io/sonic-ring-run",
+    "score": 28,
+    "author": "JSLegendDev",
+    "comments": 20
+  },
+  {
+    "rank": 27,
+    "title": "First images from Euclid are in",
+    "link": "https://dlmultimedia.esa.int/download/public/videos/2024/10/023/orig-2410_023_AR_EN.mp4",
+    "score": 1210,
+    "author": "mooreds",
+    "comments": 332
+  },
+  {
+    "rank": 28,
+    "title": "MQTT turns 25",
+    "link": "https://andypiper.co.uk/2024/10/22/mqtt-turns-25-heres-how-it-has-endured/",
+    "score": 252,
+    "author": "andypiper",
+    "comments": 63
+  },
+  {
+    "rank": 29,
+    "title": "IBM's new SWE agents for developers",
+    "link": "https://research.ibm.com/blog/ibm-swe-agents",
+    "score": 55,
+    "author": "sandwichsphinx",
+    "comments": 55
+  },
+  {
+    "rank": 30,
+    "title": "Against /tmp",
+    "link": "https://dotat.at/@/2024-10-22-tmp.html",
+    "score": 197,
+    "author": "todsacerdoti",
+    "comments": 137
+  }
+]
