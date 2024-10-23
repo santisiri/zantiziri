@@ -1,242 +1,257 @@
 [
   {
-    "rank": 1,
-    "title": "USGS uses machine learning to show large lithium potential in Arkansas",
-    "link": "https://www.usgs.gov/news/national-news-release/unlocking-arkansas-hidden-treasure-usgs-uses-machine-learning-show-large",
-    "score": 190,
-    "author": "antidnan",
-    "comments": 110
-  },
-  {
-    "rank": 2,
+    "rank": 5,
     "title": "Computer use, a new Claude 3.5 Sonnet, and Claude 3.5 Haiku",
     "link": "https://www.anthropic.com/news/3-5-models-and-computer-use",
-    "score": 857,
+    "score": 1299,
     "author": "weirdcat",
-    "comments": 458
+    "comments": 657,
+    "summary": "Exciting news from Claude 3.5! Introducing an upgraded Sonnet and new Haiku model with enhanced coding capabilities. A groundbreaking beta feature, \"computer use,\" lets developers direct AI to perform tasks like a human on screens. Industry leaders like Asana and DoorDash are already exploring its potential. Claude 3.5 Sonnet impresses with coding skills, showing significant performance gains with no extra cost. Partners like GitLab and Cognition praise its efficiency for software development and AI evaluations. Plus, Claude 3.5 Haiku offers state-of-the-art improvements in speed and affordability. Stay tuned for more innovations from Claude 3.5! #AI #Innovation #TechUpdates",
+    "translated_summary": "\u00a1Noticias emocionantes de Claude 3.5! Presentamos un Soneto actualizado y un nuevo modelo de Haiku con capacidades de codificaci\u00f3n mejoradas. Una caracter\u00edstica beta revolucionaria, \"uso de computadora\", permite a los desarrolladores guiar a la IA para realizar tareas como lo har\u00eda un humano en las pantallas. L\u00edderes de la industria como Asana y DoorDash ya est\u00e1n explorando su potencial. Claude 3.5 Soneto impresiona con habilidades de codificaci\u00f3n, mostrando ganancias significativas en rendimiento sin costo adicional. Socios como GitLab y Cognition elogian su eficiencia para el desarrollo de software y evaluaciones de IA. Adem\u00e1s, Claude 3.5 Haiku ofrece mejoras de \u00faltima tecnolog\u00eda en velocidad y asequibilidad. \u00a1Est\u00e9n atentos a m\u00e1s innovaciones de Claude 3.5! #IA #Innovaci\u00f3n #",
+    "script": "\u00a1Hola a todos! \u00bfPodr\u00edan imaginar una IA tan avanzada que pueda realizar tareas como lo har\u00eda un humano en una pantalla? Les traigo noticias emocionantes sobre Claude 3.5, con novedades que est\u00e1n revolucionando el mundo de la programaci\u00f3n.\n\nUna caracter\u00edstica beta sorprendente llamada \"uso de computadora\" permite a los desarrolladores guiar a la inteligencia artificial, alcanzando niveles de interactividad nunca vistos antes. Grandes jugadores como Asana y DoorDash ya est\u00e1n explorando este potencial, abriendo nuevas posibilidades en el campo de la IA aplicada.\n\nClaude 3.5 Sonnet ha impactado con sus habilidades de codificaci\u00f3n, logrando mejoras significativas en rendimiento sin costos adicionales. GitLab y Cognition elogian su eficiencia para el desarrollo de software y las evaluaciones de IA, mostrando el impacto positivo de esta actualizaci\u00f3n en la productividad y calidad del trabajo.\n\nPor otro lado, Claude 3.5 Haiku promete mejoras tecnol\u00f3gicas en velocidad y asequibilidad, abriendo el camino a nuevas innovaciones en el futuro cercano.\n\nLas implicaciones de estas mejoras no pueden subestimarse, transformando la forma en que interactuamos con la tecnolog\u00eda y potenciando nuestras capacidades de creaci\u00f3n y desarrollo. Es crucial estar al tanto de estos avances para adaptarnos y aprovechar al m\u00e1ximo sus beneficios.\n\nEst\u00e9n atentos a m\u00e1s noticias sobre Claude 3.5, \u00a1y no duden en suscribirse para recibir las \u00faltimas actualizaciones tecnol\u00f3gicas! #IA #Innovaci\u00f3n"
   },
   {
-    "rank": 3,
-    "title": "The Tragedy of Google Books (2017)",
-    "link": "https://www.theatlantic.com/technology/archive/2017/04/the-tragedy-of-google-books/523320/",
-    "score": 144,
-    "author": "lispybanana",
-    "comments": 66
-  },
-  {
-    "rank": 4,
+    "rank": 30,
     "title": "Show HN: Rust Web Framework",
     "link": "https://github.com/levkk/rwf",
-    "score": 323,
+    "score": 447,
     "author": "levkk",
-    "comments": 130
-  },
-  {
-    "rank": 5,
-    "title": "Meta Bans Accounts Tracking Private Jets for Zuckerberg, Musk",
-    "link": "https://www.bloomberg.com/news/articles/2024-10-22/meta-bans-accounts-tracking-private-jets-for-zuckerberg-musk",
-    "score": 81,
-    "author": "JumpCrisscross",
-    "comments": 40
-  },
-  {
-    "rank": 6,
-    "title": "Show HN: Open-source Counter-Strike-like game",
-    "link": "https://github.com/solcloud/Counter-Strike",
-    "score": 154,
-    "author": "solcloud",
-    "comments": 56
-  },
-  {
-    "rank": 7,
-    "title": "DRAM Changed the World",
-    "link": "https://www.micron.com/about/blog/memory/dram/how-dram-changed-the-world",
-    "score": 7,
-    "author": "sandwichsphinx",
-    "comments": 0
-  },
-  {
-    "rank": 8,
-    "title": "We built a new powerful JSON data type for ClickHouse",
-    "link": "https://clickhouse.com/blog/a-new-powerful-json-data-type-for-clickhouse",
-    "score": 212,
-    "author": "markhneedham",
-    "comments": 40
-  },
-  {
-    "rank": 9,
-    "title": "What It's Like to Experience Polar Night in the Northernmost Town",
-    "link": "https://www.smithsonianmag.com/travel/what-its-like-to-experience-polar-night-in-the-worlds-northernmost-town-180985271/",
-    "score": 26,
-    "author": "Brajeshwar",
-    "comments": 2
-  },
-  {
-    "rank": 10,
-    "title": "Tog's Paradox",
-    "link": "https://www.votito.com/methods/togs-paradox/",
-    "score": 194,
-    "author": "adzicg",
-    "comments": 90
-  },
-  {
-    "rank": 11,
-    "title": "An Illustrated Guide to Maritime Signal Flags",
-    "link": "https://rabbitwaves.ca/site/flags_maritime.html",
-    "score": 68,
-    "author": "gaws",
-    "comments": 15
-  },
-  {
-    "rank": 12,
-    "title": "The PlanetScale vectors public beta",
-    "link": "https://planetscale.com/blog/announcing-planetscale-vectors-public-beta",
-    "score": 74,
-    "author": "ksec",
-    "comments": 16
-  },
-  {
-    "rank": 13,
-    "title": "FTC's rule banning fake online reviews goes into effect",
-    "link": "https://abcnews.go.com/US/wireStory/ftcs-rule-banning-fake-online-reviews-effect-115009298",
-    "score": 356,
-    "author": "indus",
-    "comments": 217
-  },
-  {
-    "rank": 14,
-    "title": "Coreboot port for 486 motherboard (UM8881/6)",
-    "link": "https://github.com/pc2005cz/TheUltimate486Upgrade/blob/main/main.md",
-    "score": 7,
-    "author": "rasz",
-    "comments": 0
-  },
-  {
-    "rank": 15,
-    "title": "A Report from the 2024 Image-Based Linux Summit",
-    "link": "https://lwn.net/SubscriberLink/994704/0356b274aa959853/",
-    "score": 11,
-    "author": "Foxboron",
-    "comments": 1
-  },
-  {
-    "rank": 16,
-    "title": "Ask HN: What's the most creative 'useless' program you've ever written?",
-    "link": "https://news.ycombinator.com/item?id=41894765",
-    "score": 47,
-    "author": "reverseCh",
-    "comments": 55
+    "comments": 233,
+    "summary": "\ud83d\ude80 Exciting news! Introducing Rwf, a Rust Web Framework for fast and secure web apps. Features include HTTP server, ORM for PostgreSQL queries, dynamic templates, authentication, WebSockets, CLI, and more. Perfect for building backend-driven SPAs and migrating from Django/Flask apps. Check it out on GitHub! #Rust #WebDevelopment #Framework",
+    "translated_summary": "\u00a1Noticias emocionantes! Presentamos Rwf, un marco web Rust para aplicaciones web r\u00e1pidas y seguras. Sus caracter\u00edsticas incluyen servidor HTTP, ORM para consultas PostgreSQL, plantillas din\u00e1micas, autenticaci\u00f3n, WebSockets, CLI y m\u00e1s. Ideal para construir SPA impulsadas por backend y migrar desde aplicaciones Django/Flask. \u00a1Con\u00f3celo en GitHub! #Rust #DesarrolloWeb #Framework",
+    "script": "\u00a1Hola a todos! Hoy quiero compartir una noticia interesante sobre el mundo tecnol\u00f3gico que me tiene bastante intrigado. Se trata de Rwf, un nuevo marco web en Rust que est\u00e1 dando de qu\u00e9 hablar. \n\nRwf promete ser una soluci\u00f3n completa para aquellos desarrolladores que buscan crear aplicaciones web r\u00e1pidas y seguras. Con funcionalidades como servidor HTTP, ORM para consultas PostgreSQL, plantillas din\u00e1micas, autenticaci\u00f3n, WebSockets y una interfaz de l\u00ednea de comandos, este marco parece tener todo lo necesario para satisfacer las necesidades de los desarrolladores m\u00e1s exigentes.\n\nUna de las cosas que m\u00e1s me llama la atenci\u00f3n es la capacidad de Rwf para soportar el desarrollo de SPAs impulsadas por el backend. Esto podr\u00eda ser un gran avance para aquellos que buscan migrar sus aplicaciones desde entornos como Django o Flask a una soluci\u00f3n m\u00e1s moderna y eficiente.\n\nSi bien es emocionante ver nuevas herramientas y tecnolog\u00edas emergentes en el mundo del desarrollo web, siempre es importante mantener una mirada cr\u00edtica y equilibrada. Como todo en la vida, Rwf tambi\u00e9n tendr\u00e1 sus desaf\u00edos y limitaciones que debemos considerar.\n\nSi eres un apasionado del desarrollo web y te entusiasman las nuevas tecnolog\u00edas, te invito a echar un vistazo m\u00e1s de cerca a Rwf en GitHub. Recuerda siempre investigar por tu cuenta, analizar las ventajas y desventajas de cada herramienta, y tomar decisiones informadas. \u00a1La tecnolog\u00eda avanza r\u00e1pido, y es importante mantenerse actualizado! \u00bfQu\u00e9 opinas de esta nueva propuesta en el mundo de los marcos web? \u00a1D\u00e9jame tu comentario y no olvides suscribirte para m\u00e1s noticias tecnol\u00f3gicas como esta! #Rust #DesarrolloWeb #Framework"
   },
   {
     "rank": 17,
-    "title": "Show HN: Ambulate – Detailed Trip Planning",
-    "link": "https://ambulate.app",
-    "score": 67,
-    "author": "_phnd_",
-    "comments": 32
+    "title": "Arm is canceling Qualcomm's chip design license",
+    "link": "https://www.bloomberg.com/news/articles/2024-10-23/arm-to-cancel-qualcomm-chip-design-license-in-escalation-of-feud",
+    "score": 422,
+    "author": "necubi",
+    "comments": 291
   },
   {
-    "rank": 18,
-    "title": "Show HN: I made a tool for curating and sharing links as lists",
-    "link": "https://snack.xyz/",
-    "score": 13,
-    "author": "chshux",
-    "comments": 4
+    "rank": 10,
+    "title": "Show HN: Open-source Counter-Strike-like game",
+    "link": "https://github.com/solcloud/Counter-Strike",
+    "score": 360,
+    "author": "solcloud",
+    "comments": 133,
+    "summary": "Check out this open-source multiplayer FPS game called Counter-Strike: Football! Teams of Attackers and Defenders battle it out to win rounds. Defenders protect their base from Attackers using a graffiti bomb ball, while Attackers aim to eliminate Defenders or plant the bomb. This low-violence game offers a unique twist on the classic Counter-Strike gameplay. #gaming #opensource",
+    "translated_summary": "\u00a1Chequ\u00e9ate este juego de disparos en primera persona multijugador de c\u00f3digo abierto llamado Counter-Strike: F\u00fatbol! Equipos de Atacantes y Defensores se enfrentan para ganar rondas. Los Defensores protegen su base de los Atacantes usando una pelota de bomba de graffiti, mientras que los Atacantes buscan eliminar a los Defensores o plantar la bomba. Este juego de baja violencia ofrece una vuelta de tuerca \u00fanica al cl\u00e1sico juego de Counter-Strike. #gaming #opensource",
+    "script": "\u00a1Oye, comunidad tecnol\u00f3gica! Hoy les traigo una noticia interesante que me gustar\u00eda compartir con ustedes. Se trata de un juego de disparos en primera persona de c\u00f3digo abierto llamado Counter-Strike: F\u00fatbol. S\u00ed, as\u00ed como lo oyen, una mezcla entre el cl\u00e1sico Counter-Strike y el mundo del f\u00fatbol.\n\nEn este juego, equipos de Atacantes y Defensores se enfrentan en intensas batallas por rondas. Los Defensores ponen a prueba sus habilidades para proteger su base utilizando una pelota de bomba de graffiti, mientras que los Atacantes buscan eliminar a los Defensores o plantar la temida bomba.\n\nLo que destaca de este juego es su enfoque en la estrategia y la acci\u00f3n, manteniendo un nivel de violencia bastante bajo en comparaci\u00f3n con otros t\u00edtulos del g\u00e9nero. Es refrescante ver una propuesta que innova dentro de un g\u00e9nero tan consolidado como el de los disparos en primera persona.\n\nCounter-Strike: F\u00fatbol presenta una vuelta de tuerca \u00fanica que seguramente atraer\u00e1 a los amantes de los juegos multijugador. La idea de combinar elementos de f\u00fatbol con la mec\u00e1nica de Counter-Strike definitivamente llama la atenci\u00f3n y promete horas de diversi\u00f3n para quienes decidan sumergirse en esta nueva experiencia.\n\nComo en todas las noticias tecnol\u00f3gicas, es importante analizar en detalle los aspectos positivos y negativos de esta novedad. Si bien la originalidad y creatividad detr\u00e1s de este juego son aspectos destacables, tambi\u00e9n es fundamental considerar c\u00f3mo se traduce en la experiencia real de juego para los usuarios.\n\nEn definitiva, Counter-Strike: F\u00fatbol es una propuesta interesante que despierta curiosidad y nos invita a explorar nuevas formas de entretenimiento en el mundo de los videojuegos. \u00bfQu\u00e9 opinan ustedes? \u00bfLes gustar\u00eda probarlo y descubrir qu\u00e9 tal se desenvuelven en este nuevo desaf\u00edo?\n\n\u00a1Suscr\u00edbanse para m\u00e1s noticias tecnol\u00f3gicas y mant\u00e9nganse al tanto de las \u00faltimas novedades en el mundo de la tecnolog\u00eda y la innovaci\u00f3n! \u00a1Hasta la pr\u00f3xima! #gaming #opensource"
   },
   {
-    "rank": 19,
-    "title": "How fast is quantum entanglement? Scientists investigate it at attosecond scale",
-    "link": "https://phys.org/news/2024-10-fast-quantum-entanglement-scientists-attosecond.html",
-    "score": 14,
-    "author": "bookofjoe",
-    "comments": 2
+    "rank": 16,
+    "title": "A new JSON data type for ClickHouse",
+    "link": "https://clickhouse.com/blog/a-new-powerful-json-data-type-for-clickhouse",
+    "score": 345,
+    "author": "markhneedham",
+    "comments": 95,
+    "summary": "At ClickHouse, a powerful new JSON data type has been developed to efficiently handle JSON data challenges. The JSON data type enables true column-oriented storage, dynamically changing data without type unification, prevention of excessive column data files, and dense storage. This innovation allows for optimal compression, high-performance analytics, and scalability, ensuring efficient processing of JSON data within ClickHouse. #ClickHouse #JSON #DataInnovation",
+    "translated_summary": "En ClickHouse, se ha desarrollado un poderoso nuevo tipo de datos JSON para manejar eficientemente los desaf\u00edos de los datos JSON. El tipo de datos JSON permite un almacenamiento verdaderamente orientado a columnas, cambiando din\u00e1micamente los datos sin unificaci\u00f3n de tipos, previniendo archivos de datos de columna excesivos y un almacenamiento denso. Esta innovaci\u00f3n permite una compresi\u00f3n \u00f3ptima, an\u00e1lisis de alto rendimiento y escalabilidad, garantizando un procesamiento eficiente de datos JSON dentro de ClickHouse. #ClickHouse #JSON #Innovaci\u00f3nDeDatos",
+    "script": "\u00bfTe imaginas manejar datos JSON de forma m\u00e1s eficiente? En la \u00faltima actualizaci\u00f3n de ClickHouse, se ha introducido un nuevo tipo de datos, el JSON data type. \u00bfEn qu\u00e9 consiste esta innovaci\u00f3n? B\u00e1sicamente, nos permite tratar los datos bajo un enfoque orientado a columnas, lo cual supone un cambio significativo en la manera en que se gestionan los datos JSON dentro de la plataforma.\n\nEste tipo de datos no solo permite almacenar la informaci\u00f3n de forma m\u00e1s optimizada, sino que tambi\u00e9n posibilita realizar operaciones de manera m\u00e1s din\u00e1mica, sin la necesidad de uniformar los tipos de datos. En t\u00e9rminos pr\u00e1cticos, esto implica un menor consumo de recursos y una mayor eficiencia en el procesamiento de datos JSON.\n\nUna de las principales ventajas de esta innovaci\u00f3n radica en la capacidad de comprimir los datos de forma \u00f3ptima, lo que se traduce en un mejor rendimiento en el an\u00e1lisis de datos y una escalabilidad mejorada. Adem\u00e1s, al evitar la creaci\u00f3n de archivos de datos de columna excesivamente grandes, se logra un almacenamiento m\u00e1s eficiente y compacto.\n\nEn un contexto donde la cantidad de datos que manejamos crece de forma exponencial, contar con herramientas que nos permitan procesar la informaci\u00f3n de manera eficaz se vuelve crucial. Con este nuevo tipo de datos JSON en ClickHouse, se abre una puerta a un mejor manejo y an\u00e1lisis de datos, potenciando as\u00ed las capacidades de la plataforma.\n\nSi eres un apasionado de la tecnolog\u00eda y te interesa mantenerte al tanto de las \u00faltimas novedades en el mundo de los datos, esta noticia seguro capt\u00f3 tu inter\u00e9s. \u00a1No dudes en suscribirte para seguir recibiendo contenido relevante sobre innovaciones tecnol\u00f3gicas como esta!\n\n#ClickHouse #JSON #Innovaci\u00f3nDeDatos"
   },
   {
-    "rank": 20,
-    "title": "One Plus One Equals Two (2006)",
-    "link": "https://blog.plover.com/math/PM.html",
-    "score": 85,
-    "author": "lemper",
-    "comments": 48
+    "rank": 14,
+    "title": "The Tragedy of Google Books (2017)",
+    "link": "https://www.theatlantic.com/technology/archive/2017/04/the-tragedy-of-google-books/523320/",
+    "score": 309,
+    "author": "lispybanana",
+    "comments": 138
+  },
+  {
+    "rank": 6,
+    "title": "USGS uses machine learning to show large lithium potential in Arkansas",
+    "link": "https://www.usgs.gov/news/national-news-release/unlocking-arkansas-hidden-treasure-usgs-uses-machine-learning-show-large",
+    "score": 303,
+    "author": "antidnan",
+    "comments": 191,
+    "summary": "\ud83d\udd0d USGS discovered significant lithium potential in Arkansas through machine learning and water testing, estimating 5-19 million tons of reserves. The findings could impact the commercial production of lithium. Unlocking hidden treasure with technology! \ud83c\udf1f #USGS #LithiumDiscovery #ArkansasMining",
+    "translated_summary": "El USGS descubri\u00f3 un potencial significativo de litio en Arkansas a trav\u00e9s de aprendizaje autom\u00e1tico y pruebas de agua, estimando reservas de 5 a 19 millones de toneladas. Los hallazgos podr\u00edan impactar la producci\u00f3n comercial de litio. \u00a1Desbloqueando un tesoro oculto con tecnolog\u00eda! \ud83c\udf1f #USGS #DescubrimientoDeLitio #Miner\u00edaEnArkansas",
+    "script": "\u00a1Atenci\u00f3n a todos los amantes de la tecnolog\u00eda! Hoy quiero compartir con ustedes un descubrimiento que ha sacudido el mundo de la miner\u00eda: el USGS ha revelado un potencial significativo de litio en Arkansas mediante el uso de aprendizaje autom\u00e1tico y pruebas de agua. Estos m\u00e9todos novedosos han permitido estimar reservas de este elemento clave para la industria tecnol\u00f3gica entre 5 y 19 millones de toneladas.\n\nEl impacto de este hallazgo va m\u00e1s all\u00e1 de lo que podr\u00edamos imaginar a simple vista. El litio es fundamental en la producci\u00f3n de bater\u00edas, y la disponibilidad de estas reservas en Arkansas podr\u00eda tener ramificaciones importantes en la producci\u00f3n comercial de este mineral esencial para la electr\u00f3nica moderna.\n\nLa combinaci\u00f3n de tecnolog\u00eda y geolog\u00eda nos ha permitido desbloquear un tesoro oculto en las profundidades de Arkansas, mostr\u00e1ndonos una vez m\u00e1s el poder transformador de la ciencia aplicada. Este descubrimiento nos invita a reflexionar sobre el potencial que tienen la innovaci\u00f3n y el an\u00e1lisis de datos para abrir nuevas oportunidades en sectores clave para nuestro desarrollo.\n\nEs crucial mantener una mirada cr\u00edtica y equilibrada ante noticias de este calibre. Si bien es cierto que esta revelaci\u00f3n podr\u00eda representar una ventaja significativa para la industria, tambi\u00e9n es importante considerar los posibles impactos ambientales y socioculturales que la explotaci\u00f3n de estas reservas podr\u00eda tener en la regi\u00f3n.\n\nComo siempre, les insto a que sigan inform\u00e1ndose y reflexionando por ustedes mismos sobre las implicaciones de estos avances tecnol\u00f3gicos. El conocimiento nos brinda el poder de discernir y tomar decisiones informadas para construir un futuro m\u00e1s consciente y sostenible.\n\nSi desean continuar explorando las \u00faltimas novedades en tecnolog\u00eda y ciencia, los invito a suscribirse a nuestro canal para no perderse ninguna actualizaci\u00f3n. Juntos, podemos seguir descubriendo y analizando el impacto que la tecnolog\u00eda tiene en nuestras vidas. \u00a1Hasta la pr\u00f3xima! #USGS #DescubrimientoDeLitio #Miner\u00edaEnArkansas"
+  },
+  {
+    "rank": 27,
+    "title": "Ask HN: What's the most creative 'useless' program you've ever written?",
+    "link": "https://news.ycombinator.com/item?id=41894765",
+    "score": 228,
+    "author": "reverseCh",
+    "comments": 308
+  },
+  {
+    "rank": 4,
+    "title": "Solving Sudoku in Python Packaging",
+    "link": "https://github.com/konstin/sudoku-in-python-packaging",
+    "score": 218,
+    "author": "Yenrabbit",
+    "comments": 44
+  },
+  {
+    "rank": 2,
+    "title": "Adding row polymorphism to Damas-Hindley-Milner",
+    "link": "https://bernsteinbear.com/blog/row-poly/",
+    "score": 154,
+    "author": "surprisetalk",
+    "comments": 34
+  },
+  {
+    "rank": 28,
+    "title": "An Illustrated Guide to Maritime Signal Flags",
+    "link": "https://rabbitwaves.ca/site/flags_maritime.html",
+    "score": 140,
+    "author": "gaws",
+    "comments": 38
+  },
+  {
+    "rank": 13,
+    "title": "I Got Dysentary So You Don't Have To",
+    "link": "https://eukaryotewritesblog.com/2024/10/21/i-got-dysentery-so-you-dont-have-to/",
+    "score": 119,
+    "author": "l1n",
+    "comments": 73
   },
   {
     "rank": 21,
-    "title": "Understanding Gaussians",
-    "link": "https://gestalt.ink/gaussians",
-    "score": 134,
-    "author": "lapnect",
-    "comments": 27
+    "title": "How DRAM changed the world",
+    "link": "https://www.micron.com/about/blog/memory/dram/how-dram-changed-the-world",
+    "score": 107,
+    "author": "sandwichsphinx",
+    "comments": 69
   },
   {
-    "rank": 22,
-    "title": "Rustls Outperforms OpenSSL and BoringSSL",
-    "link": "https://www.memorysafety.org/blog/rustls-performance-outperforms/",
-    "score": 63,
-    "author": "jaas",
+    "rank": 8,
+    "title": "The Dawn of a New Era for Supernova 1987a (2017)",
+    "link": "https://science.nasa.gov/missions/chandra/the-dawn-of-a-new-era-for-supernova-1987a/",
+    "score": 104,
+    "author": "raattgift",
     "comments": 17
   },
   {
     "rank": 23,
-    "title": "TSMC told US of chip in Huawei product after TechInsights finding, source says",
-    "link": "https://www.reuters.com/technology/tsmc-told-us-chip-huawei-device-after-techinsights-finding-source-says-2024-10-22/",
-    "score": 40,
-    "author": "mikhael",
-    "comments": 15
+    "title": "Coreboot port for 486 motherboard (UM8881/6)",
+    "link": "https://github.com/pc2005cz/TheUltimate486Upgrade/blob/main/main.md",
+    "score": 90,
+    "author": "rasz",
+    "comments": 14
   },
   {
-    "rank": 24,
-    "title": "NIST Standard Reference Materials Catalog [pdf]",
-    "link": "https://tsapps.nist.gov/srmext/certificates/documents/Current_SRM_Catalog.pdf",
-    "score": 10,
-    "author": "NaOH",
-    "comments": 3
+    "rank": 18,
+    "title": "Solving the Mystery of ARM7TDMI Multiply Carry Flag",
+    "link": "https://bmchtech.github.io/post/multiply/",
+    "score": 74,
+    "author": "skrrtww",
+    "comments": 28
   },
   {
     "rank": 25,
-    "title": "MixRank (YC S11) Is Hiring Software Engineers and Ex-Founders Globally",
-    "link": "https://news.ycombinator.com/item?id=41913403",
-    "score": 0,
-    "author": "Unknown",
-    "comments": 0
+    "title": "Implementing Brainfuck in APL",
+    "link": "https://blog.wilsonb.com/posts/2024-09-27-brainfuck.html",
+    "score": 58,
+    "author": "pabs3",
+    "comments": 17
+  },
+  {
+    "rank": 15,
+    "title": "Apple May Stop Producing Vision Pro by the End of 2024",
+    "link": "https://www.macrumors.com/2024/10/23/apple-may-stop-producing-vision-pro-by-end-of-2024/",
+    "score": 57,
+    "author": "mfiguiere",
+    "comments": 41
+  },
+  {
+    "rank": 22,
+    "title": "Show HN: I made tool for slicing up samples to Ableton Move presets",
+    "link": "https://github.com/alexfedosov/move-tool",
+    "score": 39,
+    "author": "alex_x",
+    "comments": 15
   },
   {
     "rank": 26,
-    "title": "Show HN: I made a Sonic runner game in JavaScript",
-    "link": "https://jslegend.itch.io/sonic-ring-run",
-    "score": 28,
-    "author": "JSLegendDev",
-    "comments": 20
+    "title": "Triaging Clang C++ front end bugs",
+    "link": "https://shafik.github.io/c++/llvm/2024/10/17/triaging-clang-fronend-bugs.html",
+    "score": 33,
+    "author": "todsacerdoti",
+    "comments": 0
   },
   {
-    "rank": 27,
-    "title": "First images from Euclid are in",
-    "link": "https://dlmultimedia.esa.int/download/public/videos/2024/10/023/orig-2410_023_AR_EN.mp4",
-    "score": 1210,
-    "author": "mooreds",
-    "comments": 332
+    "rank": 11,
+    "title": "Breaking Bad: How Compilers Break Constant-Time~Implementations",
+    "link": "https://arxiv.org/abs/2410.13489",
+    "score": 23,
+    "author": "belter",
+    "comments": 10
   },
   {
-    "rank": 28,
-    "title": "MQTT turns 25",
-    "link": "https://andypiper.co.uk/2024/10/22/mqtt-turns-25-heres-how-it-has-endured/",
-    "score": 252,
-    "author": "andypiper",
-    "comments": 63
+    "rank": 12,
+    "title": "Giant catapult launching satellites into orbit without the need of rocket fuel",
+    "link": "https://www.thebrighterside.news/space/giant-catapult-defies-gravity-by-launching-satellites-into-orbit-without-the-need-of-rocket-fuel/",
+    "score": 23,
+    "author": "DocFeind",
+    "comments": 28
+  },
+  {
+    "rank": 9,
+    "title": "How I use git",
+    "link": "https://registerspill.thorstenball.com/p/how-i-use-git",
+    "score": 19,
+    "author": "signa11",
+    "comments": 2
+  },
+  {
+    "rank": 3,
+    "title": "The Incredible Machine (1968) [video]",
+    "link": "https://www.youtube.com/watch?v=iwVu2BWLZqA",
+    "score": 16,
+    "author": "syndicatedjelly",
+    "comments": 7
+  },
+  {
+    "rank": 20,
+    "title": "Supporting Task Switching with Reinforcement Learning",
+    "link": "https://dl.acm.org/doi/10.1145/3613904.3642063",
+    "score": 15,
+    "author": "Topfi",
+    "comments": 0
+  },
+  {
+    "rank": 1,
+    "title": "Launch HN: GPT Driver (YC S21) \u2013 End-to-end app testing in natural language",
+    "link": "https://news.ycombinator.com/item?id=41924787",
+    "score": 14,
+    "author": "cschiller",
+    "comments": 10
+  },
+  {
+    "rank": 7,
+    "title": "Carbon Sequestration by Recycling Cement, Aggregates, and Concrete",
+    "link": "https://www.mdpi.com/1996-1944/17/20/5020",
+    "score": 13,
+    "author": "PaulHoule",
+    "comments": 2
   },
   {
     "rank": 29,
-    "title": "IBM's new SWE agents for developers",
-    "link": "https://research.ibm.com/blog/ibm-swe-agents",
-    "score": 55,
-    "author": "sandwichsphinx",
-    "comments": 55
+    "title": "Comparing Auth from Supabase, Firebase, Auth.js, Ory, Clerk and Others",
+    "link": "https://blog.hyperknot.com/p/comparing-auth-providers",
+    "score": 8,
+    "author": "thunderbong",
+    "comments": 1
   },
   {
-    "rank": 30,
-    "title": "Against /tmp",
-    "link": "https://dotat.at/@/2024-10-22-tmp.html",
-    "score": 197,
-    "author": "todsacerdoti",
-    "comments": 137
+    "rank": 24,
+    "title": "The DeVault Report",
+    "link": "https://dmpwn.info/",
+    "score": 4,
+    "author": "mimasama",
+    "comments": 0
+  },
+  {
+    "rank": 19,
+    "title": "NewsCatcher (YC S22) Is Hiring Web Scraping/Crawling Engineers",
+    "link": "https://www.newscatcherapi.com/career/web-crawling-scraping-engineer",
+    "score": 0,
+    "author": "Unknown",
+    "comments": 0
   }
 ]

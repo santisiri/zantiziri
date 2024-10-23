@@ -265,13 +265,12 @@ Guion:"""
         logging.error(f"Error creating script: {e}")
         return None
 
-def save_to_json(data, filename="hackernews_data.json"):
-    try:
-        with open(filename, 'w', encoding='utf-8') as f:
-            json.dump(data, f, ensure_ascii=False, indent=2)
-        logging.info(f"Data successfully saved to {filename}")
-    except Exception as e:
-        logging.error(f"Error saving data to JSON: {e}")
+def save_to_json(stories):
+    with open('hackernews_data.json', 'w') as f:
+        json.dump(stories, f, indent=2)
+
+def emit_article_update(article):
+    socketio.emit('article_update', article)
 
 def is_relevant_topic(title):
     relevant_keywords = [
@@ -402,18 +401,20 @@ def main():
     logging.info(f"Using model: {MODEL}")
     stories = scrape_hackernews()
     if stories:
-        save_to_json(stories)
-        
         # Filter stories based on relevance
         relevant_stories = filter_stories(stories)
         emit_log(f"Found {len(relevant_stories)} relevant stories out of {len(stories)} total stories.")
         
         sorted_stories = sorted(relevant_stories, key=lambda x: x['score'], reverse=True)
         processed_articles = 0
+        processed_urls = set()  # To keep track of processed URLs
         
         for story in sorted_stories:
             if processed_articles >= 5:
                 break
+            
+            if story['link'] in processed_urls:
+                continue  # Skip if we've already processed this URL
             
             emit_log(f"Processing article {processed_articles + 1}:")
             emit_log(json.dumps(story, indent=2))
@@ -440,7 +441,17 @@ def main():
                         if script:
                             emit_log("\nVideo Script (as Santiago Siri):")
                             emit_log(script)
+                            
+                            # Update the story with new information
+                            story['summary'] = summary
+                            story['translated_summary'] = translated_summary
+                            story['script'] = script
+                            
+                            # Emit the updated article to the frontend
+                            emit_article_update(story)
+                            
                             processed_articles += 1
+                            processed_urls.add(story['link'])  # Mark this URL as processed
                         else:
                             emit_log("\nFailed to create script.")
                     else:
@@ -453,6 +464,9 @@ def main():
                 emit_log("Article content too short. Skipping to next article.")
             
             random_delay()
+        
+        # Save the updated stories to JSON
+        save_to_json(sorted_stories)
         
         emit_log(f"\nProcessed {processed_articles} articles successfully.")
     else:
