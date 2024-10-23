@@ -8,33 +8,341 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .container {
+            max-width: 1200px;
+        }
+        .card {
+            border: none;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+        .card-header {
+            font-weight: 500;
+            border-top-left-radius: 10px !important;
+            border-top-right-radius: 10px !important;
+            padding: 0.75rem 1.25rem;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .table {
+            margin-bottom: 0;
+        }
+        .table th, .table td {
+            border-top: none;
+            vertical-align: middle;
+        }
+        .btn-script {
+            padding: 0.25rem 0.5rem;
+            font-size: 0.875rem;
+            line-height: 1.5;
+        }
+        #log-container {
+            height: 300px;
+            overflow-y: scroll;
+            border-radius: 10px;
+            padding: 0.5rem;
+            font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+            font-size: 0.875rem;
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+        #scriptContent {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            border-radius: 10px;
+            padding: 1rem;
+            max-height: 60vh;
+            overflow-y: auto;
+            transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+        }
+        .action-column {
+            width: 100px;
+        }
+        .spinner-border {
+            width: 1rem;
+            height: 1rem;
+            margin-right: 0.5rem;
+        }
+        #modelSelector {
+            max-width: 200px;
+            transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+        }
+        .table-hover tbody tr:hover {
+            transition: background-color 0.3s;
+        }
+        .modal-content {
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .modal-header, .modal-footer {
+            transition: border-color 0.3s;
+        }
+        .btn-close {
+            transition: color 0.3s;
+        }
+        .theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+        /* Light mode styles */
+        body.light-mode {
+            background-color: #f5f5f7;
+            color: #1d1d1f;
+        }
+        .light-mode .card {
+            background-color: #ffffff;
+        }
+        .light-mode .card-header {
+            background-color: #0071e3;
+            color: white;
+        }
+        .light-mode .btn-script {
+            background-color: #0071e3;
+            border-color: #0071e3;
+            color: white;
+        }
+        .light-mode .btn-script:hover {
+            background-color: #005cbd;
+            border-color: #005cbd;
+        }
+        .light-mode #log-container {
+            border: 1px solid #d2d2d7;
+            background-color: #ffffff;
+        }
+        .light-mode #scriptContent {
+            background-color: #f5f5f7;
+            border: 1px solid #d2d2d7;
+            color: #1d1d1f;
+        }
+        .light-mode .btn-primary {
+            background-color: #0071e3;
+            border-color: #0071e3;
+        }
+        .light-mode .btn-primary:hover {
+            background-color: #005cbd;
+            border-color: #005cbd;
+        }
+        .light-mode a {
+            color: #0071e3;
+        }
+        .light-mode a:hover {
+            color: #005cbd;
+        }
+        .light-mode #modelSelector {
+            background-color: #ffffff;
+            color: #1d1d1f;
+            border-color: #d2d2d7;
+        }
+        .light-mode .table-hover tbody tr:hover {
+            background-color: rgba(0, 113, 227, 0.1);
+        }
+        .light-mode .modal-content {
+            background-color: #ffffff;
+            color: #1d1d1f;
+        }
+        .light-mode .modal-header, .light-mode .modal-footer {
+            border-color: #d2d2d7;
+        }
+        /* Dark mode styles */
+        body.dark-mode {
+            background-color: #121212;
+            color: #ffffff;
+        }
+        .dark-mode .card {
+            background-color: #1e1e1e;
+            box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+        }
+        .dark-mode .card-header {
+            background-color: #ffd700;
+            color: #121212;
+        }
+        .dark-mode .btn-script {
+            background-color: #ffd700;
+            border-color: #ffd700;
+            color: #121212;
+        }
+        .dark-mode .btn-script:hover {
+            background-color: #e6c200;
+            border-color: #e6c200;
+        }
+        .dark-mode #log-container {
+            border: 1px solid #444;  /* Lightened border color */
+            background-color: #1e1e1e;
+        }
+        .dark-mode #scriptContent {
+            background-color: #1e1e1e;
+            border: 1px solid #444;  /* Lightened border color */
+            color: #ffffff;  /* Changed from #e0e0e0 to #ffffff */
+        }
+        .dark-mode .btn-primary {
+            background-color: #ffd700;
+            border-color: #ffd700;
+            color: #121212;
+        }
+        .dark-mode .btn-primary:hover {
+            background-color: #e6c200;
+            border-color: #e6c200;
+        }
+        .dark-mode a {
+            color: #ffd700;
+        }
+        .dark-mode a:hover {
+            color: #ffe666;  /* Lightened hover color */
+        }
+        .dark-mode #modelSelector {
+            background-color: #2c2c2c;  /* Slightly lighter than the card background */
+            color: #ffffff;
+            border-color: #ffd700;
+        }
+        .dark-mode .table-hover tbody tr:hover {
+            background-color: rgba(255, 215, 0, 0.2);  /* Increased opacity for better visibility */
+            color: #121212;  /* Dark text color for better contrast on hover */
+        }
+        .dark-mode .table-hover tbody tr:hover a {
+            color: #121212;  /* Ensure links are also dark on hover for better visibility */
+        }
+        .dark-mode .modal-content {
+            background-color: #1e1e1e;
+            color: #ffffff;
+        }
+        .dark-mode .modal-header, .dark-mode .modal-footer {
+            border-color: #444;  /* Lightened border color */
+        }
+        .dark-mode .table {
+            color: #ffffff;
+        }
+        .dark-mode .table a {
+            color: #ffd700;
+        }
+        .dark-mode .table a:hover {
+            color: #ffe666;
+        }
+
+        .navbar {
+            transition: background-color 0.3s, color 0.3s;
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        .form-control-plaintext {
+            transition: color 0.3s, background-color 0.3s, border-color 0.3s;
+            padding: 0.375rem 0.75rem;
+            border-radius: 0.25rem;
+            width: 100%;
+            max-width: 400px;
+        }
+        #themeToggle {
+            transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+        }
+
+        /* Light mode styles */
+        body.light-mode .navbar {
+            background-color: #f8f9fa;
+            color: #1d1d1f;
+        }
+        body.light-mode .form-control-plaintext {
+            color: #1d1d1f;
+            background-color: #e9ecef;
+            border: 1px solid #ced4da;
+        }
+        body.light-mode #themeToggle {
+            background-color: #ffffff;
+            color: #1d1d1f;
+            border-color: #1d1d1f;
+        }
+
+        /* Dark mode styles */
+        body.dark-mode .navbar {
+            background-color: #1e1e1e;
+            color: #ffffff;
+        }
+        body.dark-mode .form-control-plaintext {
+            color: #ffffff;
+            background-color: #2c2c2c;
+            border: 1px solid #444;
+        }
+        body.dark-mode #themeToggle {
+            background-color: #ffd700;
+            color: #121212;
+            border-color: #ffd700;
+        }
+    </style>
 </head>
-<body>
-    <div class="container mt-5">
-        <h1 class="mb-4">Hacker News Scraper Dashboard</h1>
-        <div class="row">
-            <div class="col-md-12">
-                <h2>Scraped Articles</h2>
-                <table class="table table-striped" id="articlesTable">
-                    <thead>
-                        <tr>
-                            <th>Title</th>
-                            <th>Score</th>
-                            <th>Comments</th>
-                            <th>Summary Preview</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- Articles will be dynamically inserted here -->
-                    </tbody>
-                </table>
+<body class="light-mode">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">HN Scraper Dashboard</a>
+            <div class="d-flex align-items-center flex-grow-1 justify-content-end">
+                <span class="navbar-text me-2">Scraping:</span>
+                <input type="text" readonly class="form-control-plaintext" id="scrapedUrl" value="{{ scraped_url }}">
+                <button id="themeToggle" class="btn ms-3">🌓 Toggle Theme</button>
             </div>
         </div>
-        <div class="row mt-4">
+    </nav>
+
+    <div class="container mt-4">
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <select id="modelSelector" class="form-select">
+                    <option value="gpt-4">GPT-4</option>
+                    <option value="gpt-3.5-turbo">GPT-3.5 Turbo</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 mb-4">
+                <div class="card">
+                    <div class="card-header">
+                        Scraped Articles
+                    </div>
+                    <div class="card-body p-0">
+                        <table class="table table-hover" id="articlesTable">
+                            <thead>
+                                <tr>
+                                    <th>Title</th>
+                                    <th>Score</th>
+                                    <th>Comments</th>
+                                    <th>Summary Preview</th>
+                                    <th class="action-column">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Articles will be dynamically inserted here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
             <div class="col-md-12">
-                <h2>Live Logs</h2>
-                <div id="log-container" style="height: 400px; overflow-y: scroll; border: 1px solid #ccc; padding: 10px;"></div>
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <span>Live Logs</span>
+                        <div>
+                            <div id="logsSpinner" class="spinner-border text-light" role="status" style="display: none;">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                            <a href="#" class="btn-toggle" data-bs-toggle="collapse" data-bs-target="#logContainer" aria-expanded="true" aria-controls="logContainer">
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-body collapse show" id="logContainer">
+                        <div id="log-container"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -48,6 +356,9 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
+                    <div class="mb-3">
+                        <button id="copyScriptBtn" class="btn btn-primary btn-sm">📋 Copy to Clipboard</button>
+                    </div>
                     <pre id="scriptContent"></pre>
                 </div>
             </div>
@@ -58,12 +369,27 @@
         var socket = io();
         var logContainer = document.getElementById('log-container');
         var articlesTable = document.getElementById('articlesTable').getElementsByTagName('tbody')[0];
+        var logsSpinner = document.getElementById('logsSpinner');
+        var modelSelector = document.getElementById('modelSelector');
+
+        // Check if dev_mode is defined, default to false if not
+        var isDevMode = {{ dev_mode|default(false)|tojson }};
+
+        if (isDevMode) {
+            modelSelector.value = 'gpt-3.5-turbo';
+            modelSelector.disabled = true;
+        }
+
+        modelSelector.addEventListener('change', function() {
+            socket.emit('change_model', { model: this.value });
+        });
 
         socket.on('log_update', function(data) {
             var logEntry = document.createElement('p');
             logEntry.textContent = data.message;
             logContainer.appendChild(logEntry);
             logContainer.scrollTop = logContainer.scrollHeight;
+            logsSpinner.style.display = 'inline-block';
         });
 
         socket.on('article_update', function(article) {
@@ -73,21 +399,71 @@
                 <td>${article.score}</td>
                 <td>${article.comments}</td>
                 <td>${article.summary ? (article.summary.length > 200 ? article.summary.substring(0, 200) + '...' : article.summary) : 'N/A'}</td>
-                <td>
-                    ${article.script ? `<button class="btn btn-primary btn-sm view-script" data-bs-toggle="modal" data-bs-target="#scriptModal" data-script="${encodeURIComponent(article.script)}">View Script</button>` : 'N/A'}
+                <td class="action-column">
+                    ${article.script ? `<button class="btn btn-script btn-sm" data-bs-toggle="modal" data-bs-target="#scriptModal" data-script="${encodeURIComponent(article.script)}">📜 Script</button>` : 'N/A'}
                 </td>
             `;
             articlesTable.appendChild(row);
 
             // Attach event listener to the new button
-            var newButton = row.querySelector('.view-script');
+            var newButton = row.querySelector('.btn-script');
             if (newButton) {
                 newButton.addEventListener('click', function() {
                     var script = decodeURIComponent(this.getAttribute('data-script'));
                     document.getElementById('scriptContent').textContent = script;
                 });
             }
+            logsSpinner.style.display = 'none';
         });
+
+        // Copy to clipboard functionality
+        document.getElementById('copyScriptBtn').addEventListener('click', function() {
+            var scriptContent = document.getElementById('scriptContent');
+            var textArea = document.createElement('textarea');
+            textArea.value = scriptContent.textContent;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textArea);
+            
+            // Change button text to indicate successful copy
+            this.textContent = '✅ Copied!';
+            setTimeout(() => {
+                this.textContent = '📋 Copy to Clipboard';
+            }, 2000);
+        });
+
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+
+        function updateThemeStyles() {
+            if (body.classList.contains('dark-mode')) {
+                themeToggle.classList.remove('btn-outline-primary');
+                themeToggle.classList.add('btn-warning');
+            } else {
+                themeToggle.classList.remove('btn-warning');
+                themeToggle.classList.add('btn-outline-primary');
+            }
+        }
+
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            body.classList.toggle('light-mode');
+            updateThemeStyles();
+            
+            // Save the current theme preference
+            const isDarkMode = body.classList.contains('dark-mode');
+            localStorage.setItem('darkMode', isDarkMode);
+        });
+
+        // Check for saved theme preference
+        const savedDarkMode = localStorage.getItem('darkMode');
+        if (savedDarkMode === 'true') {
+            body.classList.remove('light-mode');
+            body.classList.add('dark-mode');
+        }
+        updateThemeStyles();
     </script>
 </body>
 </html>

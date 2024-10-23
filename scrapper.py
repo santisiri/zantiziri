@@ -30,7 +30,7 @@ parser.add_argument("--dev", action="store_true", help="Use GPT-3.5-turbo instea
 args = parser.parse_args()
 
 # Choose the model based on the --dev flag
-MODEL = "gpt-3.5-turbo" if args.dev else "gpt-4-0613"
+MODEL = "gpt-3.5-turbo" if args.dev else "gpt-4"
 
 # Flask app setup
 app = Flask(__name__)
@@ -38,13 +38,8 @@ socketio = SocketIO(app, cors_allowed_origins="*")
 
 @app.route('/')
 def index():
-    try:
-        with open('hackernews_data.json', 'r') as f:
-            data = json.load(f)
-        data.sort(key=lambda x: x['score'], reverse=True)
-    except FileNotFoundError:
-        data = []
-    return render_template('index.html', articles=data)
+    scraped_url = "https://news.ycombinator.com"  # Or get this dynamically
+    return render_template('index.html', scraped_url=scraped_url, dev_mode=args.dev)
 
 def emit_log(message):
     print(message)  # Print to console
@@ -396,6 +391,12 @@ def filter_stories(stories):
 def handle_connect():
     print('Client connected')
     socketio.start_background_task(main)
+
+@socketio.on('change_model')
+def handle_change_model(data):
+    global MODEL
+    MODEL = data['model']
+    print(f"Model changed to: {MODEL}")
 
 def main():
     logging.info(f"Using model: {MODEL}")

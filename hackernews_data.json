@@ -1,88 +1,96 @@
 [
   {
-    "rank": 5,
+    "rank": 6,
     "title": "Computer use, a new Claude 3.5 Sonnet, and Claude 3.5 Haiku",
     "link": "https://www.anthropic.com/news/3-5-models-and-computer-use",
-    "score": 1299,
+    "score": 1330,
     "author": "weirdcat",
-    "comments": 657,
-    "summary": "Exciting news from Claude 3.5! Introducing an upgraded Sonnet and new Haiku model with enhanced coding capabilities. A groundbreaking beta feature, \"computer use,\" lets developers direct AI to perform tasks like a human on screens. Industry leaders like Asana and DoorDash are already exploring its potential. Claude 3.5 Sonnet impresses with coding skills, showing significant performance gains with no extra cost. Partners like GitLab and Cognition praise its efficiency for software development and AI evaluations. Plus, Claude 3.5 Haiku offers state-of-the-art improvements in speed and affordability. Stay tuned for more innovations from Claude 3.5! #AI #Innovation #TechUpdates",
-    "translated_summary": "\u00a1Noticias emocionantes de Claude 3.5! Presentamos un Soneto actualizado y un nuevo modelo de Haiku con capacidades de codificaci\u00f3n mejoradas. Una caracter\u00edstica beta revolucionaria, \"uso de computadora\", permite a los desarrolladores guiar a la IA para realizar tareas como lo har\u00eda un humano en las pantallas. L\u00edderes de la industria como Asana y DoorDash ya est\u00e1n explorando su potencial. Claude 3.5 Soneto impresiona con habilidades de codificaci\u00f3n, mostrando ganancias significativas en rendimiento sin costo adicional. Socios como GitLab y Cognition elogian su eficiencia para el desarrollo de software y evaluaciones de IA. Adem\u00e1s, Claude 3.5 Haiku ofrece mejoras de \u00faltima tecnolog\u00eda en velocidad y asequibilidad. \u00a1Est\u00e9n atentos a m\u00e1s innovaciones de Claude 3.5! #IA #Innovaci\u00f3n #",
-    "script": "\u00a1Hola a todos! \u00bfPodr\u00edan imaginar una IA tan avanzada que pueda realizar tareas como lo har\u00eda un humano en una pantalla? Les traigo noticias emocionantes sobre Claude 3.5, con novedades que est\u00e1n revolucionando el mundo de la programaci\u00f3n.\n\nUna caracter\u00edstica beta sorprendente llamada \"uso de computadora\" permite a los desarrolladores guiar a la inteligencia artificial, alcanzando niveles de interactividad nunca vistos antes. Grandes jugadores como Asana y DoorDash ya est\u00e1n explorando este potencial, abriendo nuevas posibilidades en el campo de la IA aplicada.\n\nClaude 3.5 Sonnet ha impactado con sus habilidades de codificaci\u00f3n, logrando mejoras significativas en rendimiento sin costos adicionales. GitLab y Cognition elogian su eficiencia para el desarrollo de software y las evaluaciones de IA, mostrando el impacto positivo de esta actualizaci\u00f3n en la productividad y calidad del trabajo.\n\nPor otro lado, Claude 3.5 Haiku promete mejoras tecnol\u00f3gicas en velocidad y asequibilidad, abriendo el camino a nuevas innovaciones en el futuro cercano.\n\nLas implicaciones de estas mejoras no pueden subestimarse, transformando la forma en que interactuamos con la tecnolog\u00eda y potenciando nuestras capacidades de creaci\u00f3n y desarrollo. Es crucial estar al tanto de estos avances para adaptarnos y aprovechar al m\u00e1ximo sus beneficios.\n\nEst\u00e9n atentos a m\u00e1s noticias sobre Claude 3.5, \u00a1y no duden en suscribirse para recibir las \u00faltimas actualizaciones tecnol\u00f3gicas! #IA #Innovaci\u00f3n"
+    "comments": 667,
+    "summary": "Exciting updates from Claude 3.5 - introducing an improved Sonnet and a new Haiku model. The Sonnet leads in coding, while the Haiku matches Opus' performance. Public beta feature: computer use! Companies already exploring the potential. Sonnet excels in software engineering tasks, providing significant advancements at the same price. Early testing feedback is positive. Haiku offers top-notch performance at an affordable cost. Stay tuned for more updates on these cutting-edge AI models! #AI #Technology #Innovation",
+    "translated_summary": "Emocionantes novedades de Claude 3.5: presentando una versi\u00f3n mejorada del Soneto y un nuevo modelo de Haik\u00fa. El Soneto lidera en codificaci\u00f3n, mientras que el Haik\u00fa iguala el rendimiento de Opus. \u00a1Funci\u00f3n beta p\u00fablica: uso de computadora! Empresas ya est\u00e1n explorando el potencial. El Soneto se destaca en tareas de ingenier\u00eda de software, ofreciendo avances significativos al mismo precio. Los comentarios tempranos de las pruebas son positivos. El Haik\u00fa ofrece un rendimiento de primera a un costo accesible. \u00a1Mantente atento para m\u00e1s novedades sobre estos modelos de IA de vanguardia! #IA #Tecnolog\u00eda #Innovaci\u00f3n",
+    "script": "\u00a1Hola a todos los amantes de la tecnolog\u00eda! Esta vez tenemos un anuncio interesante que puede cambiar el juego en el mundo de la inteligencia artificial. Se trata de las \u00faltimas actualizaciones en Claude 3.5, que incluyen un impresionante redise\u00f1o del Soneto y una nueva incorporaci\u00f3n, el Haik\u00fa.\n\nEl Soneto ha sido elogiado por su liderazgo en codificaci\u00f3n, prometiendo un desempe\u00f1o superior en tareas de ingenier\u00eda de software. A un precio competitivo, esta joya de la IA ha despertado la curiosidad de expertos e empresas por igual. Los informes iniciales sugieren avances significativos, lo que nos hace pensar en posibles aplicaciones revolucionarias en el horizonte.\n\nMientras tanto, el nuevo Haik\u00fa ha llamado la atenci\u00f3n al equiparar el rendimiento de Opus a un costo accesible. Esto abre todo un abanico de posibilidades para quienes buscan un rendimiento de primer nivel sin tener que desembolsar cantidades exorbitantes de dinero.\n\nLo m\u00e1s emocionante de todo es que ahora podemos probar en beta la funci\u00f3n de uso de computadora, lo que muestra c\u00f3mo la tecnolog\u00eda contin\u00faa avanzando a pasos agigantados. Las empresas ya est\u00e1n explorando las capacidades de Claude 3.5 y sus implicaciones en sus respectivos campos.\n\nEsperamos ansiosos m\u00e1s noticias sobre estos modelos de IA de vanguardia y c\u00f3mo pueden influir en nuestra forma de interactuar con la tecnolog\u00eda en un futuro cercano. \u00a1Mant\u00e9nganse al tanto de las \u00faltimas actualizaciones! No se pierdan las nuevas posibilidades que estos avances podr\u00edan brindar. \u00bfQu\u00e9 piensan ustedes? \u00a1No olviden suscribirse para no perderse ninguna novedad sobre tecnolog\u00eda de punta! \u00a1Hasta la pr\u00f3xima videoactualizaci\u00f3n! #IA #Tecnolog\u00eda #Innovaci\u00f3n"
+  },
+  {
+    "rank": 29,
+    "title": "FTC's rule banning fake online reviews goes into effect",
+    "link": "https://abcnews.go.com/US/wireStory/ftcs-rule-banning-fake-online-reviews-effect-115009298",
+    "score": 549,
+    "author": "indus",
+    "comments": 311,
+    "summary": "\ud83d\udeab\ud83d\udcdd FTC's new rule banning fake online reviews is now in effect! Businesses and individuals face penalties for generating or purchasing fake reviews and testimonials. This move aims to protect consumers, promote fair competition, and maintain marketplace integrity. Report violations at https://reportfraud.ftc.gov. Stay informed and support honest reviews! #FTC #OnlineReviews #ConsumerProtection \ud83d\uded2\ud83d\udd0d",
+    "translated_summary": "\ud83d\udeab\ud83d\udcdd \u00a1La nueva regla de la FTC que proh\u00edbe las rese\u00f1as falsas en l\u00ednea ya est\u00e1 vigente! Las empresas y personas enfrentan sanciones por generar o comprar rese\u00f1as y testimonios falsos. Esta medida apunta a proteger a los consumidores, promover una competencia justa y mantener la integridad del mercado. Report\u00e1 las infracciones en https://reportfraud.ftc.gov. \u00a1Mantenete informado y apoy\u00e1 las rese\u00f1as honestas! #FTC #Rese\u00f1asEnL\u00ednea #Protecci\u00f3nAlConsumidor \ud83d\uded2\ud83d\udd0d",
+    "script": "\u00a1Atenci\u00f3n a todos los seguidores de las noticias tecnol\u00f3gicas! Hoy quiero compartir con ustedes un tema que est\u00e1 en boca de todos en el mundo digital. La nueva regla de la FTC que proh\u00edbe las rese\u00f1as falsas en l\u00ednea ha sido implementada, y eso significa un cambio significativo en la forma en que empresas y personas interact\u00faan en el espacio digital.\n\nEs importante destacar que la generaci\u00f3n y compra de testimonios falsos ahora conlleva sanciones, y estas medidas no solo van dirigidas a asegurar la protecci\u00f3n de los consumidores, sino tambi\u00e9n a fomentar una competencia justa y a salvaguardar la integridad del mercado.\n\nAlgo que vale la pena reflexionar es c\u00f3mo esta normativa puede impactar directamente en la confianza que depositamos al realizar compras en l\u00ednea. Todos sabemos lo crucial que son las rese\u00f1as para tomar decisiones informadas, y saber que ahora se est\u00e1n tomando medidas para garantizar la veracidad de estas opiniones es un avance notable en la transparencia del comercio en l\u00ednea.\n\nSi te topas con alguna rese\u00f1a que sospeches que pueda ser falsa, te animo a que denuncies cualquier infracci\u00f3n en el enlace https://reportfraud.ftc.gov. Mantenerte informado sobre tus derechos como consumidor es clave para fortalecer la comunidad en l\u00ednea y promover una cultura de honestidad y responsabilidad. Juntos podemos apoyar y fomentar las rese\u00f1as honestas, brindando as\u00ed un ambiente m\u00e1s transparente y confiable para todos los usuarios.\n\nRecuerda que la informaci\u00f3n es poder, y cada uno de nosotros tiene un papel importante en la construcci\u00f3n de un entorno digital m\u00e1s justo y \u00e9tico. \u00a1No dudes en suscribirte a nuestro canal para mantenerte al d\u00eda con las \u00faltimas noticias y novedades tecnol\u00f3gicas! #FTC #Rese\u00f1asEnL\u00ednea #Protecci\u00f3nAlConsumidor \ud83d\uded2\ud83d\udd0d"
+  },
+  {
+    "rank": 19,
+    "title": "Arm is canceling Qualcomm's chip design license",
+    "link": "https://www.bloomberg.com/news/articles/2024-10-23/arm-to-cancel-qualcomm-chip-design-license-in-escalation-of-feud",
+    "score": 454,
+    "author": "necubi",
+    "comments": 307
   },
   {
     "rank": 30,
     "title": "Show HN: Rust Web Framework",
     "link": "https://github.com/levkk/rwf",
-    "score": 447,
+    "score": 454,
     "author": "levkk",
-    "comments": 233,
-    "summary": "\ud83d\ude80 Exciting news! Introducing Rwf, a Rust Web Framework for fast and secure web apps. Features include HTTP server, ORM for PostgreSQL queries, dynamic templates, authentication, WebSockets, CLI, and more. Perfect for building backend-driven SPAs and migrating from Django/Flask apps. Check it out on GitHub! #Rust #WebDevelopment #Framework",
-    "translated_summary": "\u00a1Noticias emocionantes! Presentamos Rwf, un marco web Rust para aplicaciones web r\u00e1pidas y seguras. Sus caracter\u00edsticas incluyen servidor HTTP, ORM para consultas PostgreSQL, plantillas din\u00e1micas, autenticaci\u00f3n, WebSockets, CLI y m\u00e1s. Ideal para construir SPA impulsadas por backend y migrar desde aplicaciones Django/Flask. \u00a1Con\u00f3celo en GitHub! #Rust #DesarrolloWeb #Framework",
-    "script": "\u00a1Hola a todos! Hoy quiero compartir una noticia interesante sobre el mundo tecnol\u00f3gico que me tiene bastante intrigado. Se trata de Rwf, un nuevo marco web en Rust que est\u00e1 dando de qu\u00e9 hablar. \n\nRwf promete ser una soluci\u00f3n completa para aquellos desarrolladores que buscan crear aplicaciones web r\u00e1pidas y seguras. Con funcionalidades como servidor HTTP, ORM para consultas PostgreSQL, plantillas din\u00e1micas, autenticaci\u00f3n, WebSockets y una interfaz de l\u00ednea de comandos, este marco parece tener todo lo necesario para satisfacer las necesidades de los desarrolladores m\u00e1s exigentes.\n\nUna de las cosas que m\u00e1s me llama la atenci\u00f3n es la capacidad de Rwf para soportar el desarrollo de SPAs impulsadas por el backend. Esto podr\u00eda ser un gran avance para aquellos que buscan migrar sus aplicaciones desde entornos como Django o Flask a una soluci\u00f3n m\u00e1s moderna y eficiente.\n\nSi bien es emocionante ver nuevas herramientas y tecnolog\u00edas emergentes en el mundo del desarrollo web, siempre es importante mantener una mirada cr\u00edtica y equilibrada. Como todo en la vida, Rwf tambi\u00e9n tendr\u00e1 sus desaf\u00edos y limitaciones que debemos considerar.\n\nSi eres un apasionado del desarrollo web y te entusiasman las nuevas tecnolog\u00edas, te invito a echar un vistazo m\u00e1s de cerca a Rwf en GitHub. Recuerda siempre investigar por tu cuenta, analizar las ventajas y desventajas de cada herramienta, y tomar decisiones informadas. \u00a1La tecnolog\u00eda avanza r\u00e1pido, y es importante mantenerse actualizado! \u00bfQu\u00e9 opinas de esta nueva propuesta en el mundo de los marcos web? \u00a1D\u00e9jame tu comentario y no olvides suscribirte para m\u00e1s noticias tecnol\u00f3gicas como esta! #Rust #DesarrolloWeb #Framework"
-  },
-  {
-    "rank": 17,
-    "title": "Arm is canceling Qualcomm's chip design license",
-    "link": "https://www.bloomberg.com/news/articles/2024-10-23/arm-to-cancel-qualcomm-chip-design-license-in-escalation-of-feud",
-    "score": 422,
-    "author": "necubi",
-    "comments": 291
+    "comments": 236,
+    "summary": "\ud83d\ude80 Exciting news! Introducing Rwf \u2013 a comprehensive Rust Web Framework for building super-fast and secure web applications. Features include HTTP server, built-in ORM for PostgreSQL, dynamic templates, authentication, middleware, background jobs, REST framework, WebSockets support, and more! Perfect for creating backend-driven SPAs with Hotwired Turbo integration. Get started easily with Rwf and take your web development to the next level. #Rust #WebDevelopment #Framework \ud83c\udf10\ud83d\udcbb",
+    "translated_summary": "\u00a1Noticias emocionantes! Presentamos Rwf - un completo Marco Web de Rust para construir aplicaciones web s\u00faper r\u00e1pidas y seguras. Las caracter\u00edsticas incluyen servidor HTTP, ORM integrado para PostgreSQL, plantillas din\u00e1micas, autenticaci\u00f3n, middleware, trabajos en segundo plano, marco de REST, soporte para WebSockets \u00a1y mucho m\u00e1s! Ideal para crear SPAs impulsadas por el backend con integraci\u00f3n Hotwired Turbo. Comienza f\u00e1cilmente con Rwf y lleva tu desarrollo web al siguiente nivel. #Rust #DesarrolloWeb #Marco \ud83c\udf10\ud83d\udcbb",
+    "script": "\u00a1Hola mundo tecnol\u00f3gico! Hoy les traigo noticias emocionantes para todos los amantes del desarrollo web. Se ha presentado Rwf, un completo Marco Web en Rust dise\u00f1ado para llevar nuestras aplicaciones al siguiente nivel. \u00bfQu\u00e9 hace que Rwf destaque entre la multitud de frameworks existentes? La clave, como siempre, est\u00e1 en los detalles.\n\nEste framework no solo promete rapidez y seguridad, sino que tambi\u00e9n viene equipado con un servidor HTTP integrado y un ORM para PostgreSQL. \u00bfPero qu\u00e9 hace especial a Rwf m\u00e1s all\u00e1 de sus caracter\u00edsticas b\u00e1sicas? Su enfoque en la creaci\u00f3n de SPAs impulsadas por el backend con integraci\u00f3n Hotwired Turbo. Esto significa que es ideal para aquellos que buscan una soluci\u00f3n \u00e1gil y eficiente para sus proyectos web.\n\nLas plantillas din\u00e1micas, la autenticaci\u00f3n, los trabajos en segundo plano, el soporte para WebSockets y un s\u00f3lido marco de REST son solo algunas de las funcionalidades que ofrece Rwf. Sin embargo, como en todo en la vida, tambi\u00e9n existen aspectos a considerar. Como en cualquier herramienta nueva, es crucial evaluar su curva de aprendizaje y adaptaci\u00f3n a tus necesidades espec\u00edficas.\n\nEs vital recordar que no existe una soluci\u00f3n \u00fanica para todos. Cada proyecto es \u00fanico y requiere un an\u00e1lisis minucioso para determinar si Rwf es la mejor opci\u00f3n. Mi consejo como desarrollador con m\u00e1s de 20 a\u00f1os de experiencia es que investigues, pruebes y eval\u00faes antes de comprometerte con una tecnolog\u00eda nueva. Mant\u00e9n la mente abierta y la curiosidad aguda.\n\nSi te apasiona el desarrollo web y est\u00e1s ansioso por explorar las posibilidades que ofrece Rwf, te invito a sumergirte en este emocionante mundo de posibilidades. Suscr\u00edbete para m\u00e1s noticias tecnol\u00f3gicas y mantente informado sobre las \u00faltimas tendencias en el fascinante mundo del desarrollo web. \u00a1Hasta la pr\u00f3xima!"
   },
   {
     "rank": 10,
     "title": "Show HN: Open-source Counter-Strike-like game",
     "link": "https://github.com/solcloud/Counter-Strike",
-    "score": 360,
+    "score": 378,
     "author": "solcloud",
-    "comments": 133,
-    "summary": "Check out this open-source multiplayer FPS game called Counter-Strike: Football! Teams of Attackers and Defenders battle it out to win rounds. Defenders protect their base from Attackers using a graffiti bomb ball, while Attackers aim to eliminate Defenders or plant the bomb. This low-violence game offers a unique twist on the classic Counter-Strike gameplay. #gaming #opensource",
-    "translated_summary": "\u00a1Chequ\u00e9ate este juego de disparos en primera persona multijugador de c\u00f3digo abierto llamado Counter-Strike: F\u00fatbol! Equipos de Atacantes y Defensores se enfrentan para ganar rondas. Los Defensores protegen su base de los Atacantes usando una pelota de bomba de graffiti, mientras que los Atacantes buscan eliminar a los Defensores o plantar la bomba. Este juego de baja violencia ofrece una vuelta de tuerca \u00fanica al cl\u00e1sico juego de Counter-Strike. #gaming #opensource",
-    "script": "\u00a1Oye, comunidad tecnol\u00f3gica! Hoy les traigo una noticia interesante que me gustar\u00eda compartir con ustedes. Se trata de un juego de disparos en primera persona de c\u00f3digo abierto llamado Counter-Strike: F\u00fatbol. S\u00ed, as\u00ed como lo oyen, una mezcla entre el cl\u00e1sico Counter-Strike y el mundo del f\u00fatbol.\n\nEn este juego, equipos de Atacantes y Defensores se enfrentan en intensas batallas por rondas. Los Defensores ponen a prueba sus habilidades para proteger su base utilizando una pelota de bomba de graffiti, mientras que los Atacantes buscan eliminar a los Defensores o plantar la temida bomba.\n\nLo que destaca de este juego es su enfoque en la estrategia y la acci\u00f3n, manteniendo un nivel de violencia bastante bajo en comparaci\u00f3n con otros t\u00edtulos del g\u00e9nero. Es refrescante ver una propuesta que innova dentro de un g\u00e9nero tan consolidado como el de los disparos en primera persona.\n\nCounter-Strike: F\u00fatbol presenta una vuelta de tuerca \u00fanica que seguramente atraer\u00e1 a los amantes de los juegos multijugador. La idea de combinar elementos de f\u00fatbol con la mec\u00e1nica de Counter-Strike definitivamente llama la atenci\u00f3n y promete horas de diversi\u00f3n para quienes decidan sumergirse en esta nueva experiencia.\n\nComo en todas las noticias tecnol\u00f3gicas, es importante analizar en detalle los aspectos positivos y negativos de esta novedad. Si bien la originalidad y creatividad detr\u00e1s de este juego son aspectos destacables, tambi\u00e9n es fundamental considerar c\u00f3mo se traduce en la experiencia real de juego para los usuarios.\n\nEn definitiva, Counter-Strike: F\u00fatbol es una propuesta interesante que despierta curiosidad y nos invita a explorar nuevas formas de entretenimiento en el mundo de los videojuegos. \u00bfQu\u00e9 opinan ustedes? \u00bfLes gustar\u00eda probarlo y descubrir qu\u00e9 tal se desenvuelven en este nuevo desaf\u00edo?\n\n\u00a1Suscr\u00edbanse para m\u00e1s noticias tecnol\u00f3gicas y mant\u00e9nganse al tanto de las \u00faltimas novedades en el mundo de la tecnolog\u00eda y la innovaci\u00f3n! \u00a1Hasta la pr\u00f3xima! #gaming #opensource"
+    "comments": 141,
+    "summary": "Check out this open-source Counter-Strike-like game called Counter-Strike: Football. It's a multiplayer FPS game where two teams, Attackers and Defenders, battle to win rounds. Defenders protect their fan base sanctuary from the graffiti bomb ball of attackers. With a unique gameplay twist, this low-violence game offers an engaging experience for players. #gaming #opensource #CounterStrikeFootball",
+    "translated_summary": "Cheque\u00e1 este juego de c\u00f3digo abierto parecido a Counter-Strike llamado Counter-Strike: Football. Es un juego FPS multijugador en el que dos equipos, Atacantes y Defensores, luchan por ganar rondas. Los Defensores protegen su santuario de la base de fans del bal\u00f3n bomba de graffiti de los Atacantes. Con un giro de jugabilidad \u00fanico, este juego de baja violencia ofrece una experiencia atractiva para los jugadores. #gaming #opensource #CounterStrikeFootball",
+    "script": "Hoy quiero compartir con ustedes una interesante novedad del mundo de los videojuegos. Se trata de Counter-Strike: Football, un juego de c\u00f3digo abierto que ha captado la atenci\u00f3n de muchos entusiastas.\u00bfDe qu\u00e9 se trata? En esencia, es un juego FPS multijugador donde dos equipos, Atacantes y Defensores, se enfrentan en intensas batallas por la victoria en cada ronda. Lo curioso es que los Defensores deben proteger su santuario de la base de fans del bal\u00f3n bomba de graffiti de los Atacantes.\n\nEste giro \u00fanico en la jugabilidad es lo que hace a Counter-Strike: Football destacar en el panorama de los juegos FPS. Pero, \u00bfqu\u00e9 tal es la experiencia de juego? A diferencia de otros t\u00edtulos del g\u00e9nero, este juego se enfoca en una baja violencia, lo que lo convierte en una alternativa atractiva para aquellos que buscan algo diferente.\n\nComo siempre, es importante reconocer tanto los aspectos positivos como los negativos de esta propuesta. Por un lado, la innovaci\u00f3n en la mec\u00e1nica del juego es digna de aplaudir, ya que ofrece una frescura bienvenida al g\u00e9nero. Sin embargo, es crucial ser cr\u00edticos y analizar a fondo c\u00f3mo se ejecuta esta propuesta en la pr\u00e1ctica y qu\u00e9 impacto puede tener en la experiencia de los jugadores.\n\nEn definitiva, Counter-Strike: Football es una propuesta interesante que vale la pena explorar para aquellos que buscan un nuevo reto en el mundo de los videojuegos. Les invito a que investiguen m\u00e1s sobre este juego y formen sus propias opiniones al respecto. Manteng\u00e1monos abiertos a la innovaci\u00f3n, pero tambi\u00e9n seamos exigentes a la hora de evaluar las propuestas que recibimos en este fascinante mundo de la tecnolog\u00eda y los videojuegos.\u00a1No dejen de suscribirse para m\u00e1s contenido de calidad! #gaming #opensource #CounterStrikeFootball"
   },
   {
-    "rank": 16,
+    "rank": 17,
     "title": "A new JSON data type for ClickHouse",
     "link": "https://clickhouse.com/blog/a-new-powerful-json-data-type-for-clickhouse",
-    "score": 345,
+    "score": 353,
     "author": "markhneedham",
-    "comments": 95,
-    "summary": "At ClickHouse, a powerful new JSON data type has been developed to efficiently handle JSON data challenges. The JSON data type enables true column-oriented storage, dynamically changing data without type unification, prevention of excessive column data files, and dense storage. This innovation allows for optimal compression, high-performance analytics, and scalability, ensuring efficient processing of JSON data within ClickHouse. #ClickHouse #JSON #DataInnovation",
-    "translated_summary": "En ClickHouse, se ha desarrollado un poderoso nuevo tipo de datos JSON para manejar eficientemente los desaf\u00edos de los datos JSON. El tipo de datos JSON permite un almacenamiento verdaderamente orientado a columnas, cambiando din\u00e1micamente los datos sin unificaci\u00f3n de tipos, previniendo archivos de datos de columna excesivos y un almacenamiento denso. Esta innovaci\u00f3n permite una compresi\u00f3n \u00f3ptima, an\u00e1lisis de alto rendimiento y escalabilidad, garantizando un procesamiento eficiente de datos JSON dentro de ClickHouse. #ClickHouse #JSON #Innovaci\u00f3nDeDatos",
-    "script": "\u00bfTe imaginas manejar datos JSON de forma m\u00e1s eficiente? En la \u00faltima actualizaci\u00f3n de ClickHouse, se ha introducido un nuevo tipo de datos, el JSON data type. \u00bfEn qu\u00e9 consiste esta innovaci\u00f3n? B\u00e1sicamente, nos permite tratar los datos bajo un enfoque orientado a columnas, lo cual supone un cambio significativo en la manera en que se gestionan los datos JSON dentro de la plataforma.\n\nEste tipo de datos no solo permite almacenar la informaci\u00f3n de forma m\u00e1s optimizada, sino que tambi\u00e9n posibilita realizar operaciones de manera m\u00e1s din\u00e1mica, sin la necesidad de uniformar los tipos de datos. En t\u00e9rminos pr\u00e1cticos, esto implica un menor consumo de recursos y una mayor eficiencia en el procesamiento de datos JSON.\n\nUna de las principales ventajas de esta innovaci\u00f3n radica en la capacidad de comprimir los datos de forma \u00f3ptima, lo que se traduce en un mejor rendimiento en el an\u00e1lisis de datos y una escalabilidad mejorada. Adem\u00e1s, al evitar la creaci\u00f3n de archivos de datos de columna excesivamente grandes, se logra un almacenamiento m\u00e1s eficiente y compacto.\n\nEn un contexto donde la cantidad de datos que manejamos crece de forma exponencial, contar con herramientas que nos permitan procesar la informaci\u00f3n de manera eficaz se vuelve crucial. Con este nuevo tipo de datos JSON en ClickHouse, se abre una puerta a un mejor manejo y an\u00e1lisis de datos, potenciando as\u00ed las capacidades de la plataforma.\n\nSi eres un apasionado de la tecnolog\u00eda y te interesa mantenerte al tanto de las \u00faltimas novedades en el mundo de los datos, esta noticia seguro capt\u00f3 tu inter\u00e9s. \u00a1No dudes en suscribirte para seguir recibiendo contenido relevante sobre innovaciones tecnol\u00f3gicas como esta!\n\n#ClickHouse #JSON #Innovaci\u00f3nDeDatos"
+    "comments": 105,
+    "summary": "\ud83d\ude80 Exciting news from ClickHouse! Introducing a new powerful JSON data type, overcoming challenges like true column-oriented storage, handling dynamically changing data, preventing disk overload, and ensuring dense storage for high performance analytics. JSON support in ClickHouse just got even better! #DataAnalytics #TechInnovation\n\nThis article discusses the development of a new JSON data type for ClickHouse, addressing challenges like true column-oriented storage, handling dynamically changing data, preventing disk overload, and ensuring dense storage for efficient analytics over large datasets. It highlights the importance of JSON in modern data systems and the unique considerations in leveraging it effectively at scale. This information may interest those involved in data analytics, database management, and tech innovation.",
+    "translated_summary": "\u00a1Noticias emocionantes de ClickHouse! Presentamos un nuevo y poderoso tipo de dato JSON, superando desaf\u00edos como un almacenamiento verdaderamente orientado a columnas, el manejo de datos que cambian din\u00e1micamente, previniendo la sobrecarga de disco y garantizando un almacenamiento denso para an\u00e1lisis de alto rendimiento. \u00a1El soporte de JSON en ClickHouse acaba de mejorar a\u00fan m\u00e1s! #An\u00e1lisisDeDatos #Innovaci\u00f3nTecnol\u00f3gica\n\nEste art\u00edculo discute el desarrollo de un nuevo tipo de dato JSON para ClickHouse, abordando desaf\u00edos como un almacenamiento verdaderamente orientado a columnas, el manejo de datos que cambian din\u00e1micamente, previniendo la sobrecarga de disco y garantizando un almacenamiento denso para an\u00e1lisis eficientes sobre grandes conjuntos de datos. Destaca la importancia de JSON en los sistemas",
+    "script": "\u00a1Amigos aficionados a la tecnolog\u00eda! Hoy traigo una noticia que promete darle un vuelco al mundo de la anal\u00edtica de datos. En una movida que demuestra la constante evoluci\u00f3n en la b\u00fasqueda de soluciones eficientes, el equipo detr\u00e1s de ClickHouse ha lanzado un nuevo tipo de dato: JSON. Un hito que promete simplificar y potenciar el proceso de almacenamiento y an\u00e1lisis de informaci\u00f3n.\n\nLo destacable de este avance radica en la capacidad de adaptaci\u00f3n de ClickHouse a las demandas cambiantes de datos, ofreciendo un soporte robusto para el manejo de informaci\u00f3n en formato JSON. Esta incorporaci\u00f3n supone un paso significativo, ya que no solo se ajusta a un almacenamiento verdaderamente orientado a columnas, sino que tambi\u00e9n aborda la complejidad de datos din\u00e1micos, previniendo sobrecargas innecesarias y garantizando un almacenamiento eficiente para an\u00e1lisis de alto rendimiento.\n\nLa relevancia de la incorporaci\u00f3n de JSON en ClickHouse no se limita \u00fanicamente a ofrecer una alternativa de almacenamiento m\u00e1s eficaz, sino que tambi\u00e9n resalta la importancia de adaptarse a las necesidades emergentes en el \u00e1mbito de la anal\u00edtica de datos. Este nuevo hito no solo representa un avance tecnol\u00f3gico, sino tambi\u00e9n una respuesta inteligente a los desaf\u00edos actuales en la gesti\u00f3n de informaci\u00f3n.\n\nEn un mundo donde la eficiencia y la velocidad son clave en el an\u00e1lisis de grandes vol\u00famenes de datos, la introducci\u00f3n del tipo de dato JSON en ClickHouse promete ser una respuesta acertada a las demandas del mercado. M\u00e1s que una simple novedad, este avance refleja un compromiso por parte del equipo detr\u00e1s de ClickHouse de seguir superando barreras y ofrecer soluciones s\u00f3lidas a los retos del an\u00e1lisis de datos en la actualidad.\n\nPara mantenerse al tanto de las \u00faltimas noticias y avances tecnol\u00f3gicos como este, les invito a suscribirse a nuestro canal. Juntos, seguiremos explorando el fascinante mundo de la tecnolog\u00eda y sus infinitas posibilidades. \u00a1Hasta la pr\u00f3xima! #An\u00e1lisisDeDatos #Innovaci\u00f3nTecnol\u00f3gica"
   },
   {
     "rank": 14,
     "title": "The Tragedy of Google Books (2017)",
     "link": "https://www.theatlantic.com/technology/archive/2017/04/the-tragedy-of-google-books/523320/",
-    "score": 309,
+    "score": 320,
     "author": "lispybanana",
-    "comments": 138
+    "comments": 142
   },
   {
-    "rank": 6,
+    "rank": 7,
     "title": "USGS uses machine learning to show large lithium potential in Arkansas",
     "link": "https://www.usgs.gov/news/national-news-release/unlocking-arkansas-hidden-treasure-usgs-uses-machine-learning-show-large",
-    "score": 303,
+    "score": 315,
     "author": "antidnan",
-    "comments": 191,
-    "summary": "\ud83d\udd0d USGS discovered significant lithium potential in Arkansas through machine learning and water testing, estimating 5-19 million tons of reserves. The findings could impact the commercial production of lithium. Unlocking hidden treasure with technology! \ud83c\udf1f #USGS #LithiumDiscovery #ArkansasMining",
-    "translated_summary": "El USGS descubri\u00f3 un potencial significativo de litio en Arkansas a trav\u00e9s de aprendizaje autom\u00e1tico y pruebas de agua, estimando reservas de 5 a 19 millones de toneladas. Los hallazgos podr\u00edan impactar la producci\u00f3n comercial de litio. \u00a1Desbloqueando un tesoro oculto con tecnolog\u00eda! \ud83c\udf1f #USGS #DescubrimientoDeLitio #Miner\u00edaEnArkansas",
-    "script": "\u00a1Atenci\u00f3n a todos los amantes de la tecnolog\u00eda! Hoy quiero compartir con ustedes un descubrimiento que ha sacudido el mundo de la miner\u00eda: el USGS ha revelado un potencial significativo de litio en Arkansas mediante el uso de aprendizaje autom\u00e1tico y pruebas de agua. Estos m\u00e9todos novedosos han permitido estimar reservas de este elemento clave para la industria tecnol\u00f3gica entre 5 y 19 millones de toneladas.\n\nEl impacto de este hallazgo va m\u00e1s all\u00e1 de lo que podr\u00edamos imaginar a simple vista. El litio es fundamental en la producci\u00f3n de bater\u00edas, y la disponibilidad de estas reservas en Arkansas podr\u00eda tener ramificaciones importantes en la producci\u00f3n comercial de este mineral esencial para la electr\u00f3nica moderna.\n\nLa combinaci\u00f3n de tecnolog\u00eda y geolog\u00eda nos ha permitido desbloquear un tesoro oculto en las profundidades de Arkansas, mostr\u00e1ndonos una vez m\u00e1s el poder transformador de la ciencia aplicada. Este descubrimiento nos invita a reflexionar sobre el potencial que tienen la innovaci\u00f3n y el an\u00e1lisis de datos para abrir nuevas oportunidades en sectores clave para nuestro desarrollo.\n\nEs crucial mantener una mirada cr\u00edtica y equilibrada ante noticias de este calibre. Si bien es cierto que esta revelaci\u00f3n podr\u00eda representar una ventaja significativa para la industria, tambi\u00e9n es importante considerar los posibles impactos ambientales y socioculturales que la explotaci\u00f3n de estas reservas podr\u00eda tener en la regi\u00f3n.\n\nComo siempre, les insto a que sigan inform\u00e1ndose y reflexionando por ustedes mismos sobre las implicaciones de estos avances tecnol\u00f3gicos. El conocimiento nos brinda el poder de discernir y tomar decisiones informadas para construir un futuro m\u00e1s consciente y sostenible.\n\nSi desean continuar explorando las \u00faltimas novedades en tecnolog\u00eda y ciencia, los invito a suscribirse a nuestro canal para no perderse ninguna actualizaci\u00f3n. Juntos, podemos seguir descubriendo y analizando el impacto que la tecnolog\u00eda tiene en nuestras vidas. \u00a1Hasta la pr\u00f3xima! #USGS #DescubrimientoDeLitio #Miner\u00edaEnArkansas"
+    "comments": 193
   },
   {
-    "rank": 27,
+    "rank": 28,
     "title": "Ask HN: What's the most creative 'useless' program you've ever written?",
     "link": "https://news.ycombinator.com/item?id=41894765",
-    "score": 228,
+    "score": 244,
     "author": "reverseCh",
-    "comments": 308
+    "comments": 328
   },
   {
     "rank": 4,
     "title": "Solving Sudoku in Python Packaging",
     "link": "https://github.com/konstin/sudoku-in-python-packaging",
-    "score": 218,
+    "score": 236,
     "author": "Yenrabbit",
     "comments": 44
   },
@@ -90,164 +98,156 @@
     "rank": 2,
     "title": "Adding row polymorphism to Damas-Hindley-Milner",
     "link": "https://bernsteinbear.com/blog/row-poly/",
-    "score": 154,
+    "score": 165,
     "author": "surprisetalk",
-    "comments": 34
+    "comments": 36
   },
   {
-    "rank": 28,
+    "rank": 27,
     "title": "An Illustrated Guide to Maritime Signal Flags",
     "link": "https://rabbitwaves.ca/site/flags_maritime.html",
-    "score": 140,
+    "score": 149,
     "author": "gaws",
-    "comments": 38
+    "comments": 39
   },
   {
-    "rank": 13,
+    "rank": 11,
     "title": "I Got Dysentary So You Don't Have To",
     "link": "https://eukaryotewritesblog.com/2024/10/21/i-got-dysentery-so-you-dont-have-to/",
-    "score": 119,
+    "score": 136,
     "author": "l1n",
-    "comments": 73
+    "comments": 90
   },
   {
     "rank": 21,
     "title": "How DRAM changed the world",
     "link": "https://www.micron.com/about/blog/memory/dram/how-dram-changed-the-world",
-    "score": 107,
+    "score": 116,
     "author": "sandwichsphinx",
-    "comments": 69
+    "comments": 75
   },
   {
-    "rank": 8,
+    "rank": 9,
     "title": "The Dawn of a New Era for Supernova 1987a (2017)",
     "link": "https://science.nasa.gov/missions/chandra/the-dawn-of-a-new-era-for-supernova-1987a/",
-    "score": 104,
+    "score": 105,
     "author": "raattgift",
-    "comments": 17
+    "comments": 19
   },
   {
-    "rank": 23,
+    "rank": 25,
     "title": "Coreboot port for 486 motherboard (UM8881/6)",
     "link": "https://github.com/pc2005cz/TheUltimate486Upgrade/blob/main/main.md",
-    "score": 90,
+    "score": 92,
     "author": "rasz",
-    "comments": 14
+    "comments": 15
   },
   {
-    "rank": 18,
+    "rank": 20,
     "title": "Solving the Mystery of ARM7TDMI Multiply Carry Flag",
     "link": "https://bmchtech.github.io/post/multiply/",
-    "score": 74,
+    "score": 76,
     "author": "skrrtww",
     "comments": 28
   },
   {
-    "rank": 25,
+    "rank": 24,
     "title": "Implementing Brainfuck in APL",
     "link": "https://blog.wilsonb.com/posts/2024-09-27-brainfuck.html",
-    "score": 58,
+    "score": 62,
     "author": "pabs3",
-    "comments": 17
+    "comments": 18
   },
   {
-    "rank": 15,
-    "title": "Apple May Stop Producing Vision Pro by the End of 2024",
-    "link": "https://www.macrumors.com/2024/10/23/apple-may-stop-producing-vision-pro-by-end-of-2024/",
-    "score": 57,
-    "author": "mfiguiere",
-    "comments": 41
-  },
-  {
-    "rank": 22,
-    "title": "Show HN: I made tool for slicing up samples to Ableton Move presets",
-    "link": "https://github.com/alexfedosov/move-tool",
-    "score": 39,
-    "author": "alex_x",
-    "comments": 15
-  },
-  {
-    "rank": 26,
-    "title": "Triaging Clang C++ front end bugs",
-    "link": "https://shafik.github.io/c++/llvm/2024/10/17/triaging-clang-fronend-bugs.html",
-    "score": 33,
-    "author": "todsacerdoti",
-    "comments": 0
-  },
-  {
-    "rank": 11,
+    "rank": 5,
     "title": "Breaking Bad: How Compilers Break Constant-Time~Implementations",
     "link": "https://arxiv.org/abs/2410.13489",
-    "score": 23,
+    "score": 43,
     "author": "belter",
-    "comments": 10
-  },
-  {
-    "rank": 12,
-    "title": "Giant catapult launching satellites into orbit without the need of rocket fuel",
-    "link": "https://www.thebrighterside.news/space/giant-catapult-defies-gravity-by-launching-satellites-into-orbit-without-the-need-of-rocket-fuel/",
-    "score": 23,
-    "author": "DocFeind",
     "comments": 28
   },
   {
-    "rank": 9,
-    "title": "How I use git",
-    "link": "https://registerspill.thorstenball.com/p/how-i-use-git",
-    "score": 19,
-    "author": "signa11",
-    "comments": 2
+    "rank": 26,
+    "title": "Don't use \"click here\" for link text",
+    "link": "https://www.dont-click-here.com/",
+    "score": 41,
+    "author": "jonathanberger",
+    "comments": 14
   },
   {
-    "rank": 3,
-    "title": "The Incredible Machine (1968) [video]",
-    "link": "https://www.youtube.com/watch?v=iwVu2BWLZqA",
-    "score": 16,
-    "author": "syndicatedjelly",
-    "comments": 7
-  },
-  {
-    "rank": 20,
-    "title": "Supporting Task Switching with Reinforcement Learning",
-    "link": "https://dl.acm.org/doi/10.1145/3613904.3642063",
-    "score": 15,
-    "author": "Topfi",
-    "comments": 0
+    "rank": 23,
+    "title": "Show HN: I made tool for slicing up samples to Ableton Move presets",
+    "link": "https://github.com/alexfedosov/move-tool",
+    "score": 40,
+    "author": "alex_x",
+    "comments": 16
   },
   {
     "rank": 1,
     "title": "Launch HN: GPT Driver (YC S21) \u2013 End-to-end app testing in natural language",
     "link": "https://news.ycombinator.com/item?id=41924787",
-    "score": 14,
+    "score": 33,
     "author": "cschiller",
-    "comments": 10
+    "comments": 28
   },
   {
-    "rank": 7,
-    "title": "Carbon Sequestration by Recycling Cement, Aggregates, and Concrete",
-    "link": "https://www.mdpi.com/1996-1944/17/20/5020",
-    "score": 13,
-    "author": "PaulHoule",
-    "comments": 2
+    "rank": 12,
+    "title": "Users say T-Mobile must pay for killing \"lifetime\" price lock",
+    "link": "https://arstechnica.com/tech-policy/2024/10/i-am-still-alive-users-say-t-mobile-must-pay-for-killing-lifetime-price-lock/",
+    "score": 29,
+    "author": "rntn",
+    "comments": 19
   },
   {
-    "rank": 29,
+    "rank": 13,
     "title": "Comparing Auth from Supabase, Firebase, Auth.js, Ory, Clerk and Others",
     "link": "https://blog.hyperknot.com/p/comparing-auth-providers",
-    "score": 8,
+    "score": 29,
     "author": "thunderbong",
-    "comments": 1
+    "comments": 11
   },
   {
-    "rank": 24,
-    "title": "The DeVault Report",
-    "link": "https://dmpwn.info/",
-    "score": 4,
-    "author": "mimasama",
+    "rank": 3,
+    "title": "The Incredible Machine (1968) [video]",
+    "link": "https://www.youtube.com/watch?v=iwVu2BWLZqA",
+    "score": 25,
+    "author": "syndicatedjelly",
+    "comments": 12
+  },
+  {
+    "rank": 8,
+    "title": "Carbon Sequestration by Recycling Cement, Aggregates, and Concrete",
+    "link": "https://www.mdpi.com/1996-1944/17/20/5020",
+    "score": 18,
+    "author": "PaulHoule",
+    "comments": 5
+  },
+  {
+    "rank": 22,
+    "title": "Supporting Task Switching with Reinforcement Learning",
+    "link": "https://dl.acm.org/doi/10.1145/3613904.3642063",
+    "score": 16,
+    "author": "Topfi",
     "comments": 0
   },
   {
-    "rank": 19,
+    "rank": 15,
+    "title": "SuperHTML is here to rescue you from syntax errors, and it's FOSS",
+    "link": "https://www.theregister.com/2024/10/23/superhtml_live_html_syntax_checking/",
+    "score": 12,
+    "author": "rc00",
+    "comments": 4
+  },
+  {
+    "rank": 18,
+    "title": "The Global Surveillance Free-for-All in Mobile Ad Data",
+    "link": "https://krebsonsecurity.com/2024/10/the-global-surveillance-free-for-all-in-mobile-ad-data/",
+    "score": 10,
+    "author": "todsacerdoti",
+    "comments": 0
+  },
+  {
+    "rank": 16,
     "title": "NewsCatcher (YC S22) Is Hiring Web Scraping/Crawling Engineers",
     "link": "https://www.newscatcherapi.com/career/web-crawling-scraping-engineer",
     "score": 0,
