@@ -10,7 +10,7 @@ import openai
 import os
 import mimetypes
 import argparse
-from flask import Flask, render_template
+from flask import Flask, render_template, request, jsonify
 from flask_socketio import SocketIO, emit
 
 # Set up logging
@@ -36,10 +36,49 @@ MODEL = "gpt-3.5-turbo" if args.dev else "gpt-4"
 app = Flask(__name__)
 socketio = SocketIO(app, cors_allowed_origins="*")
 
+PROMPT_FILE = 'prompt.txt'
+DEFAULT_PROMPT = """You are an AI assistant tasked with creating engaging social media content. Your goal is to transform the given article summary into a captivating script for an influencer to present on platforms like TikTok or Instagram Reels.
+
+Here's the format for the script:
+
+1. Hook (Attention-grabbing opening line)
+2. Introduction (Brief context about the topic)
+3. Key Points (2-3 main takeaways from the article)
+4. Call-to-Action (Encourage viewers to engage or learn more)
+
+Keep the script concise, engaging, and suitable for a 60-second video. Use casual language and incorporate trending phrases or hashtags when appropriate.
+
+Article Title: {title}
+Article Summary: {summary}
+
+Please generate the script based on this information."""
+
+def load_prompt():
+    try:
+        with open(PROMPT_FILE, 'r') as f:
+            return f.read()
+    except FileNotFoundError:
+        save_prompt(DEFAULT_PROMPT)
+        return DEFAULT_PROMPT
+
+def save_prompt(prompt):
+    with open(PROMPT_FILE, 'w') as f:
+        f.write(prompt)
+
 @app.route('/')
 def index():
-    scraped_url = "https://news.ycombinator.com"  # Or get this dynamically
+    scraped_url = "https://news.ycombinator.com"  # Default URL
     return render_template('index.html', scraped_url=scraped_url, dev_mode=args.dev)
+
+@app.route('/get_prompt')
+def get_prompt():
+    return load_prompt()
+
+@app.route('/save_prompt', methods=['POST'])
+def save_prompt_route():
+    new_prompt = request.json['prompt']
+    save_prompt(new_prompt)
+    return jsonify({"success": True})
 
 def emit_log(message):
     print(message)  # Print to console
@@ -108,14 +147,12 @@ def is_downloadable_content(url):
     
     return False
 
-def scrape_hackernews():
-    url = "https://news.ycombinator.com/"
-    
+def scrape_hackernews(url):
     try:
-        logging.info(f"Fetching Hacker News from {url}")
+        logging.info(f"Fetching stories from {url}")
         response = make_request(url)
         if not response:
-            raise Exception("Failed to fetch Hacker News after multiple attempts")
+            raise Exception(f"Failed to fetch stories from {url} after multiple attempts")
         
         soup = BeautifulSoup(response.text, 'html.parser')
         
@@ -136,17 +173,17 @@ def scrape_hackernews():
             stories.append({
                 "rank": int(rank),
                 "title": title,
-                "link": link if link.startswith('http') else url + link,
+                "link": link if link.startswith('http') else f"{url}/{link}",
                 "score": int(score.split()[0]),
                 "author": author,
                 "comments": int(comments)
             })
         
-        logging.info(f"Successfully scraped {len(stories)} stories from Hacker News")
+        logging.info(f"Successfully scraped {len(stories)} stories from {url}")
         return stories
         
     except Exception as e:
-        logging.error(f"Error scraping Hacker News: {e}")
+        logging.error(f"Error scraping stories: {e}")
         return None
 
 def scrape_article_content(url):
@@ -226,6 +263,7 @@ def translate_to_argentine_spanish(text):
         return None
 
 def create_script(summary, title):
+    prompt = load_prompt()
     prompt = f"""Actúa como Santiago Siri en primera persona, reconocido emprendedor, programador y dedicador a la tecnología desde hace más de 20 años. Crea un guion para un video de noticias tecnológicas en redes sociales basado en el siguiente resumen y título. El guion debe reflejar la personalidad de Santiago: un tono auténtico, sin exageraciones ni superlativos innecesarios, pero siempre con una mirada crítica y equilibrada.
 
 Presenta la noticia de manera imparcial, mostrando tanto los aspectos positivos como negativos del tema, invitando a la audiencia a pensar por sí misma. Comienza con un buen 'hook' que enganche a la audiencia de inmediato, captando su atención de forma genuina y directa, y termina con un llamado claro a la acción para que se suscriban al canal.
@@ -398,9 +436,15 @@ def handle_change_model(data):
     MODEL = data['model']
     print(f"Model changed to: {MODEL}")
 
-def main():
+@socketio.on('run_scraper')
+def run_scraper(data):
+    url = data['url']
+    emit_log(f"Starting scraper for URL: {url}")
+    socketio.start_background_task(main, url)
+
+def main(url):
     logging.info(f"Using model: {MODEL}")
-    stories = scrape_hackernews()
+    stories = scrape_hackernews(url)
     if stories:
         # Filter stories based on relevance
         relevant_stories = filter_stories(stories)
@@ -470,6 +514,7 @@ def main():
         save_to_json(sorted_stories)
         
         emit_log(f"\nProcessed {processed_articles} articles successfully.")
+        socketio.emit('scraping_complete')  # Add this line
     else:
         emit_log("Failed to scrape Hacker News")
 

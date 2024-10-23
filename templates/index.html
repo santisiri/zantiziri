@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hacker News Scraper Dashboard</title>
+    <title>Holograma TV - Advanced Social Media Content Generator</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
@@ -243,7 +244,15 @@
             max-width: 400px;
         }
         #themeToggle {
-            transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+            width: 40px;
+            height: 40px;
+            padding: 0;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            transition: background-color 0.3s, color 0.3s;
         }
 
         /* Light mode styles */
@@ -257,9 +266,9 @@
             border: 1px solid #ced4da;
         }
         body.light-mode #themeToggle {
-            background-color: #ffffff;
+            background-color: #f8f9fa;
             color: #1d1d1f;
-            border-color: #1d1d1f;
+            border: 1px solid #1d1d1f;
         }
 
         /* Dark mode styles */
@@ -273,74 +282,179 @@
             border: 1px solid #444;
         }
         body.dark-mode #themeToggle {
-            background-color: #ffd700;
-            color: #121212;
-            border-color: #ffd700;
+            background-color: #1e1e1e;
+            color: #ffd700;
+            border: 1px solid #ffd700;
+        }
+
+        #modelSelector {
+            width: 100%;
+        }
+
+        /* Light mode styles */
+        body.light-mode #modelSelector {
+            background-color: #ffffff;
+            color: #1d1d1f;
+            border-color: #ced4da;
+        }
+
+        /* Dark mode styles */
+        body.dark-mode #modelSelector {
+            background-color: #2c2c2c;
+            color: #ffffff;
+            border-color: #444;
+        }
+        #promptEditor {
+            width: 100%;
+            min-height: 200px;
+            font-family: monospace;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ced4da;
+            transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        }
+        .light-mode #promptEditor {
+            background-color: #f8f9fa;
+            color: #1d1d1f;
+        }
+        .dark-mode #promptEditor {
+            background-color: #2c2c2c;
+            color: #ffffff;
+            border-color: #444;
+        }
+        .collapse-toggle::after {
+            content: '\25B6';
+            float: right;
+            transition: transform 0.3s;
+        }
+        .collapse-toggle[aria-expanded="true"]::after {
+            transform: rotate(90deg);
+        }
+        .card-header .collapse-toggle {
+            color: inherit;
+            text-decoration: none;
+            width: 100%;
+            text-align: left;
+            padding: 0;
+            font-weight: bold;
+        }
+        .card-header .collapse-toggle:hover,
+        .card-header .collapse-toggle:focus {
+            text-decoration: none;
+            color: inherit;
+        }
+        .light-mode .card-header {
+            background-color: #f8f9fa;
+            color: #1d1d1f;
+        }
+        .dark-mode .card-header {
+            background-color: #2c2c2c;
+            color: #ffffff;
+        }
+        .card:not(.card-expanded) {
+            border-radius: 0.25rem;
+        }
+        .card:not(.card-expanded) .card-header {
+            border-radius: 0.25rem;
+        }
+        #runScraper .spinner-border {
+            display: none;
+            width: 1rem;
+            height: 1rem;
+            margin-left: 0.5rem;
         }
     </style>
 </head>
 <body class="light-mode">
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">HN Scraper Dashboard</a>
+            <a class="navbar-brand" href="#">Holograma TV</a>
             <div class="d-flex align-items-center flex-grow-1 justify-content-end">
-                <span class="navbar-text me-2">Scraping:</span>
-                <input type="text" readonly class="form-control-plaintext" id="scrapedUrl" value="{{ scraped_url }}">
-                <button id="themeToggle" class="btn ms-3">🌓 Toggle Theme</button>
+                <button id="themeToggle" class="btn">
+                    <i class="fas fa-sun"></i>
+                </button>
             </div>
         </div>
     </nav>
 
     <div class="container mt-4">
-        <div class="row mb-3">
-            <div class="col-md-6">
-                <select id="modelSelector" class="form-select">
-                    <option value="gpt-4">GPT-4</option>
-                    <option value="gpt-3.5-turbo">GPT-3.5 Turbo</option>
-                </select>
+        <div class="row mb-4">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <span>Prompt Editor</span>
+                        <button id="savePrompt" class="btn btn-primary btn-sm">Save Prompt</button>
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-3 row">
+                            <div class="col-md-6 mb-3">
+                                <label for="scrapedUrl" class="form-label">Scraping URL:</label>
+                                <input type="text" class="form-control" id="scrapedUrl" value="{{ scraped_url }}">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="modelSelector" class="form-label">Model:</label>
+                                <select id="modelSelector" class="form-select">
+                                    <option value="gpt-4">GPT-4</option>
+                                    <option value="gpt-3.5-turbo">GPT-3.5 Turbo</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="promptEditor" class="form-label">Prompt:</label>
+                            <textarea id="promptEditor" class="form-control"></textarea>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <button id="runScraper" class="btn btn-success">
+                                Run Scraper
+                                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                            </button>
+                            <button id="savePrompt" class="btn btn-primary">Save Prompt</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="row">
             <div class="col-md-12 mb-4">
-                <div class="card">
+                <div class="card" id="scrapedArticlesCard">
                     <div class="card-header">
-                        Scraped Articles
+                        <button class="btn collapse-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#scrapedArticlesCollapse" aria-expanded="false" aria-controls="scrapedArticlesCollapse">
+                            Scraped Articles
+                        </button>
                     </div>
-                    <div class="card-body p-0">
-                        <table class="table table-hover" id="articlesTable">
-                            <thead>
-                                <tr>
-                                    <th>Title</th>
-                                    <th>Score</th>
-                                    <th>Comments</th>
-                                    <th>Summary Preview</th>
-                                    <th class="action-column">Action</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <!-- Articles will be dynamically inserted here -->
-                            </tbody>
-                        </table>
+                    <div class="collapse" id="scrapedArticlesCollapse">
+                        <div class="card-body p-0">
+                            <table class="table table-hover" id="articlesTable">
+                                <thead>
+                                    <tr>
+                                        <th>Title</th>
+                                        <th>Score</th>
+                                        <th>Comments</th>
+                                        <th>Summary Preview</th>
+                                        <th class="action-column">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- Articles will be dynamically inserted here -->
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-md-12">
-                <div class="card">
-                    <div class="card-header d-flex justify-content-between align-items-center">
-                        <span>Live Logs</span>
-                        <div>
-                            <div id="logsSpinner" class="spinner-border text-light" role="status" style="display: none;">
-                                <span class="visually-hidden">Loading...</span>
-                            </div>
-                            <a href="#" class="btn-toggle" data-bs-toggle="collapse" data-bs-target="#logContainer" aria-expanded="true" aria-controls="logContainer">
-                                <i class="fas fa-chevron-down"></i>
-                            </a>
-                        </div>
+                <div class="card" id="logCard">
+                    <div class="card-header">
+                        <button class="btn collapse-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#logContainer" aria-expanded="false" aria-controls="logContainer">
+                            Live Logs
+                        </button>
                     </div>
-                    <div class="card-body collapse show" id="logContainer">
-                        <div id="log-container"></div>
+                    <div class="collapse" id="logContainer">
+                        <div class="card-body">
+                            <div id="log-container"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -371,6 +485,10 @@
         var articlesTable = document.getElementById('articlesTable').getElementsByTagName('tbody')[0];
         var logsSpinner = document.getElementById('logsSpinner');
         var modelSelector = document.getElementById('modelSelector');
+        var promptEditor = document.getElementById('promptEditor');
+        var savePromptBtn = document.getElementById('savePrompt');
+        var runScraperBtn = document.getElementById('runScraper');
+        var scrapedUrlInput = document.getElementById('scrapedUrl');
 
         // Check if dev_mode is defined, default to false if not
         var isDevMode = {{ dev_mode|default(false)|tojson }};
@@ -384,12 +502,47 @@
             socket.emit('change_model', { model: this.value });
         });
 
+        var scrapedArticlesCollapse = new bootstrap.Collapse(document.getElementById('scrapedArticlesCollapse'), {
+            toggle: false
+        });
+        var logContainerCollapse = new bootstrap.Collapse(document.getElementById('logContainer'), {
+            toggle: false
+        });
+
+        runScraperBtn.addEventListener('click', () => {
+            const url = scrapedUrlInput.value;
+            socket.emit('run_scraper', { url: url });
+            // Clear the existing articles
+            articlesTable.innerHTML = '';
+            // Show the spinner
+            runScraperBtn.querySelector('.spinner-border').style.display = 'inline-block';
+            runScraperBtn.disabled = true;
+            // Expand the collapsed sections
+            scrapedArticlesCollapse.show();
+            logContainerCollapse.show();
+            document.getElementById('scrapedArticlesCard').classList.add('card-expanded');
+            document.getElementById('logCard').classList.add('card-expanded');
+        });
+
+        socket.on('scraping_complete', function() {
+            runScraperBtn.querySelector('.spinner-border').style.display = 'none';
+            runScraperBtn.disabled = false;
+        });
+
+        document.querySelectorAll('.collapse').forEach(collapse => {
+            collapse.addEventListener('hidden.bs.collapse', function () {
+                this.closest('.card').classList.remove('card-expanded');
+            });
+            collapse.addEventListener('show.bs.collapse', function () {
+                this.closest('.card').classList.add('card-expanded');
+            });
+        });
+
         socket.on('log_update', function(data) {
             var logEntry = document.createElement('p');
             logEntry.textContent = data.message;
             logContainer.appendChild(logEntry);
             logContainer.scrollTop = logContainer.scrollHeight;
-            logsSpinner.style.display = 'inline-block';
         });
 
         socket.on('article_update', function(article) {
@@ -438,12 +591,29 @@
         const body = document.body;
 
         function updateThemeStyles() {
+            const sunIcon = '<i class="fas fa-sun"></i>';
+            const moonIcon = '<i class="fas fa-moon"></i>';
+            
             if (body.classList.contains('dark-mode')) {
-                themeToggle.classList.remove('btn-outline-primary');
-                themeToggle.classList.add('btn-warning');
+                themeToggle.innerHTML = sunIcon;
+                modelSelector.classList.add('bg-dark');
+                modelSelector.classList.add('text-light');
+                promptEditor.classList.add('bg-dark');
+                promptEditor.classList.add('text-light');
+                document.querySelectorAll('.card-header').forEach(header => {
+                    header.classList.add('bg-dark');
+                    header.classList.add('text-light');
+                });
             } else {
-                themeToggle.classList.remove('btn-warning');
-                themeToggle.classList.add('btn-outline-primary');
+                themeToggle.innerHTML = moonIcon;
+                modelSelector.classList.remove('bg-dark');
+                modelSelector.classList.remove('text-light');
+                promptEditor.classList.remove('bg-dark');
+                promptEditor.classList.remove('text-light');
+                document.querySelectorAll('.card-header').forEach(header => {
+                    header.classList.remove('bg-dark');
+                    header.classList.remove('text-light');
+                });
             }
         }
 
@@ -464,6 +634,33 @@
             body.classList.add('dark-mode');
         }
         updateThemeStyles();
+
+        // Prompt editor functionality
+        // Load the initial prompt
+        fetch('/get_prompt')
+            .then(response => response.text())
+            .then(prompt => {
+                promptEditor.value = prompt;
+            });
+
+        savePromptBtn.addEventListener('click', () => {
+            const newPrompt = promptEditor.value;
+            fetch('/save_prompt', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ prompt: newPrompt }),
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert('Prompt saved successfully!');
+                } else {
+                    alert('Failed to save prompt.');
+                }
+            });
+        });
     </script>
 </body>
 </html>
