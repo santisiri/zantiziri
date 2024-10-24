@@ -1,213 +1,205 @@
 [
   {
-    "rank": 28,
-    "title": "AWS data center latencies, visualized",
-    "link": "https://benjdd.com/aws/",
-    "score": 454,
-    "author": "orliesaurus",
-    "comments": 184
-  },
-  {
-    "rank": 16,
-    "title": "Show HN: Wall-mounted diffusion mirror that turns reflections into paintings",
-    "link": "https://www.matthieulc.com/posts/pablonet/",
-    "score": 432,
-    "author": "cataPhil",
-    "comments": 109,
-    "summary": "Discover an innovative wall-mounted diffusion mirror that transforms reflections into mesmerizing paintings, created using AI technology. This unique piece explores creativity and art, emphasizing the blending of the inner world with skill. The mirror provides a new way to experience art with its interactive features, offering a permanent and evolving artistic display. Want to create your own? Check out the details shared for this inspiring project! #ArtTech #Innovation #CreateYourOwn",
-    "translated_summary": "Descubr\u00ed un espejo de difusi\u00f3n innovador montado en la pared que transforma las reflexiones en pinturas hipnotizantes, creadas utilizando tecnolog\u00eda de inteligencia artificial. Esta pieza \u00fanica explora la creatividad y el arte, haciendo hincapi\u00e9 en la fusi\u00f3n del mundo interior con habilidad. El espejo brinda una nueva forma de experimentar el arte con sus funciones interactivas, ofreciendo una exposici\u00f3n art\u00edstica permanente y en constante evoluci\u00f3n. \u00bfQuer\u00e9s crear el tuyo propio? \u00a1Cheque\u00e1 los detalles compartidos para este proyecto inspirador! #ArtTech #Innovaci\u00f3n #CreaTuPropio",
-    "script": "Hoy vamos a hablar de una interesante innovaci\u00f3n en el mundo del arte y la tecnolog\u00eda. Se ha presentado un espejo de difusi\u00f3n montado en la pared que convierte simples reflejos en fascinantes obras de arte, gracias al uso de inteligencia artificial. Una propuesta que despierta la curiosidad y creatividad en un matrimonio entre lo visual y lo t\u00e9cnico.\n\nEste espejo no es solo un objeto decorativo, sino una ventana a un mundo en el que las fronteras entre lo tangible y lo virtual se desdibujan. Al interactuar con este espejo, los usuarios se adentran en un universo fascinante donde la imaginaci\u00f3n y la tecnolog\u00eda se funden para crear una experiencia art\u00edstica \u00fanica.\n\nLa propuesta de este dispositivo va m\u00e1s all\u00e1 de simplemente decorar una pared. Se trata de invitar al espectador a sumergirse en un ambiente art\u00edstico en constante evoluci\u00f3n, donde cada reflejo se convierte en una nueva oportunidad para la inspiraci\u00f3n y la contemplaci\u00f3n.\n\nPara aquellos interesados en explorar su propia creatividad a trav\u00e9s de esta innovadora herramienta, les invito a conocer m\u00e1s detalles sobre este proyecto. La posibilidad de transformar un reflejo cotidiano en una obra de arte personalizada representa un emocionante desaf\u00edo para todos aquellos que buscan nutrir su lado creativo.\n\nSi deseas descubrir m\u00e1s sobre esta fusi\u00f3n entre arte y tecnolog\u00eda, te animo a explorar los detalles compartidos sobre este intrigante espejo de difusi\u00f3n montado en la pared. Una oportunidad \u00fanica para sumergirte en un territorio donde la creatividad y la innovaci\u00f3n se entrelazan de forma inesperada. Es hora de despertar tu imaginaci\u00f3n y explorar el potencial de esta emocionante propuesta. \u00a1No te lo pierdas! #ArtTech #Innovaci\u00f3n #CreaTuPropio. \u00a1Suscr\u00edbete para m\u00e1s contenidos relacionados con tecnolog\u00eda y creatividad!"
-  },
-  {
-    "rank": 5,
-    "title": "JetBrains Rider is now free for non-commercial use",
-    "link": "https://www.jetbrains.com/rider/",
-    "score": 423,
-    "author": "kretaceous",
-    "comments": 202
-  },
-  {
-    "rank": 18,
+    "rank": 24,
     "title": "Show HN: RF Hunter \u2013 Find hidden cameras and other devices",
     "link": "https://github.com/RamboRogers/rfhunter",
-    "score": 354,
+    "score": 360,
     "author": "RamboRogers",
-    "comments": 105,
-    "summary": "Check out the RFHunter project by Matthew Rogers on GitHub, a device to detect hidden cameras and RF devices with an ESP32 and AD8317 RF detector. The scanner displays signal strength on an OLED screen. V4 is user-friendly with a battery and improved efficiency. Useful for security-conscious individuals. #RFHunter #HiddenCameras #SecurityDetection",
-    "translated_summary": "Cheque\u00e1 el proyecto RFHunter de Matthew Rogers en GitHub, un dispositivo para detectar c\u00e1maras ocultas y dispositivos de RF con un ESP32 y un detector de RF AD8317. El esc\u00e1ner muestra la intensidad de la se\u00f1al en una pantalla OLED. La V4 es amigable para el usuario con una bater\u00eda y una eficiencia mejorada. \u00datil para personas conscientes de la seguridad. #RFHunter #C\u00e1marasOcultas #Detecci\u00f3nDeSeguridad",
-    "script": "\u00a1Hola a todos! \u00bfPensaste alguna vez en lo f\u00e1cil que podr\u00eda ser estar siendo vigilado sin siquiera saberlo? Hoy les traigo una noticia que provocar\u00e1 escalofr\u00edos a m\u00e1s de uno.\n\n\u00bfImaginan poder detectar c\u00e1maras ocultas y otros dispositivos de radiofrecuencia con una simple herramienta? Pues bien, gracias al ingenio de Matthew Rogers, eso ya es posible con RF Hunter.\n\nEste proyecto, disponible en GitHub, utiliza un ESP32 y un detector de RF AD8317 para escanear y mostrar la intensidad de la se\u00f1al en una pantalla OLED. Una herramienta que evoca a la conciencia de seguridad y privacidad de cada uno de nosotros. \n\nLa versi\u00f3n 4 de RF Hunter no solo es m\u00e1s amigable para el usuario, sino que tambi\u00e9n ha mejorado su eficiencia al integrar una bater\u00eda para mayor portabilidad. Una soluci\u00f3n pr\u00e1ctica y sencilla para aquellos que desean sentirse m\u00e1s seguros en su entorno.\n\nNo podemos negar la relevancia y utilidad de esta innovaci\u00f3n en un mundo donde la privacidad est\u00e1 tan amenazada. Sin embargo, como en todo avance tecnol\u00f3gico, debemos ser conscientes de c\u00f3mo y cu\u00e1ndo utilizar estas herramientas, recordando siempre el equilibrio entre seguridad y libertad.\n\nLes invito a revisar el proyecto RF Hunter en GitHub y explorar m\u00e1s sobre c\u00f3mo podemos proteger nuestra privacidad en un mundo cada vez m\u00e1s conectado. \u00a1Descubramos juntos nuevas formas de hacer frente a los desaf\u00edos tecnol\u00f3gicos de hoy!\n\nSi les interesa estar al tanto de m\u00e1s noticias y desarrollos tecnol\u00f3gicos relevantes, \u00a1no olviden suscribirse a nuestro canal! Juntos seguiremos explorando el impacto de la tecnolog\u00eda en nuestras vidas. \u00a1Hasta la pr\u00f3xima!"
-  },
-  {
-    "rank": 30,
-    "title": "What happens when you make a move in lichess.org?",
-    "link": "https://www.davidreis.me/2024/what-happens-when-you-make-a-move-in-lichess",
-    "score": 333,
-    "author": "dreis_sw",
-    "comments": 135,
-    "summary": "Ever wondered what happens behind the scenes when you make a move in lichess.org? Discover the technical magic powering this real-time chess platform. From WebSocket connections to data exchanges, each move triggers a series of intricate processes between client and server. This peek into the backend reveals how moves are acknowledged, game states are updated, and possible moves are highlighted. Dive into the world of online chess with a fresh perspective! \ud83c\udfb2\ud83d\udd0d #OnlineChess #TechBehindGames",
-    "translated_summary": "\u00bfAlguna vez te preguntaste qu\u00e9 sucede detr\u00e1s de escena cuando realizas un movimiento en lichess.org? Descubre la magia t\u00e9cnica que impulsa esta plataforma de ajedrez en tiempo real. Desde conexiones WebSocket hasta intercambios de datos, cada movimiento desencadena una serie de procesos intrincados entre el cliente y el servidor. Esta mirada al backend revela c\u00f3mo se confirman los movimientos, se actualizan los estados del juego y se destacan los posibles movimientos. \u00a1Sum\u00e9rgete en el mundo del ajedrez online con una perspectiva fresca! \ud83c\udfb2\ud83d\udd0d #AjedrezOnline #Tecnolog\u00edaDetr\u00e1sDeLosJuegos",
-    "script": "\u00bfTe has preguntado alguna vez qu\u00e9 sucede en lichess.org cada vez que haces un movimiento en una partida de ajedrez online? Detr\u00e1s de la pantalla, se pone en marcha un fascinante ballet de procesos t\u00e9cnicos que hacen posible esta experiencia \u00fanica. Desde la confirmaci\u00f3n de tu jugada hasta la actualizaci\u00f3n del estado del juego, cada movimiento desata una compleja danza de intercambio de datos entre tu dispositivo y los servidores de lichess. \n\n\u00bfQu\u00e9 elementos hacen posible esta magia t\u00e9cnica? La clave radica en las conexiones WebSocket, un protocolo que permite la comunicaci\u00f3n bidireccional en tiempo real entre el cliente y el servidor. Gracias a esta tecnolog\u00eda, tu jugada es enviada al servidor de lichess, donde se valida, se actualiza el estado del tablero y se env\u00edan las posibles respuestas de tu oponente de vuelta a tu dispositivo, todo en cuesti\u00f3n de milisegundos.\n\nSum\u00e9rgete en el mundo del ajedrez online con esta reveladora mirada al backend de lichess.org. Cada movimiento, cada decisi\u00f3n estrat\u00e9gica, se traduce en una compleja secuencia de eventos que nos recuerda la sofisticaci\u00f3n tecnol\u00f3gica que sustenta nuestros pasatiempos digitales. \n\nInvito a que reflexionemos sobre el equilibrio necesario entre la magia del juego y la infraestructura t\u00e9cnica que lo hace posible. La belleza del ajedrez est\u00e1 en la estrategia, en la mente humana compitiendo en un campo de batalla virtual. Pero detr\u00e1s de esa experiencia, hay un entramado de tecnolog\u00eda que funciona silenciosamente para llevar nuestra pasi\u00f3n por el juego a nuevas alturas.\n\nAs\u00ed que, \u00bfte animas a dar el siguiente movimiento en lichess.org y apreciar la complejidad t\u00e9cnica detr\u00e1s de cada jugada? Suscr\u00edbete para seguir explorando el apasionante mundo de la tecnolog\u00eda y el entretenimiento. \u00a1Hasta la pr\u00f3xima jugada! #AjedrezOnline #Tecnolog\u00edaDetr\u00e1sDeLosJuegos"
+    "comments": 109,
+    "summary": "\ud83d\udce1 RF Hunter is a DIY RF Signal Scanner project built with an ESP32 and RF detector to find hidden cameras and other RF devices. It displays signal strength on an OLED screen, and the latest version is easy to assemble with a battery option. Created by Matthew Rogers, it's handy for detecting unauthorized devices. Watch the video demo and get more info from Matthew's website and social media. #opensource #security #DIYtech",
+    "translated_summary": "\ud83d\udce1 RF Hunter es un proyecto de Esc\u00e1ner de Se\u00f1al RF DIY construido con un ESP32 y detector de RF para encontrar c\u00e1maras ocultas y otros dispositivos RF. Muestra la intensidad de la se\u00f1al en una pantalla OLED, y la \u00faltima versi\u00f3n es f\u00e1cil de armar con la opci\u00f3n de bater\u00eda. Creado por Matthew Rogers, es \u00fatil para detectar dispositivos no autorizados. Mir\u00e1 el video demostrativo y obten\u00e9 m\u00e1s informaci\u00f3n en el sitio web y redes sociales de Matthew. #c\u00f3digoabierto #seguridad #tecnolog\u00edaDIY",
+    "script": "\u00bfEst\u00e1s preocupado por tu privacidad y seguridad? Me dedico a explorar las innovaciones tecnol\u00f3gicas que nos invitan a reflexionar. Hoy quiero hablarles de RF Hunter, un proyecto fascinante que ha llamado mi atenci\u00f3n. \n\nRF Hunter es un Esc\u00e1ner de Se\u00f1al RF DIY que promete detectar c\u00e1maras ocultas y otros dispositivos RF no autorizados. Construido con un ESP32 y un detector de RF, este dispositivo muestra la intensidad de la se\u00f1al en una pantalla OLED de manera sencilla y clara. Su \u00faltima versi\u00f3n es especialmente atractiva, ya que ofrece la opci\u00f3n de ser armada con bater\u00eda para mayor comodidad.\n\nCreo que la iniciativa de Matthew Rogers es valiosa en un mundo donde la privacidad se vuelve cada vez m\u00e1s crucial. Sin embargo, no podemos obviar que, si bien es un paso en la direcci\u00f3n correcta, su eficacia puede verse limitada en entornos m\u00e1s complejos con m\u00faltiples se\u00f1ales presentes. Es importante no depender exclusivamente de este tipo de dispositivos y siempre mantener una actitud vigilante.\n\nSi desean conocer m\u00e1s detalles sobre RF Hunter y su funcionamiento, les invito a visualizar el video demostrativo y explorar el sitio web y redes sociales de Matthew. En un momento donde la seguridad y la privacidad son temas centrales, es esencial estar informados y prevenidos.\n\nReflexionen sobre la importancia de proteger su privacidad en un mundo cada vez m\u00e1s conectado. \u00bfQu\u00e9 medidas toman ustedes para garantizar su seguridad en un entorno digital? Compartan sus pensamientos en los comentarios y no olviden suscribirse para m\u00e1s contenido relevante. Juntos podemos navegar este universo tecnol\u00f3gico de manera informada y responsable. \u00a1Hasta la pr\u00f3xima!"
   },
   {
     "rank": 14,
-    "title": "Pretty.c",
-    "link": "https://github.com/aartaka/pretty.c",
-    "score": 290,
-    "author": "synergy20",
-    "comments": 175,
-    "summary": "\"Introducing Pretty C, a new scripting language compatible with C that adds dynamic typing and other features inspired by Lua, Python, JavaScript, and Lisp. It aims to provide a simpler, beginner-friendly coding experience while maintaining compatibility with C libraries. Pretty C can transform your C code into something enchanting and easy to read. Check it out on GitHub!\"",
-    "translated_summary": "Te presento a Pretty C, un nuevo lenguaje de programaci\u00f3n compatible con C que agrega tipado din\u00e1mico y otras caracter\u00edsticas inspiradas en Lua, Python, JavaScript y Lisp. Su objetivo es brindar una experiencia de codificaci\u00f3n m\u00e1s simple y amigable para principiantes, manteniendo la compatibilidad con las bibliotecas de C. Pretty C puede transformar tu c\u00f3digo de C en algo encantador y f\u00e1cil de leer. \u00a1\u00c9chale un vistazo en GitHub!",
-    "script": "\u00a1Hola a todos! Hoy les traigo una interesante novedad del mundo de la programaci\u00f3n. Se trata de Pretty C, un nuevo lenguaje de programaci\u00f3n que promete simplificar el proceso de codificaci\u00f3n, especialmente para aquellos que est\u00e1n dando sus primeros pasos en este apasionante mundo. Pretty C ha llamado la atenci\u00f3n por ser compatible con C, pero a\u00f1adiendo caracter\u00edsticas de tipado din\u00e1mico y tomando inspiraci\u00f3n de varios lenguajes populares como Lua, Python, JavaScript y Lisp.\n\nLa idea detr\u00e1s de Pretty C es brindar una experiencia m\u00e1s amigable y accesible a los principiantes, sin sacrificar la compatibilidad con las bibliotecas existentes de C. Esta combinaci\u00f3n busca hacer que el c\u00f3digo sea m\u00e1s legible y encantador, facilitando su comprensi\u00f3n y mantenimiento a lo largo del tiempo.\n\nSin embargo, como en toda innovaci\u00f3n, tambi\u00e9n hay aspectos a considerar. A pesar de sus ventajas, la introducci\u00f3n de un nuevo lenguaje conlleva el desaf\u00edo de la adopci\u00f3n por parte de la comunidad y la garant\u00eda de su soporte a largo plazo. Es importante evaluar c\u00f3mo Pretty C se integrar\u00e1 en el ecosistema de desarrollo de software y si lograr\u00e1 establecerse como una herramienta \u00fatil y relevante en el tiempo.\n\nPara aquellos interesados en explorar m\u00e1s sobre este nuevo lenguaje, les invito a que visiten su repositorio en GitHub, donde podr\u00e1n conocer m\u00e1s detalles y contribuir a su desarrollo. Mantenernos informados y abiertos a nuevas propuestas en el \u00e1mbito de la programaci\u00f3n es fundamental para seguir evolucionando en este campo tan din\u00e1mico y cambiante.\n\nAs\u00ed que, si te apasiona la programaci\u00f3n y te gusta estar al tanto de las \u00faltimas tendencias, te animo a que explores Pretty C y saques tus propias conclusiones sobre su potencial. \u00a1Hasta la pr\u00f3xima y no olvides suscribirte para m\u00e1s novedades tecnol\u00f3gicas!"
+    "title": "Show HN: 2048 turned 10 this year, I built an updated version to celebrate",
+    "link": "https://play2048.co",
+    "score": 213,
+    "author": "terabytest",
+    "comments": 96
   },
   {
-    "rank": 24,
-    "title": "NetGuard \u2013 rootless Android outbound per-app OSS firewall, like LittleSnitch",
-    "link": "https://netguard.me/",
-    "score": 214,
-    "author": "transpute",
-    "comments": 123,
-    "summary": "NetGuard is a rootless firewall app for Android that allows users to block internet access per application without requiring root access. It offers features like data usage reduction, battery saving, and increased privacy. The app is open-source, with options for pro features like traffic log viewing and network traffic filtering. By making a donation, users can access the pro features and support ongoing development. It's a valuable tool for controlling internet access on Android devices. #NetGuard #Firewall #AndroidPrivacy",
-    "translated_summary": "NetGuard es una aplicaci\u00f3n de firewall sin necesidad de ser root para Android que permite a los usuarios bloquear el acceso a internet por aplicaci\u00f3n sin necesidad de acceso de ra\u00edz. Ofrece funciones como reducci\u00f3n del uso de datos, ahorro de bater\u00eda y aumento de la privacidad. La aplicaci\u00f3n es de c\u00f3digo abierto, con opciones de caracter\u00edsticas profesionales como la visualizaci\u00f3n de registro de tr\u00e1fico y el filtrado de tr\u00e1fico de red. Al hacer una donaci\u00f3n, los usuarios pueden acceder a las caracter\u00edsticas profesionales y apoyar el desarrollo continuo. Es una herramienta valiosa para controlar el acceso a internet en dispositivos Android. #NetGuard #Firewall #PrivacidadAndroid",
-    "script": "\u00a1Hola a todos! Hoy quiero compartir con ustedes una interesante noticia del mundo tecnol\u00f3gico que ha llamado mi atenci\u00f3n. Se trata de NetGuard, una aplicaci\u00f3n de firewall para Android que ha estado generando cierto revuelo \u00faltimamente. Lo que hace NetGuard es permitir a los usuarios bloquear el acceso a internet por aplicaci\u00f3n, sin necesidad de tener acceso de ra\u00edz en su dispositivo. Interesante, \u00bfverdad?\n\nLo m\u00e1s destacado de NetGuard es su enfoque en la privacidad y control del tr\u00e1fico de red. Al utilizar esta herramienta, los usuarios pueden reducir el uso de datos, ahorrar bater\u00eda y mantener una mayor privacidad en sus dispositivos Android. Ahora, lo que realmente distingue a NetGuard es que es una aplicaci\u00f3n de c\u00f3digo abierto, lo cual siempre es una buena noticia para la comunidad tecnol\u00f3gica.\n\nAdem\u00e1s, NetGuard ofrece funciones profesionales opcionales, como la visualizaci\u00f3n de registros de tr\u00e1fico y el filtrado del tr\u00e1fico de red. Esto permite a los usuarios un mayor control sobre qu\u00e9 aplicaciones pueden acceder a internet y cu\u00e1les no. Y lo mejor de todo, aquellos que deseen acceder a estas funciones pueden hacerlo a trav\u00e9s de una donaci\u00f3n, lo que no solo desbloquear\u00e1 caracter\u00edsticas profesionales, sino que tambi\u00e9n apoyar\u00e1 el desarrollo continuo de la aplicaci\u00f3n.\n\nEn resumen, NetGuard se presenta como una herramienta valiosa para aquellos que buscan controlar el acceso a internet en sus dispositivos Android, sin necesidad de permisos de ra\u00edz. Una interesante propuesta que demuestra que la privacidad y el control de nuestros datos siguen siendo aspectos importantes en el mundo digital actual.\n\nSi desean mantenerse al tanto de m\u00e1s noticias y novedades tecnol\u00f3gicas como esta, los invito a suscribirse al canal y seguir explorando juntos este fascinante mundo de la tecnolog\u00eda. \u00a1Hasta pronto! #NetGuard #Firewall #PrivacidadAndroid"
-  },
-  {
-    "rank": 20,
+    "rank": 28,
     "title": "Show HN: Satoshi9000 analog BTC key generator (mechanical)",
     "link": "https://news.ycombinator.com/item?id=41929822",
-    "score": 139,
+    "score": 143,
     "author": "AJTSheppard",
-    "comments": 47
+    "comments": 50,
+    "summary": "Satoshi9000 analog BTC key generator creates secure Bitcoin keys through physical-to-digital randomness conversion. Its potential use cases span from clinical trials and security key generation for non-tech managers to estate planning for inheriting digital assets. The machine, though not entirely mechanical, offers intuitive randomness creation for users of all ages. Discussion includes testing dice fairness and the Von Neumann randomness extractor. This innovative generator holds implications beyond cryptocurrency, offering a versatile solution for various fields requiring secure, understandable randomization. #Bitcoin #Security #Innovation",
+    "translated_summary": "El generador de claves anal\u00f3gicas BTC Satoshi9000 crea claves Bitcoin seguras a trav\u00e9s de la conversi\u00f3n de la aleatoriedad f\u00edsica a digital. Sus posibles casos de uso van desde ensayos cl\u00ednicos y la generaci\u00f3n de claves de seguridad para gerentes no t\u00e9cnicos hasta la planificaci\u00f3n patrimonial para heredar activos digitales. Aunque la m\u00e1quina no es del todo mec\u00e1nica, ofrece una creaci\u00f3n intuitiva de aleatoriedad para usuarios de todas las edades. La discusi\u00f3n incluye probar la imparcialidad de los dados y el extractor de aleatoriedad de Von Neumann. Este innovador generador tiene implicancias m\u00e1s all\u00e1 de la criptomoneda, ofreciendo una soluci\u00f3n vers\u00e1til para diversos campos que requieren una aleatoriedad segura y comprensible. #Bitcoin #Seguridad #Innovaci\u00f3n",
+    "script": "\u00a1Hola a todos! Hoy quiero hablarles sobre una interesante innovaci\u00f3n en el mundo de la tecnolog\u00eda y la seguridad digital. Se trata del generador de claves anal\u00f3gicas BTC Satoshi9000, una herramienta que ha llamado la atenci\u00f3n por su enfoque \u00fanico y su potencial impacto en diversos campos.\n\nEste generador de claves Bitcoin se destaca por su m\u00e9todo particular de creaci\u00f3n de claves seguras, mediante la conversi\u00f3n de aleatoriedad f\u00edsica a digital. A pesar de no ser completamente mec\u00e1nico, ofrece una manera intuitiva y accesible para usuarios de todas las edades de generar claves de forma segura y confiable.\n\nUna de las caracter\u00edsticas m\u00e1s interesantes de este dispositivo es su versatilidad en cuanto a posibles casos de uso. Desde la generaci\u00f3n de claves de seguridad para gerentes no t\u00e9cnicos hasta la planificaci\u00f3n patrimonial para heredar activos digitales, el Satoshi9000 ofrece una soluci\u00f3n pr\u00e1ctica y segura.\n\nAdem\u00e1s, la discusi\u00f3n en torno a la imparcialidad de los dados y el extractor de aleatoriedad de Von Neumann a\u00f1ade un valor significativo a este generador, demostrando un enfoque riguroso en cuanto a la generaci\u00f3n de aleatoriedad segura.\n\nEs importante destacar que este innovador generador de claves no se limita \u00fanicamente al \u00e1mbito de la criptomoneda. Su aplicaci\u00f3n se extiende a diversos campos que requieren de una aleatoriedad segura y comprensible, lo que lo convierte en una herramienta vers\u00e1til y prometedora para el futuro de la seguridad digital.\n\nEn resumen, el Satoshi9000 representa un paso adelante en la b\u00fasqueda de soluciones innovadoras y seguras en un mundo cada vez m\u00e1s digitalizado. Su impacto potencial va m\u00e1s all\u00e1 de la criptomoneda, ofreciendo una alternativa fiable para aquellos que buscan garantizar la seguridad y confidencialidad de sus datos.\n\n\u00bfQu\u00e9 opinan ustedes sobre esta nueva herramienta? D\u00e9jenme sus comentarios abajo y no olviden suscribirse para m\u00e1s contenido sobre tecnolog\u00eda y seguridad digital. \u00a1Hasta la pr\u00f3xima! #Bitcoin #Seguridad #Innovaci\u00f3n"
   },
   {
-    "rank": 27,
-    "title": "Show HN: Which Animal Shares Your Body Fat Percentage?",
-    "link": "https://animalbodyfatmatch.netlify.app/",
-    "score": 126,
-    "author": "Atallapr",
-    "comments": 83
-  },
-  {
-    "rank": 1,
+    "rank": 2,
     "title": "Launch HN: Skyvern (YC S23) \u2013 open-source AI agent for browser automations",
-    "link": "https://news.ycombinator.com/item?id=41936745",
-    "score": 98,
+    "link": "https://github.com/Skyvern-AI/Skyvern",
+    "score": 113,
     "author": "suchintan",
-    "comments": 23
-  },
-  {
-    "rank": 15,
-    "title": "Lost Silk Road Cities Discovered High in the Mountains of Central Asia",
-    "link": "https://www.scientificamerican.com/article/lost-silk-road-cities-discovered-high-in-the-mountains-of-central-asia/",
-    "score": 76,
-    "author": "Brajeshwar",
-    "comments": 7
-  },
-  {
-    "rank": 19,
-    "title": "How to grip Bronze Age swords",
-    "link": "https://www.bookandsword.com/2024/10/19/how-to-grip-bronze-age-swords-response-to-dimicator-and-matt-easton/",
-    "score": 74,
-    "author": "speckx",
-    "comments": 59
+    "comments": 26
   },
   {
     "rank": 21,
-    "title": "Sinusoidal Sunlight",
-    "link": "https://leancrew.com/all-this/2024/10/sinusoidal-sunlight/",
-    "score": 74,
-    "author": "surprisetalk",
-    "comments": 25
+    "title": "Lost Silk Road Cities Discovered High in the Mountains of Central Asia",
+    "link": "https://www.scientificamerican.com/article/lost-silk-road-cities-discovered-high-in-the-mountains-of-central-asia/",
+    "score": 82,
+    "author": "Brajeshwar",
+    "comments": 7,
+    "summary": "Lost Silk Road Cities Uncovered in Central Asia! Archaeologists find medieval cities hidden in the mountains of Uzbekistan, challenging beliefs about the region's past. Tashbulak and Tugunbulak reveal a thriving network of trade routes and urban life. This discovery sheds new light on the ancient Silk Road civilization. #Archaeology #SilkRoadDiscovery",
+    "translated_summary": "\u00a1Ciudades Perdidas de la Ruta de la Seda Descubiertas en Asia Central! Arque\u00f3logos encuentran ciudades medievales escondidas en las monta\u00f1as de Uzbekist\u00e1n, desafiando creencias sobre el pasado de la regi\u00f3n. Tashbulak y Tugunbulak revelan una red pr\u00f3spera de rutas comerciales y vida urbana. Este descubrimiento arroja nueva luz sobre la civilizaci\u00f3n de la antigua Ruta de la Seda. #Arqueolog\u00eda #DescubrimientoRutaDeLaSeda",
+    "script": "\u00a1Atenci\u00f3n a todos los amantes de la historia y la arqueolog\u00eda! Hoy traigo una noticia que nos transporta al pasado, en un viaje fascinante por las misteriosas monta\u00f1as de Asia Central. Arque\u00f3logos han hecho un descubrimiento asombroso en Uzbekist\u00e1n, revelando las ciudades perdidas de la legendaria Ruta de la Seda.\n\nImaginen, Tashbulak y Tugunbulak, dos enclaves medievales ocultos entre las elevadas cumbres, emergen para desafiar nuestras concepciones sobre el antiguo esplendor de la regi\u00f3n. Estas antiguas urbes han resurgido del olvido, develando una pr\u00f3spera red de rutas comerciales y una vida urbana vibrante en medio de la asombrosa belleza de las monta\u00f1as.\n\nEste hallazgo arroja una nueva y cautivadora luz sobre la civilizaci\u00f3n de la Ruta de la Seda, conectando nuestros tiempos modernos con un pasado rico en intercambios culturales y comerciales. Nos invita a reflexionar sobre la profundidad de la historia y la complejidad de las sociedades que una vez poblaron estas tierras.\n\nEs un recordatorio de que bajo cada piedra yace una historia por descubrir, un legado que nos enriquece y nos desaf\u00eda a comprender nuestro mundo desde una perspectiva m\u00e1s amplia y humanista. Por eso, los invito a sumergirse en este fascinante hallazgo y a seguir explorando las maravillas de nuestro pasado para iluminar el presente.\n\n\u00bfQu\u00e9 otros secretos aguardan en las altas monta\u00f1as de Asia Central? La historia nos susurra sus secretos, y depende de nosotros escuchar atentamente. As\u00ed que no pierdan la oportunidad de abrazar la aventura del conocimiento y de reconectar con las huellas de nuestros ancestros en estos enigm\u00e1ticos parajes.\n\n\u00dananse a este viaje de descubrimiento y suscribanse para seguir explorando juntos las maravillas que el pasado tiene guardadas para nosotros. \u00a1Nos vemos en el pr\u00f3ximo episodio! #Arqueolog\u00eda #DescubrimientoRutaDeLaSeda"
   },
   {
     "rank": 25,
-    "title": "Building Document-Centric, CRDT-Native Editors",
-    "link": "https://blocksuite.io/blog/document-centric.html",
-    "score": 69,
-    "author": "rapnie",
-    "comments": 17
+    "title": "How to grip Bronze Age swords",
+    "link": "https://www.bookandsword.com/2024/10/19/how-to-grip-bronze-age-swords-response-to-dimicator-and-matt-easton/",
+    "score": 78,
+    "author": "speckx",
+    "comments": 60,
+    "summary": "Discover the gripping techniques of Bronze Age swords, with insights on how these ancient weapons were designed for efficiency and effectiveness. Explore the significance of swords from the Late Bronze Age and Early Iron Age, shedding light on historical battles and the intricate craftsmanship of these artifacts. Uncover the secrets behind using a mysterious, 3300-year-old sword, providing a glimpse into the past. #BronzeAge #AncientWeapons #HistoryBuff",
+    "translated_summary": "Descubr\u00ed las t\u00e9cnicas atrapantes de las espadas de la Edad de Bronce, con visiones sobre c\u00f3mo estas armas antiguas fueron dise\u00f1adas para eficiencia y efectividad. Explor\u00e1 la importancia de las espadas de la Edad del Bronce Tard\u00edo y la Edad del Hierro Temprana, arrojando luz sobre batallas hist\u00f3ricas y la intrincada artesan\u00eda de estos artefactos. Desenterr\u00e1 los secretos detr\u00e1s de usar una misteriosa espada de 3300 a\u00f1os, brindando una mirada al pasado. #EdadDeBronce #ArmasAntiguas #AmanteDeLaHistoria",
+    "script": "\u00a1Hey, comunidad tech! Hoy exploramos un fascinante viaje a trav\u00e9s del tiempo, adentr\u00e1ndonos en el intrigante mundo de las espadas de la Edad de Bronce. \u00bfAlguna vez te has preguntado c\u00f3mo eran usadas y por qu\u00e9 eran tan efectivas? Sum\u00e9rgete conmigo en esta inmersi\u00f3n hist\u00f3rica que nos revela mucho m\u00e1s que solo un arma.\n\nLas espadas de la Edad del Bronce Tard\u00edo y la Edad del Hierro Temprana representan no solo artefactos antiguos, sino tambi\u00e9n una ventana a las batallas y artesan\u00eda de \u00e9pocas pasadas. La eficiencia y la efectividad eran elementos clave en el dise\u00f1o de estas armas, forjadas con precisi\u00f3n para cumplir un prop\u00f3sito letal en el campo de batalla.\n\nAl desenterrar uno de estos tesoros hist\u00f3ricos, una misteriosa espada de 3300 a\u00f1os, somos transportados a un mundo olvidado donde la destreza y el ingenio se un\u00edan en cada golpe. La cuidadosa elaboraci\u00f3n de cada detalle de esta espada nos revela el conocimiento y la dedicaci\u00f3n de aquellos que la crearon, abriendo puertas a la comprensi\u00f3n de un pasado lejano.\n\nEsta exploraci\u00f3n nos invita a reflexionar sobre c\u00f3mo la tecnolog\u00eda del pasado molde\u00f3 las estrategias de guerra y la vida de aquellos que lucharon con estas armas ancestrales. Una mirada detallada a estas espadas nos permite apreciar no solo su funci\u00f3n como armas, sino tambi\u00e9n su valor como testigos silenciosos de la historia.\n\n\u00bfTe preguntas c\u00f3mo se usaban estas espadas con eficacia en combate? \u00danete a m\u00ed en este viaje a trav\u00e9s del tiempo y descubre los secretos detr\u00e1s de c\u00f3mo estas armas antiguas marcaron un hito en la evoluci\u00f3n de la tecnolog\u00eda b\u00e9lica. Suscr\u00edbete para no perderte m\u00e1s exploraciones fascinantes como esta. \u00a1Hasta la pr\u00f3xima! #EdadDeBronce #ArmasAntiguas #AmanteDeLaHistoria"
+  },
+  {
+    "rank": 30,
+    "title": "Sinusoidal Sunlight",
+    "link": "https://leancrew.com/all-this/2024/10/sinusoidal-sunlight/",
+    "score": 75,
+    "author": "surprisetalk",
+    "comments": 25,
+    "summary": "Dr. Drang's exploration of sinusoidal sunlight involved fitting a sine function to daylight data. By adjusting parameters, a close match was found with periods of around 365 days, aligning with leap years. This analysis offers insights into daylight patterns and seasonal changes. The study demonstrates a unique application of math and data science in understanding natural phenomena.\n\nPotential audience interest: Anyone curious about how math can reveal patterns in everyday experiences like daylight changes throughout the year. Math enthusiasts or those interested in seasonal rhythms might enjoy this exploration.",
+    "translated_summary": "La exploraci\u00f3n de la luz solar sinusoidal del Dr. Drang implic\u00f3 ajustar una funci\u00f3n seno a los datos de la luz diurna. Al ajustar los par\u00e1metros, se encontr\u00f3 una coincidencia cercana con per\u00edodos de alrededor de 365 d\u00edas, aline\u00e1ndose con los a\u00f1os bisiestos. Este an\u00e1lisis ofrece nuevas perspectivas sobre los patrones de luz diurna y los cambios estacionales. El estudio demuestra una aplicaci\u00f3n \u00fanica de matem\u00e1ticas y ciencias de datos en la comprensi\u00f3n de fen\u00f3menos naturales.\n\nPosible inter\u00e9s del p\u00fablico: Cualquiera que est\u00e9 curioso acerca de c\u00f3mo las matem\u00e1ticas pueden revelar patrones en experiencias cotidianas como los cambios de luz diurna a lo largo del a\u00f1o. Los entusiastas de las matem\u00e1ticas o aquellos interesados en los ritmos estacionales podr\u00edan disfrutar de",
+    "script": "Hola a todos. Hoy quiero compartir con ustedes algo fascinante que me ha llamado mucho la atenci\u00f3n. Recientemente, el Dr. Drang ha llevado a cabo un interesante estudio sobre la luz solar sinusoidal. \u00bfDe qu\u00e9 se trata esto? B\u00e1sicamente, el Dr. Drang ha podido ajustar una funci\u00f3n seno a los datos de la luz diurna, y al hacerlo, descubri\u00f3 algo sorprendente. \n\nAl ajustar los par\u00e1metros, encontr\u00f3 una coincidencia cercana con per\u00edodos de alrededor de 365 d\u00edas, aline\u00e1ndose incluso con los a\u00f1os bisiestos. \u00bfQu\u00e9 significa esto? Bueno, este an\u00e1lisis no solo nos brinda una nueva perspectiva sobre los patrones de luz diurna, sino que tambi\u00e9n arroja luz sobre los cambios estacionales que experimentamos a lo largo del a\u00f1o.\n\nEl uso de las matem\u00e1ticas y las ciencias de datos en este estudio es realmente impresionante. Nos muestra c\u00f3mo estas disciplinas pueden ser aplicadas de manera \u00fanica para entender mejor los fen\u00f3menos naturales que nos rodean. Es un recordatorio del poder que tienen las herramientas anal\u00edticas para revelar informaci\u00f3n fascinante en nuestro entorno cotidiano.\n\nEste tipo de investigaciones nos invitan a reflexionar sobre la complejidad y la belleza que subyace en los patrones que a veces pasan desapercibidos. Nos desaf\u00edan a mirar m\u00e1s all\u00e1 y a cuestionar lo establecido, a explorar los misterios que nos rodean y a aprender de ellos.\n\nAs\u00ed que, si te interesa descubrir c\u00f3mo las matem\u00e1ticas pueden revelar patrones en experiencias tan simples como los cambios de luz diurna a lo largo del a\u00f1o, te animo a seguir investigando. Hay un mundo apasionante ah\u00ed afuera esperando ser explorado.\n\nGracias por acompa\u00f1arme en este viaje de conocimiento y reflexi\u00f3n. Si quieres seguir descubriendo m\u00e1s noticias y an\u00e1lisis como este, \u00a1no olvides suscribirte al canal! Juntos podemos seguir aprendiendo y cuestionando nuestro entorno de manera cr\u00edtica y constructiva. \u00a1Hasta la pr\u00f3xima!"
+  },
+  {
+    "rank": 1,
+    "title": "New Architecture is here",
+    "link": "https://reactnative.dev/blog/2024/10/23/the-new-architecture-is-here",
+    "score": 71,
+    "author": "stigi",
+    "comments": 32
   },
   {
     "rank": 4,
     "title": "Riot Games: Peeking into Valorant's Netcode (2020)",
     "link": "https://technology.riotgames.com/news/peeking-valorants-netcode",
-    "score": 60,
+    "score": 69,
     "author": "jakey_bakey",
-    "comments": 16
+    "comments": 23
   },
   {
-    "rank": 9,
+    "rank": 11,
     "title": "Ozempic linked to lower Alzheimer's risk in people with Type 2 diabetes",
     "link": "https://www.nbcnews.com/health/health-news/ozempic-linked-lower-alzheimers-risk-people-type-2-diabetes-rcna176821",
-    "score": 42,
+    "score": 60,
     "author": "benchtobedside",
-    "comments": 11
+    "comments": 33
   },
   {
     "rank": 3,
     "title": "Post World War II Food",
     "link": "https://www.nps.gov/articles/post-wwii-food.htm",
-    "score": 38,
+    "score": 50,
     "author": "paulpauper",
+    "comments": 26
+  },
+  {
+    "rank": 12,
+    "title": "Cable companies ask 5th Circuit to block FTC's click-to-cancel rule",
+    "link": "https://arstechnica.com/tech-policy/2024/10/cable-companies-ask-5th-circuit-to-block-ftcs-click-to-cancel-rule/",
+    "score": 48,
+    "author": "LorenDB",
     "comments": 21
-  },
-  {
-    "rank": 26,
-    "title": "A field guide to the central, creeping section of the San Andreas Fault (2006)",
-    "link": "https://www.researchgate.net/publication/262263511_A_field_guide_to_the_central_creeping_section_of_the_San_Andreas_Fault_and_the_San_Andreas_Fault_Observatory_at_Depth",
-    "score": 35,
-    "author": "pastureofplenty",
-    "comments": 22
-  },
-  {
-    "rank": 22,
-    "title": "The Lion of St. Mark's Square in Venice Is Chinese: Isotopic Analyses Confirm It",
-    "link": "https://archaeologymag.com/2024/09/lion-of-st-marks-square-in-venice-is-chinese/",
-    "score": 22,
-    "author": "pseudolus",
-    "comments": 2
-  },
-  {
-    "rank": 7,
-    "title": "The Rise and Fall of IQ: The Cognitive Divide",
-    "link": "https://onepercentrule.substack.com/p/the-rise-and-fall-of-iq-the-cognitive",
-    "score": 20,
-    "author": "drcwpl",
-    "comments": 14
   },
   {
     "rank": 23,
     "title": "Why that one coworker got fired for no reason",
     "link": "https://gieseanw.wordpress.com/2024/10/24/why-that-one-coworker-got-fired-for-no-reason/",
-    "score": 17,
+    "score": 32,
     "author": "andyg_blog",
-    "comments": 13
+    "comments": 26
   },
   {
-    "rank": 29,
-    "title": "Bay Area cops are getting a new Siri-type tool for fighting sideshows",
-    "link": "https://www.sfgate.com/tech/article/bay-area-cops-get-sideshow-tool-flock-safety-19858497.php",
-    "score": 17,
-    "author": "c420",
-    "comments": 18
-  },
-  {
-    "rank": 12,
-    "title": "Show HN: PreCog AI \u2013 Automatic AI Model Selection for Any Task",
-    "link": "https://precog.ubik.studio/",
-    "score": 11,
-    "author": "ieuanking",
-    "comments": 1
+    "rank": 27,
+    "title": "The Lion of St. Mark's Square in Venice Is Chinese: Isotopic Analyses Confirm It",
+    "link": "https://archaeologymag.com/2024/09/lion-of-st-marks-square-in-venice-is-chinese/",
+    "score": 29,
+    "author": "pseudolus",
+    "comments": 4
   },
   {
     "rank": 13,
     "title": "Security Research on Private Cloud Compute",
     "link": "https://security.apple.com/blog/pcc-security-research/",
-    "score": 10,
+    "score": 18,
     "author": "todsacerdoti",
-    "comments": 0
+    "comments": 2
+  },
+  {
+    "rank": 5,
+    "title": "Show HN: PreCog AI \u2013 Automatic AI Model Selection for Any Task",
+    "link": "https://precog.ubik.studio/",
+    "score": 16,
+    "author": "ieuanking",
+    "comments": 3
+  },
+  {
+    "rank": 17,
+    "title": "Throw more AI at your problems",
+    "link": "https://frontierai.substack.com/p/throw-more-ai-at-your-problems",
+    "score": 12,
+    "author": "vsreekanti",
+    "comments": 1
+  },
+  {
+    "rank": 10,
+    "title": "Zigler: Zig Nifs in Elixir",
+    "link": "https://github.com/E-xyza/zigler",
+    "score": 11,
+    "author": "ksec",
+    "comments": 4
+  },
+  {
+    "rank": 16,
+    "title": "Never Missing the Train Again",
+    "link": "https://lilymara.xyz/posts/2024/01/transit-kindle/",
+    "score": 9,
+    "author": "thimabi",
+    "comments": 2
   },
   {
     "rank": 8,
+    "title": "Claude Computer Use \u2013 Is Vision the Ultimate API?",
+    "link": "https://www.thariq.io/blog/claudecomputer/",
+    "score": 6,
+    "author": "trq_",
+    "comments": 0
+  },
+  {
+    "rank": 19,
+    "title": "Calculating the norm of a complex number",
+    "link": "https://eli.thegreenplace.net/2024/calculating-the-norm-of-a-complex-number/",
+    "score": 6,
+    "author": "mfrw",
+    "comments": 0
+  },
+  {
+    "rank": 15,
+    "title": "Dynamic Models of Gentrification",
+    "link": "https://arxiv.org/abs/2410.18004",
+    "score": 5,
+    "author": "Anon84",
+    "comments": 1
+  },
+  {
+    "rank": 18,
+    "title": "APL Cultivations",
+    "link": "https://xpqz.github.io/cultivations/Intro.html",
+    "score": 4,
+    "author": "ofalkaed",
+    "comments": 0
+  },
+  {
+    "rank": 9,
     "title": "Svix (YC W21) Is Hiring a Developer Marketer (US Remote)",
     "link": "https://www.svix.com/careers/?ashby_jid=1d4b2de4-e9a2-4e1b-9fcb-661e678ad7c6",
     "score": 0,

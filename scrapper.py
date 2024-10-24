@@ -381,6 +381,26 @@ def run_scraper(data):
     emit_log(f"Starting scraper for URL: {url}")
     socketio.start_background_task(main, url)
 
+@app.route('/generate_images', methods=['POST'])
+def generate_images():
+    data = request.json
+    prompt = data['prompt']
+    # Replace with actual Midjourney API call
+    images = call_midjourney_api(prompt)
+    return jsonify({'images': images})
+
+def call_midjourney_api(prompt):
+    # This is a placeholder function. Replace with actual API call.
+    # Example: response = requests.post('https://api.midjourney.com/generate', json={'prompt': prompt})
+    # return response.json().get('images', [])
+    return [
+        'https://example.com/image1.jpg',
+        'https://example.com/image2.jpg',
+        'https://example.com/image3.jpg',
+        'https://example.com/image4.jpg',
+        'https://example.com/image5.jpg'
+    ]
+
 def main(url):
     logging.info(f"Using model: {MODEL}")
     stories = scrape_hackernews(url)

@@ -494,8 +494,10 @@
                 <div class="modal-body">
                     <div class="mb-3">
                         <button id="copyScriptBtn" class="btn btn-primary btn-sm">📋 Copy to Clipboard</button>
+                        <button id="generateImagesBtn" class="btn btn-secondary btn-sm">🖼️ Generate Images</button>
                     </div>
                     <pre id="scriptContent"></pre>
+                    <div id="imageGallery" class="mt-3"></div>
                 </div>
             </div>
         </div>
@@ -709,6 +711,32 @@
                     alert('Failed to save tags.');
                 }
             });
+        });
+
+        const generateImagesBtn = document.getElementById('generateImagesBtn');
+        const imageGallery = document.getElementById('imageGallery');
+
+        generateImagesBtn.addEventListener('click', () => {
+            const scriptContent = document.getElementById('scriptContent').textContent;
+            fetch('/generate_images', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ prompt: scriptContent }),
+            })
+            .then(response => response.json())
+            .then(data => {
+                imageGallery.innerHTML = ''; // Clear previous images
+                data.images.forEach(url => {
+                    const img = document.createElement('img');
+                    img.src = url;
+                    img.className = 'img-thumbnail m-1';
+                    img.style.maxWidth = '150px';
+                    imageGallery.appendChild(img);
+                });
+            })
+            .catch(error => console.error('Error generating images:', error));
         });
     </script>
 </body>
