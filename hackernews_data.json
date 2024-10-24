@@ -1,255 +1,215 @@
 [
   {
-    "rank": 11,
-    "title": "Computer use, a new Claude 3.5 Sonnet, and Claude 3.5 Haiku",
-    "link": "https://www.anthropic.com/news/3-5-models-and-computer-use",
-    "score": 1354,
-    "author": "weirdcat",
-    "comments": 685,
-    "summary": "Exciting news from Claude 3.5! Introducing an upgraded Sonnet and a new Haiku model. The Sonnet offers industry-leading coding abilities, particularly in agentic coding and tool use tasks. Beta testing on computer use is also underway, offering developers groundbreaking capabilities for directing Claude to interact with computers like humans. Early feedback is positive, with companies like Asana and Replit already exploring these possibilities. The Sonnet and Haiku models promise top-notch performance enhancements at similar costs, making them enticing options for developers. Stay tuned for the release of Claude 3.5 Haiku later this month! \ud83d\ude80 #AI #technology #innovation",
-    "translated_summary": "\u00a1Noticias emocionantes de Claude 3.5! Presentamos una Sonnet mejorada y un nuevo modelo Haiku. La Sonnet ofrece habilidades de codificaci\u00f3n l\u00edderes en la industria, especialmente en codificaci\u00f3n agente y tareas de uso de herramientas. Tambi\u00e9n se est\u00e1 realizando pruebas beta en el uso de computadoras, ofreciendo a los desarrolladores capacidades innovadoras para dirigir a Claude a interactuar con las computadoras como lo har\u00edan los humanos. Los primeros comentarios son positivos, con empresas como Asana y Replit explorando ya estas posibilidades. Los modelos Sonnet y Haiku prometen mejoras de rendimiento de primer nivel a costos similares, convirti\u00e9ndolos en opciones atractivas para desarrolladores. \u00a1Est\u00e9n atentos al lanzamiento de Claude 3.5 Haiku a fin de mes! \ud83d\ude80 #IA #tecnolog\u00eda #innov",
-    "script": "\u00a1Atenci\u00f3n, entusiastas de la tecnolog\u00eda! Hoy nos sumergimos en el fascinante mundo de Claude 3.5, donde la innovaci\u00f3n nunca deja de sorprendernos. Nos encontramos ante una noticia que promete mover los cimientos del desarrollo tecnol\u00f3gico. \u00bfQu\u00e9 tenemos entre manos? Una Sonnet mejorada y un flamante Haiku en escena. Ambos modelos prometen llevar el rendimiento a otro nivel, ofreciendo capacidades l\u00edderes en codificaci\u00f3n y una eficiencia en el uso de herramientas que ha captado la atenci\u00f3n de las grandes ligas.\n\nPero, \u00bfqu\u00e9 hay de nuevo en el horizonte de Claude 3.5? Las pruebas beta en el uso de computadoras est\u00e1n abriendo puertas a la innovaci\u00f3n, dotando a los desarrolladores de herramientas revolucionarias para una interacci\u00f3n m\u00e1s humana entre Claude y las m\u00e1quinas. Una premisa emocionante que ha encendido la curiosidad de gigantes como Asana y Replit, quienes ya visualizan las posibilidades que esto podr\u00eda desencadenar en el mercado. Es claro que la comunidad tecnol\u00f3gica est\u00e1 atenta a estas evoluciones.\n\nLo m\u00e1s intrigante de todo es la promesa de mejoras de rendimiento sin inflar los costos, convirtiendo a estos nuevos modelos en alternativas sumamente atractivas para el sector desarrollador. La eficacia y la accesibilidad se funden en un mismo paquete, mostrando un panorama alentador para aquellos inmersos en el universo de la tecnolog\u00eda.\n\n\u00bfY qu\u00e9 nos depara el futuro inmediato? Mant\u00e9nganse alerta, pues el lanzamiento del Claude 3.5 Haiku est\u00e1 a la vuelta de la esquina. Las expectativas se elevan, y las perspectivas para estos avances son m\u00e1s que alentadoras. Estamos ante un momento crucial en la evoluci\u00f3n tecnol\u00f3gica, donde la inteligencia artificial y la innovaci\u00f3n se dan la mano para trazar nuevos horizontes.\n\nAnte esta ola de transformaci\u00f3n, es esencial estar informados y preparados para lo que viene. La tecnolog\u00eda no para, y el futuro nos llama a todos a ser parte activa de este cambio. \u00bfListos para sumergirse en un mundo de posibilidades infinitas? Suscr\u00edbanse para no perderse ni un detalle de este emocionante viaje tecnol\u00f3gico. \u00a1Hasta la pr\u00f3xima! \ud83d\ude80 #IA #tecnolog\u00eda #innov"
-  },
-  {
-    "rank": 23,
-    "title": "Arm is canceling Qualcomm's chip design license",
-    "link": "https://www.bloomberg.com/news/articles/2024-10-23/arm-to-cancel-qualcomm-chip-design-license-in-escalation-of-feud",
-    "score": 490,
-    "author": "necubi",
-    "comments": 319
-  },
-  {
-    "rank": 20,
-    "title": "Show HN: Open-source Counter-Strike-like game",
-    "link": "https://github.com/solcloud/Counter-Strike",
-    "score": 387,
-    "author": "solcloud",
-    "comments": 151,
-    "summary": "Check out this open-source Counter-Strike-like game called Counter-Strike: Football on GitHub! It's a competitive FPS multiplayer game where two fan teams battle to win rounds. Defenders protect their fan base while Attackers aim to outmaneuver them. With unique gameplay mechanics like a graffiti bomb ball, this game offers a fun twist on the classic shooter genre. No red blood or extreme violence here, making it suitable for various players. Give it a try and experience the thrill of strategic teamwork in a new way! #gaming #opensource #CounterStrikeFootball",
-    "translated_summary": "\u00a1Cheque\u00e1 este juego de c\u00f3digo abierto tipo Counter-Strike llamado Counter-Strike: Football en GitHub! Es un juego multijugador competitivo de disparos en primera persona donde dos equipos de fan\u00e1ticos se enfrentan para ganar rondas. Los Defensores protegen su base de seguidores mientras que los Atacantes buscan superarlos. Con mec\u00e1nicas de juego \u00fanicas como una pelota bomba de graffiti, este juego ofrece una vuelta de tuerca divertida al cl\u00e1sico g\u00e9nero de disparos. Sin sangre ni violencia extrema, haci\u00e9ndolo apto para distintos jugadores. \u00a1Dale una oportunidad y experiment\u00e1 la emoci\u00f3n del trabajo en equipo estrat\u00e9gico de una manera nueva! #gaming #opensource #CounterStrikeFootball",
-    "script": "\u00a1Ey, comunidad tech! Hoy les traigo una noticia interesante: un juego de c\u00f3digo abierto inspirado en Counter-Strike ha llegado a GitHub. Se llama Counter-Strike: Football y promete una experiencia de disparos en primera persona con un giro innovador. En este juego, dos equipos compiten de manera competitiva: los Defensores cuidan su base de seguidores, mientras que los Atacantes buscan superarlos.\n\nLo destacable de este juego es la inclusi\u00f3n de mec\u00e1nicas \u00fanicas, como una pelota bomba de graffiti, que aportan frescura y diversi\u00f3n al cl\u00e1sico g\u00e9nero de disparos. \u00bfLo mejor? No encontrar\u00e1s sangre ni violencia extrema, lo que lo hace apto para jugadores de diferentes edades y gustos. Una excelente oportunidad para experimentar la emoci\u00f3n del trabajo en equipo estrat\u00e9gico de una forma novedosa.\n\nEs importante que elijas por ti mismo si esta propuesta es la indicada para ti, evaluando tanto sus aspectos positivos como las posibles limitaciones. La variedad en la oferta de juegos es siempre bienvenida, y proyectos como este pueden traer innovaci\u00f3n y diversi\u00f3n a la comunidad gaming.\n\nSi te interesa explorar nuevas experiencias en el mundo de los videojuegos, te invito a darle una oportunidad a Counter-Strike: Football. \u00bfQu\u00e9 opinas? \u00bfTe animar\u00edas a probar este juego de c\u00f3digo abierto? \u00a1Comparte tus pensamientos en los comentarios y suscr\u00edbete al canal para m\u00e1s noticias tecnol\u00f3gicas! \u00a1Nos vemos pronto! #gaming #opensource #CounterStrikeFootball"
-  },
-  {
-    "rank": 22,
-    "title": "A new JSON data type for ClickHouse",
-    "link": "https://clickhouse.com/blog/a-new-powerful-json-data-type-for-clickhouse",
-    "score": 359,
-    "author": "markhneedham",
-    "comments": 107,
-    "summary": "Exciting news from ClickHouse! They've enhanced their platform with a new powerful JSON data type. This advancement tackles challenges like true column-oriented storage for JSON paths, dynamically changing data types, and preventing excessive column data files. ClickHouse's innovative approach ensures efficient JSON storage for high-performance analytics over massive datasets. Stay ahead in data handling with ClickHouse's latest JSON capabilities! \ud83d\udcbb\ud83d\udcca #TechInnovation #DataAnalytics.",
-    "translated_summary": "\u00a1Noticias emocionantes de ClickHouse! Han mejorado su plataforma con un nuevo y poderoso tipo de datos JSON. Este avance aborda desaf\u00edos como el almacenamiento verdaderamente orientado a columnas para rutas JSON, tipos de datos que cambian din\u00e1micamente y la prevenci\u00f3n de archivos de datos de columnas excesivos. El enfoque innovador de ClickHouse garantiza un almacenamiento eficiente de JSON para an\u00e1lisis de alto rendimiento sobre conjuntos de datos masivos. \u00a1Mantente a la vanguardia en el manejo de datos con las \u00faltimas capacidades JSON de ClickHouse! \ud83d\udcbb\ud83d\udcca #Innovaci\u00f3nTecnol\u00f3gica #An\u00e1lisisdeDatos.",
-    "script": "\u00a1Hola a todos! Les traigo una noticia emocionante del mundo tecnol\u00f3gico: ClickHouse ha dado un paso adelante al introducir un nuevo tipo de datos JSON en su plataforma. Este avance es relevante porque aborda desaf\u00edos importantes en el tratamiento de datos, como el almacenamiento eficiente de rutas JSON y la gesti\u00f3n din\u00e1mica de tipos de datos en conjuntos masivos. \n\nLa implementaci\u00f3n de este tipo de datos JSON en ClickHouse es crucial, ya que garantiza un almacenamiento verdaderamente orientado a columnas, mejorando la eficiencia de los an\u00e1lisis de datos a gran escala. Este enfoque innovador no solo facilita la prevenci\u00f3n de archivos de datos de columnas excesivamente largos, sino que tambi\u00e9n promueve un rendimiento \u00f3ptimo en el an\u00e1lisis de datos complejos.\n\nMantenerse actualizado con las \u00faltimas capacidades en el manejo de datos es fundamental en el mundo actual. Con esta nueva funcionalidad JSON de ClickHouse, se potencia a\u00fan m\u00e1s la capacidad de procesar y analizar grandes vol\u00famenes de informaci\u00f3n de manera eficiente y efectiva.\n\nSi eres un apasionado por el an\u00e1lisis de datos y la innovaci\u00f3n tecnol\u00f3gica, no puedes dejar pasar esta noticia. Suscr\u00edbete para m\u00e1s actualizaciones sobre las tendencias en tecnolog\u00eda y descubre c\u00f3mo puedes aprovechar al m\u00e1ximo estas herramientas para potenciar tu trabajo en el mundo digital. \u00a1Es hora de explorar nuevas posibilidades con ClickHouse! \ud83d\udcbb\ud83d\udcca #Innovaci\u00f3nTecnol\u00f3gica #An\u00e1lisisdeDatos."
+    "rank": 28,
+    "title": "AWS data center latencies, visualized",
+    "link": "https://benjdd.com/aws/",
+    "score": 454,
+    "author": "orliesaurus",
+    "comments": 184
   },
   {
     "rank": 16,
-    "title": "The Tragedy of Google Books (2017)",
-    "link": "https://www.theatlantic.com/technology/archive/2017/04/the-tragedy-of-google-books/523320/",
-    "score": 333,
-    "author": "lispybanana",
-    "comments": 143
-  },
-  {
-    "rank": 12,
-    "title": "USGS uses machine learning to show large lithium potential in Arkansas",
-    "link": "https://www.usgs.gov/news/national-news-release/unlocking-arkansas-hidden-treasure-usgs-uses-machine-learning-show-large",
-    "score": 322,
-    "author": "antidnan",
-    "comments": 197,
-    "summary": "\ud83d\udd0d Unlocking treasure! USGS leverages machine learning to uncover vast lithium potential in Arkansas's Smackover Formation. Estimated 5-19 million tons of reserves found. A promising discovery for the energy sector and future sustainability. \ud83d\udca1\ud83d\udd0b #USGS #Lithium #Arkansas",
-    "translated_summary": "\ud83d\udd0d \u00a1Descubriendo un tesoro! El USGS utiliza aprendizaje autom\u00e1tico para descubrir el vasto potencial de litio en la Formaci\u00f3n Smackover de Arkansas. Se estima que se encontraron reservas de 5 a 19 millones de toneladas. Un descubrimiento prometedor para el sector energ\u00e9tico y la sostenibilidad futura. \ud83d\udca1\ud83d\udd0b #USGS #Litio #Arkansas",
-    "script": "\u00a1Atentos, amantes de la tecnolog\u00eda! Les traigo una noticia que est\u00e1 generando revuelo en el mundo de la energ\u00eda y la sostenibilidad. El USGS ha dado un paso adelante al utilizar el aprendizaje autom\u00e1tico para explorar la Formaci\u00f3n Smackover en Arkansas, revelando un vasto potencial de litio. Este descubrimiento no pasa desapercibido, ya que se estima que en esta regi\u00f3n podr\u00edan encontrarse reservas de entre 5 y 19 millones de toneladas de este preciado recurso.\n\n\u00bfQu\u00e9 significa esto en t\u00e9rminos pr\u00e1cticos? Bueno, el litio es un componente clave en la fabricaci\u00f3n de bater\u00edas utilizadas en dispositivos electr\u00f3nicos, veh\u00edculos el\u00e9ctricos y sistemas de almacenamiento de energ\u00eda renovable. As\u00ed que, tener una fuente potencial de litio en suelo americano podr\u00eda tener un impacto significativo en la independencia energ\u00e9tica y la transici\u00f3n hacia una econom\u00eda m\u00e1s sostenible.\n\nComo siempre, es crucial mantener una perspectiva cr\u00edtica. Si bien este descubrimiento abre la puerta a nuevas oportunidades y posibilidades, tambi\u00e9n es importante considerar los posibles impactos medioambientales y sociales que la extracci\u00f3n de litio podr\u00eda conllevar. Es fundamental abordar estos desaf\u00edos de manera responsable y sostenible para garantizar un equilibrio adecuado entre el progreso tecnol\u00f3gico y la protecci\u00f3n del entorno.\n\nPor eso, les invito a reflexionar sobre este hallazgo y sus implicaciones, a informarse m\u00e1s all\u00e1 de los titulares y a ser parte de la conversaci\u00f3n sobre el futuro energ\u00e9tico y ambiental de nuestro planeta. \u00a1Juntos podemos contribuir a construir un camino m\u00e1s consciente y equilibrado hacia adelante! No olviden suscribirse para seguir explorando juntos las novedades tecnol\u00f3gicas que moldear\u00e1n nuestro futuro. \u00a1Hasta la pr\u00f3xima!"
-  },
-  {
-    "rank": 9,
-    "title": "Solving Sudoku in Python Packaging",
-    "link": "https://github.com/konstin/sudoku-in-python-packaging",
-    "score": 256,
-    "author": "Yenrabbit",
-    "comments": 45,
-    "summary": "Solve Sudoku puzzles using Python packaging! Each cell in the Sudoku grid represents a package, making solving Sudokus akin to solving NP-complete problems. Write your Sudoku as a CSV, convert it to requirements, and solve it with your preferred package manager. A fun way to merge puzzle-solving with coding! #Python #Sudoku #Programming.",
-    "translated_summary": "\u00a1Resolv\u00e9 rompecabezas de Sudoku usando empaquetados de Python! Cada celda en la grilla de Sudoku representa un paquete, haciendo que resolver Sudokus sea similar a resolver problemas NP-completos. Escrib\u00ed tu Sudoku como un CSV, convertilo a requisitos, y resolvelo con tu administrador de paquetes preferido. \u00a1Una forma divertida de combinar la resoluci\u00f3n de rompecabezas con la programaci\u00f3n! #Python #Sudoku #Programaci\u00f3n.",
-    "script": "\u00a1Hola a todos! Hoy les traigo una noticia que seguro despertar\u00e1 la curiosidad de los amantes de los sudokus y la programaci\u00f3n. Imaginen poder resolver rompecabezas de Sudoku utilizando empaquetados de Python. Cada celda en la grilla de Sudoku se convierte en un paquete, lo que a\u00f1ade un interesante desaf\u00edo similar a resolver problemas NP-completos. \n\n\u00bfC\u00f3mo se hace esto? Es sencillo. Escriban su Sudoku en un archivo CSV, convi\u00e9rtanlo a requisitos y resu\u00e9lvanlo utilizando su administrador de paquetes favorito. \u00a1Una forma innovadora y entretenida de combinar la resoluci\u00f3n de puzzles con la programaci\u00f3n! \n\nEsta noticia nos invita a explorar nuevas formas de utilizar nuestras habilidades en programaci\u00f3n en contextos diferentes y desafiantes. Sin duda, una manera creativa de poner a prueba nuestras destrezas y disfrutar del proceso. \n\n\u00bfQu\u00e9 opinan? \u00bfSe animar\u00edan a probar esta original propuesta? Cu\u00e9ntenme en los comentarios qu\u00e9 les parece y si est\u00e1n dispuestos a aceptar el desaf\u00edo. Recuerden suscribirse para estar al tanto de m\u00e1s novedades tecnol\u00f3gicas como esta. \n\n\u00a1Hasta la pr\u00f3xima! #Python #Sudoku #Programaci\u00f3n"
-  },
-  {
-    "rank": 7,
-    "title": "Adding row polymorphism to Damas-Hindley-Milner",
-    "link": "https://bernsteinbear.com/blog/row-poly/",
-    "score": 180,
-    "author": "surprisetalk",
-    "comments": 42
-  },
-  {
-    "rank": 18,
-    "title": "The Dawn of a New Era for Supernova 1987a (2017)",
-    "link": "https://science.nasa.gov/missions/chandra/the-dawn-of-a-new-era-for-supernova-1987a/",
-    "score": 113,
-    "author": "raattgift",
-    "comments": 21
-  },
-  {
-    "rank": 29,
-    "title": "Coreboot port for 486 motherboard (UM8881/6)",
-    "link": "https://github.com/pc2005cz/TheUltimate486Upgrade/blob/main/main.md",
-    "score": 93,
-    "author": "rasz",
-    "comments": 15
-  },
-  {
-    "rank": 28,
-    "title": "Solving the Mystery of ARM7TDMI Multiply Carry Flag",
-    "link": "https://bmchtech.github.io/post/multiply/",
-    "score": 82,
-    "author": "skrrtww",
-    "comments": 29
-  },
-  {
-    "rank": 24,
-    "title": "RISC-V is currently slow compared to modern CPUs",
-    "link": "https://benhouston3d.com/blog/risc-v-in-2024-is-slow",
-    "score": 80,
-    "author": "bhouston",
-    "comments": 62
-  },
-  {
-    "rank": 30,
-    "title": "Users say T-Mobile must pay for killing \"lifetime\" price lock",
-    "link": "https://arstechnica.com/tech-policy/2024/10/i-am-still-alive-users-say-t-mobile-must-pay-for-killing-lifetime-price-lock/",
-    "score": 76,
-    "author": "rntn",
-    "comments": 63
-  },
-  {
-    "rank": 4,
-    "title": "The Global Surveillance Free-for-All in Mobile Ad Data",
-    "link": "https://krebsonsecurity.com/2024/10/the-global-surveillance-free-for-all-in-mobile-ad-data/",
-    "score": 68,
-    "author": "todsacerdoti",
-    "comments": 22
-  },
-  {
-    "rank": 27,
-    "title": "Implementing Brainfuck in APL",
-    "link": "https://blog.wilsonb.com/posts/2024-09-27-brainfuck.html",
-    "score": 65,
-    "author": "pabs3",
-    "comments": 23
-  },
-  {
-    "rank": 1,
-    "title": "Launch HN: GPT Driver (YC S21) \u2013 End-to-end app testing in natural language",
-    "link": "https://news.ycombinator.com/item?id=41924787",
-    "score": 56,
-    "author": "cschiller",
-    "comments": 45
-  },
-  {
-    "rank": 15,
-    "title": "Comparing Auth from Supabase, Firebase, Auth.js, Ory, Clerk and Others",
-    "link": "https://blog.hyperknot.com/p/comparing-auth-providers",
-    "score": 53,
-    "author": "thunderbong",
-    "comments": 23
-  },
-  {
-    "rank": 2,
-    "title": "Federal Suit Challenges City's Use of 170+ Cameras for Warrantless Surveillance",
-    "link": "https://ij.org/press-release/federal-lawsuit-challenges-virginia-citys-use-of-over-170-cameras-to-conduct-prolonged-warrantless-surveillance-of-entire-driving-population/",
-    "score": 51,
-    "author": "sbuttgereit",
-    "comments": 12
-  },
-  {
-    "rank": 3,
-    "title": "Probably pay attention to tokenizers",
-    "link": "https://cybernetist.com/2024/10/21/you-should-probably-pay-attention-to-tokenizers/",
-    "score": 37,
-    "author": "ingve",
-    "comments": 5
-  },
-  {
-    "rank": 8,
-    "title": "The Incredible Machine (1968) [video]",
-    "link": "https://www.youtube.com/watch?v=iwVu2BWLZqA",
-    "score": 34,
-    "author": "syndicatedjelly",
-    "comments": 16
-  },
-  {
-    "rank": 19,
-    "title": "Carbon Sequestration by Recycling Cement, Aggregates, and Concrete",
-    "link": "https://www.mdpi.com/1996-1944/17/20/5020",
-    "score": 28,
-    "author": "PaulHoule",
-    "comments": 10
-  },
-  {
-    "rank": 26,
-    "title": "SuperHTML is here to rescue you from syntax errors, and it's FOSS",
-    "link": "https://www.theregister.com/2024/10/23/superhtml_live_html_syntax_checking/",
-    "score": 28,
-    "author": "rc00",
-    "comments": 14
-  },
-  {
-    "rank": 6,
-    "title": "What happens if the NY Times tech staff strikes on election night?",
-    "link": "https://www.washingtonpost.com/style/media/2024/10/23/new-york-times-tech-guild-strike/",
-    "score": 25,
-    "author": "tysone",
-    "comments": 27
+    "title": "Show HN: Wall-mounted diffusion mirror that turns reflections into paintings",
+    "link": "https://www.matthieulc.com/posts/pablonet/",
+    "score": 432,
+    "author": "cataPhil",
+    "comments": 109,
+    "summary": "Discover an innovative wall-mounted diffusion mirror that transforms reflections into mesmerizing paintings, created using AI technology. This unique piece explores creativity and art, emphasizing the blending of the inner world with skill. The mirror provides a new way to experience art with its interactive features, offering a permanent and evolving artistic display. Want to create your own? Check out the details shared for this inspiring project! #ArtTech #Innovation #CreateYourOwn",
+    "translated_summary": "Descubr\u00ed un espejo de difusi\u00f3n innovador montado en la pared que transforma las reflexiones en pinturas hipnotizantes, creadas utilizando tecnolog\u00eda de inteligencia artificial. Esta pieza \u00fanica explora la creatividad y el arte, haciendo hincapi\u00e9 en la fusi\u00f3n del mundo interior con habilidad. El espejo brinda una nueva forma de experimentar el arte con sus funciones interactivas, ofreciendo una exposici\u00f3n art\u00edstica permanente y en constante evoluci\u00f3n. \u00bfQuer\u00e9s crear el tuyo propio? \u00a1Cheque\u00e1 los detalles compartidos para este proyecto inspirador! #ArtTech #Innovaci\u00f3n #CreaTuPropio",
+    "script": "Hoy vamos a hablar de una interesante innovaci\u00f3n en el mundo del arte y la tecnolog\u00eda. Se ha presentado un espejo de difusi\u00f3n montado en la pared que convierte simples reflejos en fascinantes obras de arte, gracias al uso de inteligencia artificial. Una propuesta que despierta la curiosidad y creatividad en un matrimonio entre lo visual y lo t\u00e9cnico.\n\nEste espejo no es solo un objeto decorativo, sino una ventana a un mundo en el que las fronteras entre lo tangible y lo virtual se desdibujan. Al interactuar con este espejo, los usuarios se adentran en un universo fascinante donde la imaginaci\u00f3n y la tecnolog\u00eda se funden para crear una experiencia art\u00edstica \u00fanica.\n\nLa propuesta de este dispositivo va m\u00e1s all\u00e1 de simplemente decorar una pared. Se trata de invitar al espectador a sumergirse en un ambiente art\u00edstico en constante evoluci\u00f3n, donde cada reflejo se convierte en una nueva oportunidad para la inspiraci\u00f3n y la contemplaci\u00f3n.\n\nPara aquellos interesados en explorar su propia creatividad a trav\u00e9s de esta innovadora herramienta, les invito a conocer m\u00e1s detalles sobre este proyecto. La posibilidad de transformar un reflejo cotidiano en una obra de arte personalizada representa un emocionante desaf\u00edo para todos aquellos que buscan nutrir su lado creativo.\n\nSi deseas descubrir m\u00e1s sobre esta fusi\u00f3n entre arte y tecnolog\u00eda, te animo a explorar los detalles compartidos sobre este intrigante espejo de difusi\u00f3n montado en la pared. Una oportunidad \u00fanica para sumergirte en un territorio donde la creatividad y la innovaci\u00f3n se entrelazan de forma inesperada. Es hora de despertar tu imaginaci\u00f3n y explorar el potencial de esta emocionante propuesta. \u00a1No te lo pierdas! #ArtTech #Innovaci\u00f3n #CreaTuPropio. \u00a1Suscr\u00edbete para m\u00e1s contenidos relacionados con tecnolog\u00eda y creatividad!"
   },
   {
     "rank": 5,
-    "title": "Paper mills: the 'cartel-like' companies behind fraudulent scientific journals",
-    "link": "https://theconversation.com/paper-mills-the-cartel-like-companies-behind-fraudulent-scientific-journals-230124",
-    "score": 23,
-    "author": "coloneltcb",
-    "comments": 2
+    "title": "JetBrains Rider is now free for non-commercial use",
+    "link": "https://www.jetbrains.com/rider/",
+    "score": 423,
+    "author": "kretaceous",
+    "comments": 202
   },
   {
-    "rank": 25,
-    "title": "Supporting Task Switching with Reinforcement Learning",
-    "link": "https://dl.acm.org/doi/10.1145/3613904.3642063",
-    "score": 19,
-    "author": "Topfi",
-    "comments": 0
+    "rank": 18,
+    "title": "Show HN: RF Hunter \u2013 Find hidden cameras and other devices",
+    "link": "https://github.com/RamboRogers/rfhunter",
+    "score": 354,
+    "author": "RamboRogers",
+    "comments": 105,
+    "summary": "Check out the RFHunter project by Matthew Rogers on GitHub, a device to detect hidden cameras and RF devices with an ESP32 and AD8317 RF detector. The scanner displays signal strength on an OLED screen. V4 is user-friendly with a battery and improved efficiency. Useful for security-conscious individuals. #RFHunter #HiddenCameras #SecurityDetection",
+    "translated_summary": "Cheque\u00e1 el proyecto RFHunter de Matthew Rogers en GitHub, un dispositivo para detectar c\u00e1maras ocultas y dispositivos de RF con un ESP32 y un detector de RF AD8317. El esc\u00e1ner muestra la intensidad de la se\u00f1al en una pantalla OLED. La V4 es amigable para el usuario con una bater\u00eda y una eficiencia mejorada. \u00datil para personas conscientes de la seguridad. #RFHunter #C\u00e1marasOcultas #Detecci\u00f3nDeSeguridad",
+    "script": "\u00a1Hola a todos! \u00bfPensaste alguna vez en lo f\u00e1cil que podr\u00eda ser estar siendo vigilado sin siquiera saberlo? Hoy les traigo una noticia que provocar\u00e1 escalofr\u00edos a m\u00e1s de uno.\n\n\u00bfImaginan poder detectar c\u00e1maras ocultas y otros dispositivos de radiofrecuencia con una simple herramienta? Pues bien, gracias al ingenio de Matthew Rogers, eso ya es posible con RF Hunter.\n\nEste proyecto, disponible en GitHub, utiliza un ESP32 y un detector de RF AD8317 para escanear y mostrar la intensidad de la se\u00f1al en una pantalla OLED. Una herramienta que evoca a la conciencia de seguridad y privacidad de cada uno de nosotros. \n\nLa versi\u00f3n 4 de RF Hunter no solo es m\u00e1s amigable para el usuario, sino que tambi\u00e9n ha mejorado su eficiencia al integrar una bater\u00eda para mayor portabilidad. Una soluci\u00f3n pr\u00e1ctica y sencilla para aquellos que desean sentirse m\u00e1s seguros en su entorno.\n\nNo podemos negar la relevancia y utilidad de esta innovaci\u00f3n en un mundo donde la privacidad est\u00e1 tan amenazada. Sin embargo, como en todo avance tecnol\u00f3gico, debemos ser conscientes de c\u00f3mo y cu\u00e1ndo utilizar estas herramientas, recordando siempre el equilibrio entre seguridad y libertad.\n\nLes invito a revisar el proyecto RF Hunter en GitHub y explorar m\u00e1s sobre c\u00f3mo podemos proteger nuestra privacidad en un mundo cada vez m\u00e1s conectado. \u00a1Descubramos juntos nuevas formas de hacer frente a los desaf\u00edos tecnol\u00f3gicos de hoy!\n\nSi les interesa estar al tanto de m\u00e1s noticias y desarrollos tecnol\u00f3gicos relevantes, \u00a1no olviden suscribirse a nuestro canal! Juntos seguiremos explorando el impacto de la tecnolog\u00eda en nuestras vidas. \u00a1Hasta la pr\u00f3xima!"
   },
   {
-    "rank": 10,
-    "title": "TCP Fast Open? Not so fast (2021)",
-    "link": "https://blog.apnic.net/2021/07/05/tcp-fast-open-not-so-fast/",
-    "score": 18,
-    "author": "fanf2",
-    "comments": 3
-  },
-  {
-    "rank": 13,
-    "title": "What makes a person seem wise?",
-    "link": "https://theconversation.com/what-makes-a-person-seem-wise-global-study-finds-that-cultures-do-differ-but-not-as-much-as-youd-think-238808",
-    "score": 11,
-    "author": "PaulHoule",
-    "comments": 12
-  },
-  {
-    "rank": 21,
-    "title": "Her Majesty\u2019s Rat-Catcher (2013)",
-    "link": "https://www.laphamsquarterly.org/roundtable/her-majestys-rat-catcher",
-    "score": 6,
-    "author": "samclemens",
-    "comments": 1
+    "rank": 30,
+    "title": "What happens when you make a move in lichess.org?",
+    "link": "https://www.davidreis.me/2024/what-happens-when-you-make-a-move-in-lichess",
+    "score": 333,
+    "author": "dreis_sw",
+    "comments": 135,
+    "summary": "Ever wondered what happens behind the scenes when you make a move in lichess.org? Discover the technical magic powering this real-time chess platform. From WebSocket connections to data exchanges, each move triggers a series of intricate processes between client and server. This peek into the backend reveals how moves are acknowledged, game states are updated, and possible moves are highlighted. Dive into the world of online chess with a fresh perspective! \ud83c\udfb2\ud83d\udd0d #OnlineChess #TechBehindGames",
+    "translated_summary": "\u00bfAlguna vez te preguntaste qu\u00e9 sucede detr\u00e1s de escena cuando realizas un movimiento en lichess.org? Descubre la magia t\u00e9cnica que impulsa esta plataforma de ajedrez en tiempo real. Desde conexiones WebSocket hasta intercambios de datos, cada movimiento desencadena una serie de procesos intrincados entre el cliente y el servidor. Esta mirada al backend revela c\u00f3mo se confirman los movimientos, se actualizan los estados del juego y se destacan los posibles movimientos. \u00a1Sum\u00e9rgete en el mundo del ajedrez online con una perspectiva fresca! \ud83c\udfb2\ud83d\udd0d #AjedrezOnline #Tecnolog\u00edaDetr\u00e1sDeLosJuegos",
+    "script": "\u00bfTe has preguntado alguna vez qu\u00e9 sucede en lichess.org cada vez que haces un movimiento en una partida de ajedrez online? Detr\u00e1s de la pantalla, se pone en marcha un fascinante ballet de procesos t\u00e9cnicos que hacen posible esta experiencia \u00fanica. Desde la confirmaci\u00f3n de tu jugada hasta la actualizaci\u00f3n del estado del juego, cada movimiento desata una compleja danza de intercambio de datos entre tu dispositivo y los servidores de lichess. \n\n\u00bfQu\u00e9 elementos hacen posible esta magia t\u00e9cnica? La clave radica en las conexiones WebSocket, un protocolo que permite la comunicaci\u00f3n bidireccional en tiempo real entre el cliente y el servidor. Gracias a esta tecnolog\u00eda, tu jugada es enviada al servidor de lichess, donde se valida, se actualiza el estado del tablero y se env\u00edan las posibles respuestas de tu oponente de vuelta a tu dispositivo, todo en cuesti\u00f3n de milisegundos.\n\nSum\u00e9rgete en el mundo del ajedrez online con esta reveladora mirada al backend de lichess.org. Cada movimiento, cada decisi\u00f3n estrat\u00e9gica, se traduce en una compleja secuencia de eventos que nos recuerda la sofisticaci\u00f3n tecnol\u00f3gica que sustenta nuestros pasatiempos digitales. \n\nInvito a que reflexionemos sobre el equilibrio necesario entre la magia del juego y la infraestructura t\u00e9cnica que lo hace posible. La belleza del ajedrez est\u00e1 en la estrategia, en la mente humana compitiendo en un campo de batalla virtual. Pero detr\u00e1s de esa experiencia, hay un entramado de tecnolog\u00eda que funciona silenciosamente para llevar nuestra pasi\u00f3n por el juego a nuevas alturas.\n\nAs\u00ed que, \u00bfte animas a dar el siguiente movimiento en lichess.org y apreciar la complejidad t\u00e9cnica detr\u00e1s de cada jugada? Suscr\u00edbete para seguir explorando el apasionante mundo de la tecnolog\u00eda y el entretenimiento. \u00a1Hasta la pr\u00f3xima jugada! #AjedrezOnline #Tecnolog\u00edaDetr\u00e1sDeLosJuegos"
   },
   {
     "rank": 14,
-    "title": "Show HN: I built a task manager that finally separates \"Do\" & \"Due\" dates",
-    "link": "https://apps.apple.com/us/app/zesfy-planner-calendar/id6479947874",
-    "score": 5,
-    "author": "zesfy",
+    "title": "Pretty.c",
+    "link": "https://github.com/aartaka/pretty.c",
+    "score": 290,
+    "author": "synergy20",
+    "comments": 175,
+    "summary": "\"Introducing Pretty C, a new scripting language compatible with C that adds dynamic typing and other features inspired by Lua, Python, JavaScript, and Lisp. It aims to provide a simpler, beginner-friendly coding experience while maintaining compatibility with C libraries. Pretty C can transform your C code into something enchanting and easy to read. Check it out on GitHub!\"",
+    "translated_summary": "Te presento a Pretty C, un nuevo lenguaje de programaci\u00f3n compatible con C que agrega tipado din\u00e1mico y otras caracter\u00edsticas inspiradas en Lua, Python, JavaScript y Lisp. Su objetivo es brindar una experiencia de codificaci\u00f3n m\u00e1s simple y amigable para principiantes, manteniendo la compatibilidad con las bibliotecas de C. Pretty C puede transformar tu c\u00f3digo de C en algo encantador y f\u00e1cil de leer. \u00a1\u00c9chale un vistazo en GitHub!",
+    "script": "\u00a1Hola a todos! Hoy les traigo una interesante novedad del mundo de la programaci\u00f3n. Se trata de Pretty C, un nuevo lenguaje de programaci\u00f3n que promete simplificar el proceso de codificaci\u00f3n, especialmente para aquellos que est\u00e1n dando sus primeros pasos en este apasionante mundo. Pretty C ha llamado la atenci\u00f3n por ser compatible con C, pero a\u00f1adiendo caracter\u00edsticas de tipado din\u00e1mico y tomando inspiraci\u00f3n de varios lenguajes populares como Lua, Python, JavaScript y Lisp.\n\nLa idea detr\u00e1s de Pretty C es brindar una experiencia m\u00e1s amigable y accesible a los principiantes, sin sacrificar la compatibilidad con las bibliotecas existentes de C. Esta combinaci\u00f3n busca hacer que el c\u00f3digo sea m\u00e1s legible y encantador, facilitando su comprensi\u00f3n y mantenimiento a lo largo del tiempo.\n\nSin embargo, como en toda innovaci\u00f3n, tambi\u00e9n hay aspectos a considerar. A pesar de sus ventajas, la introducci\u00f3n de un nuevo lenguaje conlleva el desaf\u00edo de la adopci\u00f3n por parte de la comunidad y la garant\u00eda de su soporte a largo plazo. Es importante evaluar c\u00f3mo Pretty C se integrar\u00e1 en el ecosistema de desarrollo de software y si lograr\u00e1 establecerse como una herramienta \u00fatil y relevante en el tiempo.\n\nPara aquellos interesados en explorar m\u00e1s sobre este nuevo lenguaje, les invito a que visiten su repositorio en GitHub, donde podr\u00e1n conocer m\u00e1s detalles y contribuir a su desarrollo. Mantenernos informados y abiertos a nuevas propuestas en el \u00e1mbito de la programaci\u00f3n es fundamental para seguir evolucionando en este campo tan din\u00e1mico y cambiante.\n\nAs\u00ed que, si te apasiona la programaci\u00f3n y te gusta estar al tanto de las \u00faltimas tendencias, te animo a que explores Pretty C y saques tus propias conclusiones sobre su potencial. \u00a1Hasta la pr\u00f3xima y no olvides suscribirte para m\u00e1s novedades tecnol\u00f3gicas!"
+  },
+  {
+    "rank": 24,
+    "title": "NetGuard \u2013 rootless Android outbound per-app OSS firewall, like LittleSnitch",
+    "link": "https://netguard.me/",
+    "score": 214,
+    "author": "transpute",
+    "comments": 123,
+    "summary": "NetGuard is a rootless firewall app for Android that allows users to block internet access per application without requiring root access. It offers features like data usage reduction, battery saving, and increased privacy. The app is open-source, with options for pro features like traffic log viewing and network traffic filtering. By making a donation, users can access the pro features and support ongoing development. It's a valuable tool for controlling internet access on Android devices. #NetGuard #Firewall #AndroidPrivacy",
+    "translated_summary": "NetGuard es una aplicaci\u00f3n de firewall sin necesidad de ser root para Android que permite a los usuarios bloquear el acceso a internet por aplicaci\u00f3n sin necesidad de acceso de ra\u00edz. Ofrece funciones como reducci\u00f3n del uso de datos, ahorro de bater\u00eda y aumento de la privacidad. La aplicaci\u00f3n es de c\u00f3digo abierto, con opciones de caracter\u00edsticas profesionales como la visualizaci\u00f3n de registro de tr\u00e1fico y el filtrado de tr\u00e1fico de red. Al hacer una donaci\u00f3n, los usuarios pueden acceder a las caracter\u00edsticas profesionales y apoyar el desarrollo continuo. Es una herramienta valiosa para controlar el acceso a internet en dispositivos Android. #NetGuard #Firewall #PrivacidadAndroid",
+    "script": "\u00a1Hola a todos! Hoy quiero compartir con ustedes una interesante noticia del mundo tecnol\u00f3gico que ha llamado mi atenci\u00f3n. Se trata de NetGuard, una aplicaci\u00f3n de firewall para Android que ha estado generando cierto revuelo \u00faltimamente. Lo que hace NetGuard es permitir a los usuarios bloquear el acceso a internet por aplicaci\u00f3n, sin necesidad de tener acceso de ra\u00edz en su dispositivo. Interesante, \u00bfverdad?\n\nLo m\u00e1s destacado de NetGuard es su enfoque en la privacidad y control del tr\u00e1fico de red. Al utilizar esta herramienta, los usuarios pueden reducir el uso de datos, ahorrar bater\u00eda y mantener una mayor privacidad en sus dispositivos Android. Ahora, lo que realmente distingue a NetGuard es que es una aplicaci\u00f3n de c\u00f3digo abierto, lo cual siempre es una buena noticia para la comunidad tecnol\u00f3gica.\n\nAdem\u00e1s, NetGuard ofrece funciones profesionales opcionales, como la visualizaci\u00f3n de registros de tr\u00e1fico y el filtrado del tr\u00e1fico de red. Esto permite a los usuarios un mayor control sobre qu\u00e9 aplicaciones pueden acceder a internet y cu\u00e1les no. Y lo mejor de todo, aquellos que deseen acceder a estas funciones pueden hacerlo a trav\u00e9s de una donaci\u00f3n, lo que no solo desbloquear\u00e1 caracter\u00edsticas profesionales, sino que tambi\u00e9n apoyar\u00e1 el desarrollo continuo de la aplicaci\u00f3n.\n\nEn resumen, NetGuard se presenta como una herramienta valiosa para aquellos que buscan controlar el acceso a internet en sus dispositivos Android, sin necesidad de permisos de ra\u00edz. Una interesante propuesta que demuestra que la privacidad y el control de nuestros datos siguen siendo aspectos importantes en el mundo digital actual.\n\nSi desean mantenerse al tanto de m\u00e1s noticias y novedades tecnol\u00f3gicas como esta, los invito a suscribirse al canal y seguir explorando juntos este fascinante mundo de la tecnolog\u00eda. \u00a1Hasta pronto! #NetGuard #Firewall #PrivacidadAndroid"
+  },
+  {
+    "rank": 20,
+    "title": "Show HN: Satoshi9000 analog BTC key generator (mechanical)",
+    "link": "https://news.ycombinator.com/item?id=41929822",
+    "score": 139,
+    "author": "AJTSheppard",
+    "comments": 47
+  },
+  {
+    "rank": 27,
+    "title": "Show HN: Which Animal Shares Your Body Fat Percentage?",
+    "link": "https://animalbodyfatmatch.netlify.app/",
+    "score": 126,
+    "author": "Atallapr",
+    "comments": 83
+  },
+  {
+    "rank": 1,
+    "title": "Launch HN: Skyvern (YC S23) \u2013 open-source AI agent for browser automations",
+    "link": "https://news.ycombinator.com/item?id=41936745",
+    "score": 98,
+    "author": "suchintan",
+    "comments": 23
+  },
+  {
+    "rank": 15,
+    "title": "Lost Silk Road Cities Discovered High in the Mountains of Central Asia",
+    "link": "https://www.scientificamerican.com/article/lost-silk-road-cities-discovered-high-in-the-mountains-of-central-asia/",
+    "score": 76,
+    "author": "Brajeshwar",
+    "comments": 7
+  },
+  {
+    "rank": 19,
+    "title": "How to grip Bronze Age swords",
+    "link": "https://www.bookandsword.com/2024/10/19/how-to-grip-bronze-age-swords-response-to-dimicator-and-matt-easton/",
+    "score": 74,
+    "author": "speckx",
+    "comments": 59
+  },
+  {
+    "rank": 21,
+    "title": "Sinusoidal Sunlight",
+    "link": "https://leancrew.com/all-this/2024/10/sinusoidal-sunlight/",
+    "score": 74,
+    "author": "surprisetalk",
+    "comments": 25
+  },
+  {
+    "rank": 25,
+    "title": "Building Document-Centric, CRDT-Native Editors",
+    "link": "https://blocksuite.io/blog/document-centric.html",
+    "score": 69,
+    "author": "rapnie",
+    "comments": 17
+  },
+  {
+    "rank": 4,
+    "title": "Riot Games: Peeking into Valorant's Netcode (2020)",
+    "link": "https://technology.riotgames.com/news/peeking-valorants-netcode",
+    "score": 60,
+    "author": "jakey_bakey",
+    "comments": 16
+  },
+  {
+    "rank": 9,
+    "title": "Ozempic linked to lower Alzheimer's risk in people with Type 2 diabetes",
+    "link": "https://www.nbcnews.com/health/health-news/ozempic-linked-lower-alzheimers-risk-people-type-2-diabetes-rcna176821",
+    "score": 42,
+    "author": "benchtobedside",
+    "comments": 11
+  },
+  {
+    "rank": 3,
+    "title": "Post World War II Food",
+    "link": "https://www.nps.gov/articles/post-wwii-food.htm",
+    "score": 38,
+    "author": "paulpauper",
+    "comments": 21
+  },
+  {
+    "rank": 26,
+    "title": "A field guide to the central, creeping section of the San Andreas Fault (2006)",
+    "link": "https://www.researchgate.net/publication/262263511_A_field_guide_to_the_central_creeping_section_of_the_San_Andreas_Fault_and_the_San_Andreas_Fault_Observatory_at_Depth",
+    "score": 35,
+    "author": "pastureofplenty",
+    "comments": 22
+  },
+  {
+    "rank": 22,
+    "title": "The Lion of St. Mark's Square in Venice Is Chinese: Isotopic Analyses Confirm It",
+    "link": "https://archaeologymag.com/2024/09/lion-of-st-marks-square-in-venice-is-chinese/",
+    "score": 22,
+    "author": "pseudolus",
     "comments": 2
   },
   {
-    "rank": 17,
-    "title": "NewsCatcher (YC S22) Is Hiring Web Scraping/Crawling Engineers",
-    "link": "https://www.newscatcherapi.com/career/web-crawling-scraping-engineer",
+    "rank": 7,
+    "title": "The Rise and Fall of IQ: The Cognitive Divide",
+    "link": "https://onepercentrule.substack.com/p/the-rise-and-fall-of-iq-the-cognitive",
+    "score": 20,
+    "author": "drcwpl",
+    "comments": 14
+  },
+  {
+    "rank": 23,
+    "title": "Why that one coworker got fired for no reason",
+    "link": "https://gieseanw.wordpress.com/2024/10/24/why-that-one-coworker-got-fired-for-no-reason/",
+    "score": 17,
+    "author": "andyg_blog",
+    "comments": 13
+  },
+  {
+    "rank": 29,
+    "title": "Bay Area cops are getting a new Siri-type tool for fighting sideshows",
+    "link": "https://www.sfgate.com/tech/article/bay-area-cops-get-sideshow-tool-flock-safety-19858497.php",
+    "score": 17,
+    "author": "c420",
+    "comments": 18
+  },
+  {
+    "rank": 12,
+    "title": "Show HN: PreCog AI \u2013 Automatic AI Model Selection for Any Task",
+    "link": "https://precog.ubik.studio/",
+    "score": 11,
+    "author": "ieuanking",
+    "comments": 1
+  },
+  {
+    "rank": 13,
+    "title": "Security Research on Private Cloud Compute",
+    "link": "https://security.apple.com/blog/pcc-security-research/",
+    "score": 10,
+    "author": "todsacerdoti",
+    "comments": 0
+  },
+  {
+    "rank": 8,
+    "title": "Svix (YC W21) Is Hiring a Developer Marketer (US Remote)",
+    "link": "https://www.svix.com/careers/?ashby_jid=1d4b2de4-e9a2-4e1b-9fcb-661e678ad7c6",
     "score": 0,
     "author": "Unknown",
     "comments": 0

@@ -53,6 +53,12 @@ Article Summary: {summary}
 
 Please generate the script based on this information."""
 
+TAGS_FILE = 'tags.json'
+DEFAULT_TAGS = [
+    'artificial intelligence', 'ai', 'machine learning', 'deep learning', 'neural networks',
+    # ... (other default tags) ...
+]
+
 def load_prompt():
     try:
         with open(PROMPT_FILE, 'r') as f:
@@ -64,6 +70,18 @@ def load_prompt():
 def save_prompt(prompt):
     with open(PROMPT_FILE, 'w') as f:
         f.write(prompt)
+
+def load_tags():
+    if os.path.exists(TAGS_FILE):
+        with open(TAGS_FILE, 'r') as f:
+            return json.load(f)
+    else:
+        save_tags(DEFAULT_TAGS)
+        return DEFAULT_TAGS
+
+def save_tags(tags):
+    with open(TAGS_FILE, 'w') as f:
+        json.dump(tags, f)
 
 @app.route('/')
 def index():
@@ -78,6 +96,16 @@ def get_prompt():
 def save_prompt_route():
     new_prompt = request.json['prompt']
     save_prompt(new_prompt)
+    return jsonify({"success": True})
+
+@app.route('/get_tags')
+def get_tags():
+    return jsonify(load_tags())
+
+@app.route('/save_tags', methods=['POST'])
+def save_tags_route():
+    new_tags = request.json['tags']
+    save_tags(new_tags)
     return jsonify({"success": True})
 
 def emit_log(message):
@@ -306,96 +334,7 @@ def emit_article_update(article):
     socketio.emit('article_update', article)
 
 def is_relevant_topic(title):
-    relevant_keywords = [
-        # Artificial Intelligence and Machine Learning
-        'artificial intelligence', 'ai', 'machine learning', 'deep learning', 'neural networks',
-        'natural language processing', 'nlp', 'computer vision', 'robotics', 'autonomous systems',
-        'expert systems', 'cognitive computing', 'predictive analytics', 'data mining',
-
-        # Cryptocurrency and Blockchain
-        'crypto', 'cryptocurrency', 'bitcoin', 'ethereum', 'blockchain', 'smart contracts',
-        'decentralized finance', 'defi', 'nft', 'non-fungible token', 'mining', 'wallet',
-        'exchange', 'ico', 'initial coin offering', 'token', 'altcoin', 'stablecoin',
-
-        # Gaming and Game Development
-        'gaming', 'game development', 'video games', 'esports', 'virtual reality gaming',
-        'augmented reality gaming', 'mobile gaming', 'console gaming', 'pc gaming',
-        'game engine', 'unity', 'unreal engine', 'game design', 'gamification',
-
-        # Software Development and Programming
-        'software development', 'programming', 'coding', 'software engineering',
-        'web development', 'mobile development', 'app development', 'devops',
-        'agile', 'scrum', 'version control', 'git', 'api', 'sdk', 'ide',
-        'python', 'javascript', 'java', 'c++', 'ruby', 'go', 'rust', 'swift',
-        'kotlin', 'typescript', 'php', 'scala', 'haskell', 'perl', 'r',
-
-        # Metaverse and Extended Reality
-        'metaverse', 'virtual reality', 'augmented reality', 'mixed reality', 'xr',
-        'vr', 'ar', 'virtual world', 'digital twin', '3d modeling', 'spatial computing',
-
-        # General Technology
-        'technology', 'tech', 'innovation', 'startup', 'digital transformation',
-        'internet of things', 'iot', 'big data', 'cloud computing', 'edge computing',
-        'quantum computing', 'cybersecurity', '5g', '6g', 'wifi', 'bluetooth',
-        'gps', 'satellite', 'drone', 'robotics', 'automation', 'nanotechnology',
-
-        # Data Science and Analytics
-        'data science', 'data analytics', 'business intelligence', 'statistics',
-        'data visualization', 'data engineering', 'big data', 'data mining',
-
-        # Digital Economy and New Paradigms
-        'digital economy', 'sharing economy', 'gig economy', 'circular economy',
-        'universal basic income', 'ubi', 'digital currency', 'central bank digital currency',
-        'cbdc', 'digital identity', 'smart city', 'industry 4.0', 'internet of things',
-
-        # Digital Democracy and Governance
-        'digital democracy', 'e-governance', 'online voting', 'civic tech',
-        'govtech', 'regtech', 'policy tech', 'digital rights', 'internet freedom',
-
-        # Emerging Technologies
-        'biotechnology', 'genomics', 'crispr', 'synthetic biology', 'neurotechnology',
-        'brain-computer interface', 'bci', 'quantum sensing', 'photonics',
-        'advanced materials', 'renewable energy', 'fusion energy', 'space technology',
-
-        # Cybersecurity and Privacy
-        'cybersecurity', 'information security', 'network security', 'encryption',
-        'privacy', 'data protection', 'gdpr', 'ethical hacking', 'penetration testing',
-
-        # Social Media and Digital Communication
-        'social media', 'social network', 'digital marketing', 'influencer',
-        'content creation', 'streaming', 'podcast', 'digital advertising',
-
-        # Education Technology
-        'edtech', 'online learning', 'e-learning', 'mooc', 'adaptive learning',
-        'gamified learning', 'educational software', 'learning management system',
-
-        # Health Technology
-        'healthtech', 'digital health', 'telemedicine', 'e-health', 'm-health',
-        'wearable technology', 'medical devices', 'health informatics',
-
-        # Financial Technology
-        'fintech', 'digital banking', 'mobile payments', 'insurtech', 'regtech',
-        'robo-advisors', 'peer-to-peer lending', 'crowdfunding',
-
-        # Transportation and Mobility
-        'electric vehicles', 'autonomous vehicles', 'self-driving cars', 'hyperloop',
-        'urban air mobility', 'micromobility', 'smart transportation',
-
-        # Argentina-specific Technology Topics
-        'argentina tech', 'tecnología argentina', 'startup argentina', 'silicon valley argentina',
-        'mercadolibre', 'globant', 'despegar', 'auth0', 'ualá', 'satellogic',
-        'innovación argentina', 'emprendimiento tecnológico argentina',
-        'polo tecnológico', 'economía del conocimiento argentina',
-        'industria del software argentina', 'ciberseguridad argentina',
-        'inteligencia artificial argentina', 'blockchain argentina',
-        'fintech argentina', 'agtech argentina', 'edtech argentina',
-        'healthtech argentina', 'govtech argentina', 'smart cities argentina',
-        'transformación digital argentina', 'internet de las cosas argentina',
-        'realidad virtual argentina', 'realidad aumentada argentina',
-        'impresión 3d argentina', 'robótica argentina', 'drones argentina',
-        'nanosatélites argentina', 'biotecnología argentina'
-    ]
-    
+    relevant_keywords = load_tags()
     # Check if any of the keywords are in the title
     if any(keyword in title.lower() for keyword in relevant_keywords):
         return True
