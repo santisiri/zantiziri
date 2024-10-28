@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const summary = document.getElementById('summary');
     const script = document.getElementById('script');
     const buttonText = submitBtn.querySelector('.button-text');
+    const copyBtn = document.getElementById('copyBtn');
 
     // Add loading message elements
     const loadingMessage = document.createElement('p');
@@ -112,6 +113,34 @@ document.addEventListener('DOMContentLoaded', () => {
             errorDiv.remove();
         }, 5000);
     }
+
+    // Copy to clipboard functionality
+    copyBtn.addEventListener('click', async () => {
+        const scriptText = document.getElementById('script').textContent;
+        try {
+            await navigator.clipboard.writeText(scriptText);
+            
+            // Update button text temporarily
+            const originalText = copyBtn.innerHTML;
+            copyBtn.innerHTML = '<span class="button-text">Copied! ✓</span>';
+            copyBtn.classList.add('success');
+            
+            // Reset button after 2 seconds
+            setTimeout(() => {
+                copyBtn.innerHTML = originalText;
+                copyBtn.classList.remove('success');
+            }, 2000);
+        } catch (err) {
+            console.error('Failed to copy text: ', err);
+            copyBtn.innerHTML = '<span class="button-text">Failed to copy</span>';
+            copyBtn.classList.add('error');
+            
+            setTimeout(() => {
+                copyBtn.innerHTML = '<span class="button-text">Copy to Clipboard</span>';
+                copyBtn.classList.remove('error');
+            }, 2000);
+        }
+    });
 
     document.getElementById('downloadBtn').addEventListener('click', () => {
         const script = document.getElementById('script').textContent;

@@ -5,8 +5,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 GPT_MODELS = [
+    {'id': 'gpt-3.5-turbo', 'name': 'GPT-3.5 Turbo', 'default': True},
     {'id': 'gpt-4', 'name': 'GPT-4'},
-    {'id': 'gpt-3.5-turbo', 'name': 'GPT-3.5 Turbo'},
     {'id': 'gpt-3', 'name': 'GPT-3'}
 ]
 
