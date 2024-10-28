@@ -1,0 +1,7 @@
+werkzeug==2.0.3
+flask==2.0.1
+flask-socketio==5.1.1
+requests>=2.27.0,<3.0.0
+beautifulsoup4==4.9.3
+openai>=0.27.8,<0.28.0
+python-dotenv>=1.0.0,<2.0.0

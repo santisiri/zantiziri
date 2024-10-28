@@ -1,743 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Holograma TV - Advanced Social Media Content Generator</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-            transition: background-color 0.3s, color 0.3s;
-        }
-        .container {
-            max-width: 1200px;
-        }
-        .card {
-            border: none;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            transition: background-color 0.3s, box-shadow 0.3s;
-        }
-        .card-header {
-            font-weight: 500;
-            border-top-left-radius: 10px !important;
-            border-top-right-radius: 10px !important;
-            padding: 0.75rem 1.25rem;
-            transition: background-color 0.3s, color 0.3s;
-        }
-        .table {
-            margin-bottom: 0;
-        }
-        .table th, .table td {
-            border-top: none;
-            vertical-align: middle;
-        }
-        .btn-script {
-            padding: 0.25rem 0.5rem;
-            font-size: 0.875rem;
-            line-height: 1.5;
-        }
-        #log-container {
-            height: 300px;
-            overflow-y: scroll;
-            border-radius: 10px;
-            padding: 0.5rem;
-            font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-            font-size: 0.875rem;
-            transition: background-color 0.3s, border-color 0.3s;
-        }
-        #scriptContent {
-            white-space: pre-wrap;
-            word-wrap: break-word;
-            font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-            font-size: 0.9rem;
-            line-height: 1.5;
-            border-radius: 10px;
-            padding: 1rem;
-            max-height: 60vh;
-            overflow-y: auto;
-            transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-        }
-        .action-column {
-            width: 100px;
-        }
-        .spinner-border {
-            width: 1rem;
-            height: 1rem;
-            margin-right: 0.5rem;
-        }
-        #modelSelector {
-            max-width: 200px;
-            transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-        }
-        .table-hover tbody tr:hover {
-            transition: background-color 0.3s;
-        }
-        .modal-content {
-            transition: background-color 0.3s, color 0.3s;
-        }
-        .modal-header, .modal-footer {
-            transition: border-color 0.3s;
-        }
-        .btn-close {
-            transition: color 0.3s;
-        }
-        .theme-toggle {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            z-index: 1000;
-        }
-        /* Light mode styles */
-        body.light-mode {
-            background-color: #f5f5f7;
-            color: #1d1d1f;
-        }
-        .light-mode .card {
-            background-color: #ffffff;
-        }
-        .light-mode .card-header {
-            background-color: #0071e3;
-            color: white;
-        }
-        .light-mode .btn-script {
-            background-color: #0071e3;
-            border-color: #0071e3;
-            color: white;
-        }
-        .light-mode .btn-script:hover {
-            background-color: #005cbd;
-            border-color: #005cbd;
-        }
-        .light-mode #log-container {
-            border: 1px solid #d2d2d7;
-            background-color: #ffffff;
-        }
-        .light-mode #scriptContent {
-            background-color: #f5f5f7;
-            border: 1px solid #d2d2d7;
-            color: #1d1d1f;
-        }
-        .light-mode .btn-primary {
-            background-color: #0071e3;
-            border-color: #0071e3;
-        }
-        .light-mode .btn-primary:hover {
-            background-color: #005cbd;
-            border-color: #005cbd;
-        }
-        .light-mode a {
-            color: #0071e3;
-        }
-        .light-mode a:hover {
-            color: #005cbd;
-        }
-        .light-mode #modelSelector {
-            background-color: #ffffff;
-            color: #1d1d1f;
-            border-color: #d2d2d7;
-        }
-        .light-mode .table-hover tbody tr:hover {
-            background-color: rgba(0, 113, 227, 0.1);
-        }
-        .light-mode .modal-content {
-            background-color: #ffffff;
-            color: #1d1d1f;
-        }
-        .light-mode .modal-header, .light-mode .modal-footer {
-            border-color: #d2d2d7;
-        }
-        /* Dark mode styles */
-        body.dark-mode {
-            background-color: #121212;
-            color: #ffffff;
-        }
-        .dark-mode .card {
-            background-color: #1e1e1e;
-            box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
-        }
-        .dark-mode .card-header {
-            background-color: #ffd700;
-            color: #121212;
-        }
-        .dark-mode .btn-script {
-            background-color: #ffd700;
-            border-color: #ffd700;
-            color: #121212;
-        }
-        .dark-mode .btn-script:hover {
-            background-color: #e6c200;
-            border-color: #e6c200;
-        }
-        .dark-mode #log-container {
-            border: 1px solid #444;  /* Lightened border color */
-            background-color: #1e1e1e;
-        }
-        .dark-mode #scriptContent {
-            background-color: #1e1e1e;
-            border: 1px solid #444;  /* Lightened border color */
-            color: #ffffff;  /* Changed from #e0e0e0 to #ffffff */
-        }
-        .dark-mode .btn-primary {
-            background-color: #ffd700;
-            border-color: #ffd700;
-            color: #121212;
-        }
-        .dark-mode .btn-primary:hover {
-            background-color: #e6c200;
-            border-color: #e6c200;
-        }
-        .dark-mode a {
-            color: #ffd700;
-        }
-        .dark-mode a:hover {
-            color: #ffe666;  /* Lightened hover color */
-        }
-        .dark-mode #modelSelector {
-            background-color: #2c2c2c;  /* Slightly lighter than the card background */
-            color: #ffffff;
-            border-color: #ffd700;
-        }
-        .dark-mode .table-hover tbody tr:hover {
-            background-color: rgba(255, 215, 0, 0.2);  /* Increased opacity for better visibility */
-            color: #121212;  /* Dark text color for better contrast on hover */
-        }
-        .dark-mode .table-hover tbody tr:hover a {
-            color: #121212;  /* Ensure links are also dark on hover for better visibility */
-        }
-        .dark-mode .modal-content {
-            background-color: #1e1e1e;
-            color: #ffffff;
-        }
-        .dark-mode .modal-header, .dark-mode .modal-footer {
-            border-color: #444;  /* Lightened border color */
-        }
-        .dark-mode .table {
-            color: #ffffff;
-        }
-        .dark-mode .table a {
-            color: #ffd700;
-        }
-        .dark-mode .table a:hover {
-            color: #ffe666;
-        }
-
-        .navbar {
-            transition: background-color 0.3s, color 0.3s;
-            padding: 1rem;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        .navbar-brand {
-            font-weight: bold;
-            font-size: 1.5rem;
-        }
-        .form-control-plaintext {
-            transition: color 0.3s, background-color 0.3s, border-color 0.3s;
-            padding: 0.375rem 0.75rem;
-            border-radius: 0.25rem;
-            width: 100%;
-            max-width: 400px;
-        }
-        #themeToggle {
-            width: 40px;
-            height: 40px;
-            padding: 0;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.2rem;
-            transition: background-color 0.3s, color 0.3s;
-        }
-
-        /* Light mode styles */
-        body.light-mode .navbar {
-            background-color: #f8f9fa;
-            color: #1d1d1f;
-        }
-        body.light-mode .form-control-plaintext {
-            color: #1d1d1f;
-            background-color: #e9ecef;
-            border: 1px solid #ced4da;
-        }
-        body.light-mode #themeToggle {
-            background-color: #f8f9fa;
-            color: #1d1d1f;
-            border: 1px solid #1d1d1f;
-        }
-
-        /* Dark mode styles */
-        body.dark-mode .navbar {
-            background-color: #1e1e1e;
-            color: #ffffff;
-        }
-        body.dark-mode .form-control-plaintext {
-            color: #ffffff;
-            background-color: #2c2c2c;
-            border: 1px solid #444;
-        }
-        body.dark-mode #themeToggle {
-            background-color: #1e1e1e;
-            color: #ffd700;
-            border: 1px solid #ffd700;
-        }
-
-        #modelSelector {
-            width: 100%;
-        }
-
-        /* Light mode styles */
-        body.light-mode #modelSelector {
-            background-color: #ffffff;
-            color: #1d1d1f;
-            border-color: #ced4da;
-        }
-
-        /* Dark mode styles */
-        body.dark-mode #modelSelector {
-            background-color: #2c2c2c;
-            color: #ffffff;
-            border-color: #444;
-        }
-        #promptEditor {
-            width: 100%;
-            min-height: 200px;
-            font-family: monospace;
-            padding: 10px;
-            border-radius: 5px;
-            border: 1px solid #ced4da;
-            transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-        }
-        .light-mode #promptEditor {
-            background-color: #f8f9fa;
-            color: #1d1d1f;
-        }
-        .dark-mode #promptEditor {
-            background-color: #2c2c2c;
-            color: #ffffff;
-            border-color: #444;
-        }
-        .collapse-toggle::after {
-            content: '\25B6';
-            float: right;
-            transition: transform 0.3s;
-        }
-        .collapse-toggle[aria-expanded="true"]::after {
-            transform: rotate(90deg);
-        }
-        .card-header .collapse-toggle {
-            color: inherit;
-            text-decoration: none;
-            width: 100%;
-            text-align: left;
-            padding: 0;
-            font-weight: bold;
-        }
-        .card-header .collapse-toggle:hover,
-        .card-header .collapse-toggle:focus {
-            text-decoration: none;
-            color: inherit;
-        }
-        .light-mode .card-header {
-            background-color: #f8f9fa;
-            color: #1d1d1f;
-        }
-        .dark-mode .card-header {
-            background-color: #2c2c2c;
-            color: #ffffff;
-        }
-        .card:not(.card-expanded) {
-            border-radius: 10px;
-        }
-        .card:not(.card-expanded) .card-header {
-            border-radius: 10px;
-        }
-        #runScraper .spinner-border {
-            display: none;
-            width: 1rem;
-            height: 1rem;
-            margin-left: 0.5rem;
-        }
-        #tagsEditor {
-            width: 100%;
-            min-height: 100px;
-            font-family: monospace;
-            padding: 10px;
-            border-radius: 5px;
-            border: 1px solid #ced4da;
-            transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-        }
-        .light-mode #tagsEditor {
-            background-color: #f8f9fa;
-            color: #1d1d1f;
-        }
-        .dark-mode #tagsEditor {
-            background-color: #2c2c2c;
-            color: #ffffff;
-            border-color: #444;
-        }
-    </style>
+    <title>AI Script Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='favicon.png') }}">
 </head>
-<body class="light-mode">
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Holograma TV</a>
-            <div class="d-flex align-items-center flex-grow-1 justify-content-end">
-                <button id="themeToggle" class="btn">
-                    <i class="fas fa-sun"></i>
+
+<body>
+    <div class="container">
+        <h1>AI Script Generator</h1>
+
+        <form id="scraperForm">
+            <div class="form-group">
+                <label for="url">Website URL</label>
+                <input 
+                    type="url" 
+                    id="url" 
+                    name="url" 
+                    value="https://news.ycombinator.com/"
+                    placeholder="Enter website URL"
+                    required
+                    aria-label="Website URL"
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="model">AI Model</label>
+                <select 
+                    id="model" 
+                    name="model"
+                    aria-label="Select AI Model"
+                >
+                    {% for model in gpt_models %}
+                    <option value="{{ model.id }}">{{ model.name }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="prompt">Custom Instructions</label>
+                <textarea 
+                    id="prompt" 
+                    name="prompt" 
+                    rows="4"
+                    placeholder="Enter custom instructions for the AI (optional)"
+                    aria-label="Custom Instructions"
+                ></textarea>
+            </div>
+
+            <button type="submit" id="submitBtn">
+                <span class="button-text">Generate Script</span>
+            </button>
+        </form>
+
+        <div id="loading" class="hidden" role="status" aria-live="polite">
+            <div class="spinner" aria-hidden="true"></div>
+            <p>Generating your script...</p>
+        </div>
+
+        <div id="results" class="hidden">
+            <div class="result-section">
+                <h2>Summary</h2>
+                <div id="summary" role="region" aria-label="Generated Summary"></div>
+            </div>
+            
+            <div class="result-section">
+                <h2>Generated Script</h2>
+                <div id="script" role="region" aria-label="Generated Script"></div>
+                <button id="downloadBtn" aria-label="Download Script">
+                    Download Script
                 </button>
             </div>
         </div>
-    </nav>
-
-    <div class="container mt-4">
-        <div class="row mb-4">
-            <div class="col-md-12">
-                <div class="card">
-                    <div class="card-header d-flex justify-content-between align-items-center">
-                        <span>Prompt and Tags Editor</span>
-                        <button id="savePrompt" class="btn btn-primary btn-sm">Save Changes</button>
-                    </div>
-                    <div class="card-body">
-                        <div class="mb-3 row">
-                            <div class="col-md-6 mb-3">
-                                <label for="scrapedUrl" class="form-label">Scraping URL:</label>
-                                <input type="text" class="form-control" id="scrapedUrl" value="{{ scraped_url }}">
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <label for="modelSelector" class="form-label">Model:</label>
-                                <select id="modelSelector" class="form-select">
-                                    <option value="gpt-4">GPT-4</option>
-                                    <option value="gpt-3.5-turbo">GPT-3.5 Turbo</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="promptEditor" class="form-label">Prompt:</label>
-                            <textarea id="promptEditor" class="form-control"></textarea>
-                        </div>
-                        <div class="mb-3">
-                            <label for="tagsEditor" class="form-label">Relevant Tags (comma-separated):</label>
-                            <textarea id="tagsEditor" class="form-control"></textarea>
-                        </div>
-                        <div class="d-flex justify-content-between">
-                            <button id="runScraper" class="btn btn-success">
-                                Run Scraper
-                                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-                            </button>
-                            <button id="savePrompt" class="btn btn-primary">Save Changes</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12 mb-4">
-                <div class="card" id="scrapedArticlesCard">
-                    <div class="card-header">
-                        <button class="btn collapse-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#scrapedArticlesCollapse" aria-expanded="false" aria-controls="scrapedArticlesCollapse">
-                            Scraped Articles
-                        </button>
-                    </div>
-                    <div class="collapse" id="scrapedArticlesCollapse">
-                        <div class="card-body p-0">
-                            <table class="table table-hover" id="articlesTable">
-                                <thead>
-                                    <tr>
-                                        <th>Title</th>
-                                        <th>Score</th>
-                                        <th>Comments</th>
-                                        <th>Summary Preview</th>
-                                        <th class="action-column">Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <!-- Articles will be dynamically inserted here -->
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="card" id="logCard">
-                    <div class="card-header">
-                        <button class="btn collapse-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#logContainer" aria-expanded="false" aria-controls="logContainer">
-                            Live Logs
-                        </button>
-                    </div>
-                    <div class="collapse" id="logContainer">
-                        <div class="card-body">
-                            <div id="log-container"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 
-    <!-- Modal for displaying the script -->
-    <div class="modal fade" id="scriptModal" tabindex="-1" aria-labelledby="scriptModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="scriptModalLabel">Influencer Script</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="mb-3">
-                        <button id="copyScriptBtn" class="btn btn-primary btn-sm">📋 Copy to Clipboard</button>
-                        <button id="generateImagesBtn" class="btn btn-secondary btn-sm">🖼️ Generate Images</button>
-                    </div>
-                    <pre id="scriptContent"></pre>
-                    <div id="imageGallery" class="mt-3"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        var socket = io();
-        var logContainer = document.getElementById('log-container');
-        var articlesTable = document.getElementById('articlesTable').getElementsByTagName('tbody')[0];
-        var logsSpinner = document.getElementById('logsSpinner');
-        var modelSelector = document.getElementById('modelSelector');
-        var promptEditor = document.getElementById('promptEditor');
-        var savePromptBtn = document.getElementById('savePrompt');
-        var runScraperBtn = document.getElementById('runScraper');
-        var scrapedUrlInput = document.getElementById('scrapedUrl');
-
-        // Check if dev_mode is defined, default to false if not
-        var isDevMode = {{ dev_mode|default(false)|tojson }};
-
-        if (isDevMode) {
-            modelSelector.value = 'gpt-3.5-turbo';
-            modelSelector.disabled = true;
-        }
-
-        modelSelector.addEventListener('change', function() {
-            socket.emit('change_model', { model: this.value });
-        });
-
-        var scrapedArticlesCollapse = new bootstrap.Collapse(document.getElementById('scrapedArticlesCollapse'), {
-            toggle: false
-        });
-        var logContainerCollapse = new bootstrap.Collapse(document.getElementById('logContainer'), {
-            toggle: false
-        });
-
-        runScraperBtn.addEventListener('click', () => {
-            const url = scrapedUrlInput.value;
-            socket.emit('run_scraper', { url: url });
-            // Clear the existing articles
-            articlesTable.innerHTML = '';
-            // Show the spinner
-            runScraperBtn.querySelector('.spinner-border').style.display = 'inline-block';
-            runScraperBtn.disabled = true;
-            // Expand the collapsed sections
-            scrapedArticlesCollapse.show();
-            logContainerCollapse.show();
-            document.getElementById('scrapedArticlesCard').classList.add('card-expanded');
-            document.getElementById('logCard').classList.add('card-expanded');
-        });
-
-        socket.on('scraping_complete', function() {
-            runScraperBtn.querySelector('.spinner-border').style.display = 'none';
-            runScraperBtn.disabled = false;
-        });
-
-        document.querySelectorAll('.collapse').forEach(collapse => {
-            collapse.addEventListener('hidden.bs.collapse', function () {
-                this.closest('.card').classList.remove('card-expanded');
-            });
-            collapse.addEventListener('show.bs.collapse', function () {
-                this.closest('.card').classList.add('card-expanded');
-            });
-        });
-
-        socket.on('log_update', function(data) {
-            var logEntry = document.createElement('p');
-            logEntry.textContent = data.message;
-            logContainer.appendChild(logEntry);
-            logContainer.scrollTop = logContainer.scrollHeight;
-        });
-
-        socket.on('article_update', function(article) {
-            var row = document.createElement('tr');
-            row.innerHTML = `
-                <td><a href="${article.link}" target="_blank">${article.title}</a></td>
-                <td>${article.score}</td>
-                <td>${article.comments}</td>
-                <td>${article.summary ? (article.summary.length > 200 ? article.summary.substring(0, 200) + '...' : article.summary) : 'N/A'}</td>
-                <td class="action-column">
-                    ${article.script ? `<button class="btn btn-script btn-sm" data-bs-toggle="modal" data-bs-target="#scriptModal" data-script="${encodeURIComponent(article.script)}">📜 Script</button>` : 'N/A'}
-                </td>
-            `;
-            articlesTable.appendChild(row);
-
-            // Attach event listener to the new button
-            var newButton = row.querySelector('.btn-script');
-            if (newButton) {
-                newButton.addEventListener('click', function() {
-                    var script = decodeURIComponent(this.getAttribute('data-script'));
-                    document.getElementById('scriptContent').textContent = script;
-                });
-            }
-            logsSpinner.style.display = 'none';
-        });
-
-        // Copy to clipboard functionality
-        document.getElementById('copyScriptBtn').addEventListener('click', function() {
-            var scriptContent = document.getElementById('scriptContent');
-            var textArea = document.createElement('textarea');
-            textArea.value = scriptContent.textContent;
-            document.body.appendChild(textArea);
-            textArea.select();
-            document.execCommand('copy');
-            document.body.removeChild(textArea);
-            
-            // Change button text to indicate successful copy
-            this.textContent = '✅ Copied!';
-            setTimeout(() => {
-                this.textContent = '📋 Copy to Clipboard';
-            }, 2000);
-        });
-
-        // Theme toggle functionality
-        const themeToggle = document.getElementById('themeToggle');
-        const body = document.body;
-
-        function updateThemeStyles() {
-            const sunIcon = '<i class="fas fa-sun"></i>';
-            const moonIcon = '<i class="fas fa-moon"></i>';
-            
-            if (body.classList.contains('dark-mode')) {
-                themeToggle.innerHTML = sunIcon;
-                modelSelector.classList.add('bg-dark');
-                modelSelector.classList.add('text-light');
-                promptEditor.classList.add('bg-dark');
-                promptEditor.classList.add('text-light');
-                document.querySelectorAll('.card-header').forEach(header => {
-                    header.classList.add('bg-dark');
-                    header.classList.add('text-light');
-                });
-            } else {
-                themeToggle.innerHTML = moonIcon;
-                modelSelector.classList.remove('bg-dark');
-                modelSelector.classList.remove('text-light');
-                promptEditor.classList.remove('bg-dark');
-                promptEditor.classList.remove('text-light');
-                document.querySelectorAll('.card-header').forEach(header => {
-                    header.classList.remove('bg-dark');
-                    header.classList.remove('text-light');
-                });
-            }
-        }
-
-        themeToggle.addEventListener('click', () => {
-            body.classList.toggle('dark-mode');
-            body.classList.toggle('light-mode');
-            updateThemeStyles();
-            
-            // Save the current theme preference
-            const isDarkMode = body.classList.contains('dark-mode');
-            localStorage.setItem('darkMode', isDarkMode);
-        });
-
-        // Check for saved theme preference
-        const savedDarkMode = localStorage.getItem('darkMode');
-        if (savedDarkMode === 'true') {
-            body.classList.remove('light-mode');
-            body.classList.add('dark-mode');
-        }
-        updateThemeStyles();
-
-        // Prompt editor functionality
-        // Load the initial prompt
-        fetch('/get_prompt')
-            .then(response => response.text())
-            .then(prompt => {
-                promptEditor.value = prompt;
-            });
-
-        const tagsEditor = document.getElementById('tagsEditor');
-
-        // Load the initial tags
-        fetch('/get_tags')
-            .then(response => response.json())
-            .then(tags => {
-                tagsEditor.value = tags.join(', ');
-            });
-
-        savePromptBtn.addEventListener('click', () => {
-            const newPrompt = promptEditor.value;
-            const newTags = tagsEditor.value.split(',').map(tag => tag.trim()).filter(tag => tag);
-
-            fetch('/save_prompt', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({ prompt: newPrompt }),
-            })
-            .then(response => response.json())
-            .then(data => {
-                if (data.success) {
-                    alert('Prompt saved successfully!');
-                } else {
-                    alert('Failed to save prompt.');
-                }
-            });
-
-            fetch('/save_tags', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({ tags: newTags }),
-            })
-            .then(response => response.json())
-            .then(data => {
-                if (data.success) {
-                    alert('Tags saved successfully!');
-                } else {
-                    alert('Failed to save tags.');
-                }
-            });
-        });
-
-        const generateImagesBtn = document.getElementById('generateImagesBtn');
-        const imageGallery = document.getElementById('imageGallery');
-
-        generateImagesBtn.addEventListener('click', () => {
-            const scriptContent = document.getElementById('scriptContent').textContent;
-            fetch('/generate_images', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({ prompt: scriptContent }),
-            })
-            .then(response => response.json())
-            .then(data => {
-                imageGallery.innerHTML = ''; // Clear previous images
-                data.images.forEach(url => {
-                    const img = document.createElement('img');
-                    img.src = url;
-                    img.className = 'img-thumbnail m-1';
-                    img.style.maxWidth = '150px';
-                    imageGallery.appendChild(img);
-                });
-            })
-            .catch(error => console.error('Error generating images:', error));
-        });
-    </script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 </body>
+
 </html>
