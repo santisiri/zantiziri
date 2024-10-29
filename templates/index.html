@@ -56,6 +56,13 @@
                 ></textarea>
             </div>
 
+            <div id="avatar-section" class="form-group hidden">
+                <label for="avatar">Select Avatar</label>
+                <div class="avatar-grid">
+                    <!-- Avatars will be loaded here dynamically -->
+                </div>
+            </div>
+
             <button type="submit" id="submitBtn">
                 <span class="button-text">Generate Script</span>
             </button>
@@ -75,13 +82,110 @@
             <div class="result-section">
                 <h2>Generated Script</h2>
                 <div id="script"></div>
-                <button id="copyBtn" class="action-button">
-                    <span class="button-text">Copy to Clipboard</span>
+                <div class="button-group">
+                    <button id="copyBtn" class="action-button">
+                        <span class="button-text">Copy to Clipboard</span>
+                    </button>
+                    <button id="generateVideoBtn" class="action-button">
+                        <span class="button-text">Generate Avatar Video</span>
+                    </button>
+                </div>
+            </div>
+
+            <div id="heygenSection" class="result-section heygen-section hidden">
+                <h2>Generate Avatar Video</h2>
+                
+                <div id="avatar-section" class="form-group">
+                    <label>Select Avatar</label>
+                    <div class="avatar-grid">
+                        <!-- Avatars will be loaded here -->
+                    </div>
+                </div>
+
+                <div class="generation-controls">
+                    <button id="startVideoGeneration" class="action-button full-width hidden">
+                        <span class="button-text">Generate Video</span>
+                    </button>
+                    
+                    <div class="progress-container hidden">
+                        <div class="progress-status">
+                            <span class="status-text">Initializing...</span>
+                            <span class="percentage">0%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>
+                        <button class="cancel-button secondary-button">Cancel Generation</button>
+                    </div>
+                </div>
+
+                <div class="video-result hidden">
+                    <div class="video-player">
+                        <video controls>
+                            <source src="" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Updated API Key Modal -->
+    <div id="apiKeyModal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Enter HeyGen API Key</h3>
+                <button class="close-button" aria-label="Close modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="api-key-info">
+                    <div class="info-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="12" y1="16" x2="12" y2="12"></line>
+                            <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                        </svg>
+                    </div>
+                    <p>Enter your HeyGen API key to generate AI avatar videos. Your key will not be stored and will only be used for this session.</p>
+                </div>
+                
+                <div class="form-group">
+                    <label for="heygen-api-key">API Key</label>
+                    <div class="api-key-input">
+                        <input 
+                            type="password" 
+                            id="heygen-api-key" 
+                            name="heygen-api-key"
+                            placeholder="hey_sk_..."
+                            required
+                        >
+                        <button type="button" class="toggle-password" aria-label="Toggle password visibility">
+                            <svg class="eye-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                <circle cx="12" cy="12" r="3"></circle>
+                            </svg>
+                        </button>
+                    </div>
+                    <a href="https://hey.gen/dashboard/api" class="help-link" target="_blank" rel="noopener noreferrer">
+                        Need an API key?
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                    </a>
+                </div>
+
+                <button id="verifyApiKey" class="action-button full-width">
+                    <span class="button-text">Verify & Continue</span>
                 </button>
             </div>
         </div>
     </div>
 
+    <!-- Add these before the closing </body> tag -->
+    <script src="{{ url_for('static', filename='js/heygen-manager.js') }}"></script>
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 </body>
 

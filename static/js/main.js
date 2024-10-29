@@ -155,4 +155,27 @@ document.addEventListener('DOMContentLoaded', () => {
         
         window.URL.revokeObjectURL(url);
     });
+
+    // Add handler for Generate Avatar Video button
+    const generateVideoBtn = document.getElementById('generateVideoBtn');
+    const heygenSection = document.getElementById('heygenSection');
+
+    generateVideoBtn.addEventListener('click', () => {
+        // Show the API key modal
+        const apiKeyModal = document.getElementById('apiKeyModal');
+        apiKeyModal.classList.remove('hidden');
+        
+        // Show the HeyGen section
+        heygenSection.classList.remove('hidden');
+        
+        // Smooth scroll to HeyGen section
+        heygenSection.scrollIntoView({ behavior: 'smooth' });
+    });
+
+    // Add handler for Start Video Generation button
+    const startVideoGeneration = document.getElementById('startVideoGeneration');
+    startVideoGeneration?.addEventListener('click', async () => {
+        const scriptText = document.getElementById('script').textContent;
+        await heygenManager.createVideo(scriptText);
+    });
 });

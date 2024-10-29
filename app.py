@@ -4,8 +4,12 @@ import os
 from scraper import WebScraper
 from ai_handler import AIHandler
 from config import GPT_MODELS
+from heygen_api import HeyGenAPI
+import requests
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)  # Enable CORS for all routes
 socketio = SocketIO(app, cors_allowed_origins="*")
 
 @app.route('/')
@@ -59,6 +63,171 @@ def scrape():
             'success': False,
             'error': f'Server error: {str(e)}'
         }), 500
+
+@app.route('/verify-heygen-key', methods=['POST'])
+def verify_heygen_key():
+    try:
+        api_key = request.json.get('api_key')
+        if not api_key:
+            return jsonify({'success': False, 'error': 'API key is required'})
+        
+        # Test the API key by making a request to HeyGen's API
+        headers = {
+            'Authorization': f'Bearer {api_key}',
+            'Content-Type': 'application/json'
+        }
+        
+        # Try to fetch avatars as a verification method
+        response = requests.get(
+            'https://api.heygen.com/v1/avatars',
+            headers=headers
+        )
+        
+        if response.status_code == 200:
+            return jsonify({'success': True})
+        else:
+            return jsonify({
+                'success': False, 
+                'error': 'Invalid API key'
+            })
+            
+    except Exception as e:
+        return jsonify({
+            'success': False,
+            'error': str(e)
+        })
+
+@app.route('/get-heygen-avatars', methods=['POST'])
+def get_heygen_avatars():
+    try:
+        api_key = request.json.get('api_key')
+        if not api_key:
+            return jsonify({'success': False, 'error': 'API key is required'})
+        
+        headers = {
+            'Authorization': f'Bearer {api_key}',
+            'Content-Type': 'application/json'
+        }
+        
+        response = requests.get(
+            'https://api.heygen.com/v1/avatars',
+            headers=headers
+        )
+        
+        if response.status_code == 200:
+            avatars = response.json().get('data', [])
+            return jsonify({
+                'success': True,
+                'avatars': avatars
+            })
+        else:
+            return jsonify({
+                'success': False,
+                'error': 'Failed to fetch avatars'
+            })
+            
+    except Exception as e:
+        return jsonify({
+            'success': False,
+            'error': str(e)
+        })
+
+@app.route('/create-heygen-video', methods=['POST'])
+def create_heygen_video():
+    try:
+        api_key = request.json.get('api_key')
+        avatar_id = request.json.get('avatar_id')
+        script = request.json.get('script')
+        
+        if not all([api_key, avatar_id, script]):
+            return jsonify({
+                'success': False,
+                'error': 'Missing required parameters'
+            })
+        
+        headers = {
+            'Authorization': f'Bearer {api_key}',
+            'Content-Type': 'application/json'
+        }
+        
+        payload = {
+            'script': {
+                'text': script
+            },
+            'avatar': {
+                'avatar_id': avatar_id
+            },
+            'background': {
+                'type': 'color',
+                'value': '#ffffff'
+            }
+        }
+        
+        response = requests.post(
+            'https://api.heygen.com/v1/videos',
+            headers=headers,
+            json=payload
+        )
+        
+        if response.status_code == 200:
+            data = response.json()
+            return jsonify({
+                'success': True,
+                'video_id': data.get('data', {}).get('video_id')
+            })
+        else:
+            return jsonify({
+                'success': False,
+                'error': 'Failed to create video'
+            })
+            
+    except Exception as e:
+        return jsonify({
+            'success': False,
+            'error': str(e)
+        })
+
+@app.route('/check-heygen-video', methods=['POST'])
+def check_heygen_video():
+    try:
+        api_key = request.json.get('api_key')
+        video_id = request.json.get('video_id')
+        
+        if not all([api_key, video_id]):
+            return jsonify({
+                'success': False,
+                'error': 'Missing required parameters'
+            })
+        
+        headers = {
+            'Authorization': f'Bearer {api_key}',
+            'Content-Type': 'application/json'
+        }
+        
+        response = requests.get(
+            f'https://api.heygen.com/v1/videos/{video_id}',
+            headers=headers
+        )
+        
+        if response.status_code == 200:
+            data = response.json().get('data', {})
+            return jsonify({
+                'success': True,
+                'status': data.get('status'),
+                'progress': data.get('progress', 0),
+                'video_url': data.get('video_url')
+            })
+        else:
+            return jsonify({
+                'success': False,
+                'error': 'Failed to check video status'
+            })
+            
+    except Exception as e:
+        return jsonify({
+            'success': False,
+            'error': str(e)
+        })
 
 if __name__ == '__main__':
     socketio.run(app, debug=True, port=5000)
