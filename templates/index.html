@@ -135,19 +135,27 @@
     <div id="apiKeyModal" class="modal hidden">
         <div class="modal-content">
             <div class="modal-header">
-                <h3>Enter HeyGen API Key</h3>
-                <button class="close-button" aria-label="Close modal">&times;</button>
+                <div class="modal-title">
+                    <h3>Enter HeyGen API Key</h3>
+                    <p class="modal-subtitle">Generate AI avatar videos with your API key</p>
+                </div>
+                <button class="close-button" aria-label="Close modal">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 6L6 18M6 6l12 12"></path>
+                    </svg>
+                </button>
             </div>
+
             <div class="modal-body">
                 <div class="api-key-info">
                     <div class="info-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <circle cx="12" cy="12" r="10"></circle>
-                            <line x1="12" y1="16" x2="12" y2="12"></line>
-                            <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                            <path d="M12 16v-4"></path>
+                            <path d="M12 8h.01"></path>
                         </svg>
                     </div>
-                    <p>Enter your HeyGen API key to generate AI avatar videos. Your key will not be stored and will only be used for this session.</p>
+                    <p>Your API key will be used securely and only for this session. It will not be stored or shared.</p>
                 </div>
                 
                 <div class="form-group">
@@ -159,27 +167,36 @@
                             name="heygen-api-key"
                             placeholder="hey_sk_..."
                             required
+                            autocomplete="off"
+                            spellcheck="false"
                         >
                         <button type="button" class="toggle-password" aria-label="Toggle password visibility">
-                            <svg class="eye-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <svg class="eye-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
                                 <circle cx="12" cy="12" r="3"></circle>
                             </svg>
                         </button>
                     </div>
+                </div>
+
+                <div class="modal-footer">
                     <a href="https://hey.gen/dashboard/api" class="help-link" target="_blank" rel="noopener noreferrer">
-                        Need an API key?
-                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
                             <polyline points="15 3 21 3 21 9"></polyline>
                             <line x1="10" y1="14" x2="21" y2="3"></line>
                         </svg>
+                        Need an API key?
                     </a>
-                </div>
 
-                <button id="verifyApiKey" class="action-button full-width">
-                    <span class="button-text">Verify & Continue</span>
-                </button>
+                    <button id="verifyApiKey" class="action-button">
+                        <span class="button-text">Verify & Continue</span>
+                        <svg class="arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14"></path>
+                            <path d="M12 5l7 7-7 7"></path>
+                        </svg>
+                    </button>
+                </div>
             </div>
         </div>
     </div>
