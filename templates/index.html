@@ -35,7 +35,12 @@
                     aria-label="Select AI Model"
                 >
                     {% for model in gpt_models %}
-                    <option value="{{ model.id }}">{{ model.name }}</option>
+                    <option 
+                        value="{{ model.id }}"
+                        {% if model.id == 'gpt-3.5-turbo' %}selected{% endif %}
+                    >
+                        {{ model.name }}
+                    </option>
                     {% endfor %}
                 </select>
             </div>
