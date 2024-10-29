@@ -4,13 +4,20 @@ import os
 from scraper import WebScraper
 from ai_handler import AIHandler
 from config import GPT_MODELS
-from heygen_api import HeyGenAPI
 import requests
 from flask_cors import CORS
+from openai import OpenAI
+import json
+from PIL import Image
+import io
+import base64
 
 app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
 socketio = SocketIO(app, cors_allowed_origins="*")
+
+# Initialize OpenAI client
+client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
 
 @app.route('/')
 def index():
@@ -223,6 +230,113 @@ def check_heygen_video():
                 'error': 'Failed to check video status'
             })
             
+    except Exception as e:
+        return jsonify({
+            'success': False,
+            'error': str(e)
+        })
+
+@app.route('/generate-image-prompt', methods=['POST'])
+def generate_image_prompt():
+    try:
+        script = request.json.get('script')
+        if not script:
+            return jsonify({'success': False, 'error': 'No script provided'})
+
+        # Generate a prompt using GPT
+        response = client.chat.completions.create(
+            model="gpt-4",  # or gpt-3.5-turbo
+            messages=[
+                {"role": "system", "content": """You are an expert at creating image generation prompts. 
+                Given a script, create a detailed, visual prompt that would generate an engaging image 
+                related to the main theme or message. Focus on visual elements, style, and mood."""},
+                {"role": "user", "content": f"Create an image generation prompt for this script:\n\n{script}"}
+            ],
+            max_tokens=100,
+            temperature=0.7
+        )
+
+        prompt = response.choices[0].message.content.strip()
+        return jsonify({
+            'success': True,
+            'prompt': prompt
+        })
+
+    except Exception as e:
+        return jsonify({
+            'success': False,
+            'error': str(e)
+        })
+
+@app.route('/generate-images', methods=['POST'])
+def generate_images():
+    try:
+        data = request.json
+        prompt = data.get('prompt')
+        style = data.get('style', 'natural')
+        count = min(data.get('count', 4), 4)  # Limit to 4 images max
+
+        if not prompt:
+            return jsonify({'success': False, 'error': 'No prompt provided'})
+
+        # Enhance prompt based on selected style
+        style_prompts = {
+            'natural': 'Create a natural, realistic image of',
+            'digital-art': 'Create a digital art illustration of',
+            'illustration': 'Create a detailed illustration of',
+            'photographic': 'Create a professional photograph of'
+        }
+        
+        enhanced_prompt = f"{style_prompts.get(style, '')} {prompt}"
+
+        # Generate images using DALL-E
+        images = []
+        for _ in range(count):
+            response = client.images.generate(
+                model="dall-e-3",
+                prompt=enhanced_prompt,
+                size="1024x1024",
+                quality="standard",
+                n=1
+            )
+
+            image_url = response.data[0].url
+            images.append({
+                'url': image_url,
+                'prompt': prompt
+            })
+
+        return jsonify({
+            'success': True,
+            'images': images
+        })
+
+    except Exception as e:
+        return jsonify({
+            'success': False,
+            'error': str(e)
+        })
+
+@app.route('/download-image', methods=['POST'])
+def download_image():
+    try:
+        url = request.json.get('url')
+        if not url:
+            return jsonify({'success': False, 'error': 'No image URL provided'})
+
+        # Download the image
+        response = requests.get(url)
+        if response.status_code != 200:
+            return jsonify({'success': False, 'error': 'Failed to download image'})
+
+        # Convert to base64 for frontend download
+        image_base64 = base64.b64encode(response.content).decode('utf-8')
+        
+        return jsonify({
+            'success': True,
+            'image': image_base64
+        })
+
     except Exception as e:
         return jsonify({
             'success': False,

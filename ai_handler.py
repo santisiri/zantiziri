@@ -1,16 +1,18 @@
-import openai
+from openai import OpenAI
+import os
 from config import SCRIPT_PROMPT
 
 class AIHandler:
     def __init__(self, model):
         self.model = model
+        self.client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
 
     def summarize(self, content):
         """
         Summarizes the given content using OpenAI's API
         """
         try:
-            response = openai.ChatCompletion.create(
+            response = self.client.chat.completions.create(
                 model=self.model,
                 messages=[
                     {"role": "system", "content": "You are a helpful assistant that summarizes content clearly and concisely."},
@@ -31,7 +33,7 @@ class AIHandler:
             # Combine the default prompt template with any custom prompt
             prompt = custom_prompt if custom_prompt else SCRIPT_PROMPT
             
-            response = openai.ChatCompletion.create(
+            response = self.client.chat.completions.create(
                 model=self.model,
                 messages=[
                     {"role": "system", "content": prompt},
