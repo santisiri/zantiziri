@@ -1244,3 +1244,17 @@ button:disabled {
     color: var(--text-secondary);
     font-size: 0.875rem;
 }
+
+/* Add to your existing styles */
+.image-prompt {
+    transition: background-color 0.3s ease;
+}
+
+.image-prompt.highlight {
+    background-color: rgba(16, 163, 127, 0.1);
+}
+
+.image-prompt:disabled {
+    background-color: var(--surface-color);
+    cursor: wait;
+}

@@ -257,10 +257,10 @@
         </div>
     </div>
 
-    <!-- Add these before the closing </body> tag -->
-    <script src="{{ url_for('static', filename='js/heygen-manager.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/image-generator.js') }}"></script>
+    <!-- Place these before the closing </body> tag, in this order -->
+    <script src="{{ url_for('static', filename='js/image-generator.js') }}" type="text/javascript"></script>
+    <script src="{{ url_for('static', filename='js/heygen-manager.js') }}" type="text/javascript"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}" type="text/javascript"></script>
 </body>
 
 </html>

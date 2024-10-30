@@ -1,6 +1,7 @@
 class ImageGenerator {
     constructor() {
         this.initializeEventListeners();
+        this.isGeneratingPrompt = false;
     }
 
     initializeEventListeners() {
@@ -13,11 +14,34 @@ class ImageGenerator {
         regeneratePromptBtn?.addEventListener('click', () => this.regeneratePrompt());
         downloadBtn?.addEventListener('click', () => this.downloadAllImages());
         regenerateBtn?.addEventListener('click', () => this.generateImages());
+
+        // Add listener for script changes
+        const scriptElement = document.getElementById('script');
+        const observer = new MutationObserver(() => {
+            if (scriptElement.textContent && !this.isGeneratingPrompt) {
+                this.generatePromptFromScript();
+            }
+        });
+        
+        observer.observe(scriptElement, {
+            characterData: true,
+            childList: true,
+            subtree: true
+        });
     }
 
     async generatePromptFromScript() {
+        if (this.isGeneratingPrompt) return;
+        
         const scriptText = document.getElementById('script').textContent;
+        if (!scriptText) return;
+
         try {
+            this.isGeneratingPrompt = true;
+            const promptInput = document.getElementById('imagePrompt');
+            promptInput.disabled = true;
+            promptInput.placeholder = 'Generating prompt...';
+
             const response = await fetch('/generate-image-prompt', {
                 method: 'POST',
                 headers: {
@@ -28,12 +52,19 @@ class ImageGenerator {
 
             const data = await response.json();
             if (data.success) {
-                document.getElementById('imagePrompt').value = data.prompt;
+                promptInput.value = data.prompt;
+                // Add a subtle highlight animation
+                promptInput.classList.add('highlight');
+                setTimeout(() => promptInput.classList.remove('highlight'), 1000);
             } else {
                 throw new Error(data.error);
             }
         } catch (error) {
             this.showError('Failed to generate image prompt: ' + error.message);
+            document.getElementById('imagePrompt').placeholder = 'Describe the image you want to generate...';
+        } finally {
+            document.getElementById('imagePrompt').disabled = false;
+            this.isGeneratingPrompt = false;
         }
     }
 

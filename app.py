@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template, request, jsonify, send_from_directory
 from flask_socketio import SocketIO
 import os
 from scraper import WebScraper
@@ -12,7 +12,7 @@ from PIL import Image
 import io
 import base64
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='static')
 CORS(app)  # Enable CORS for all routes
 socketio = SocketIO(app, cors_allowed_origins="*")
 
@@ -248,11 +248,16 @@ def generate_image_prompt():
             model="gpt-4",  # or gpt-3.5-turbo
             messages=[
                 {"role": "system", "content": """You are an expert at creating image generation prompts. 
-                Given a script, create a detailed, visual prompt that would generate an engaging image 
-                related to the main theme or message. Focus on visual elements, style, and mood."""},
-                {"role": "user", "content": f"Create an image generation prompt for this script:\n\n{script}"}
+                Create a vivid, detailed prompt that would generate an engaging image representing the main 
+                theme or message. Focus on visual elements like:
+                - Main subject and composition
+                - Lighting and atmosphere
+                - Color palette and mood
+                - Style and perspective
+                Keep the prompt clear and specific, around 2-3 sentences."""},
+                {"role": "user", "content": f"Create an image generation prompt for this content:\n\n{script}"}
             ],
-            max_tokens=100,
+            max_tokens=150,
             temperature=0.7
         )
 
@@ -338,6 +343,84 @@ def download_image():
         })
 
     except Exception as e:
+        return jsonify({
+            'success': False,
+            'error': str(e)
+        })
+
+# Add this route to explicitly serve static files if needed
+@app.route('/static/<path:path>')
+def send_static(path):
+    return send_from_directory('static', path)
+
+@app.route('/static/js/<path:filename>')
+def serve_js(filename):
+    response = send_from_directory('static/js', filename)
+    response.headers['Content-Type'] = 'application/javascript'
+    return response
+
+@app.route('/static/css/<path:filename>')
+def serve_css(filename):
+    response = send_from_directory('static/css', filename)
+    response.headers['Content-Type'] = 'text/css'
+    return response
+
+@app.route('/process', methods=['POST'])
+def process():
+    try:
+        data = request.get_json()
+        if not data:
+            return jsonify({
+                'success': False,
+                'error': 'No data provided'
+            })
+
+        url = data.get('url')
+        model = data.get('model')
+        custom_prompt = data.get('prompt')
+
+        if not url or not model:
+            return jsonify({
+                'success': False,
+                'error': 'Missing required fields'
+            })
+
+        # Initialize handlers
+        scraper = WebScraper()
+        ai_handler = AIHandler(model)
+
+        # Scrape content
+        content = scraper.scrape(url)
+        if not content:
+            return jsonify({
+                'success': False,
+                'error': 'Failed to scrape content'
+            })
+
+        # Generate summary
+        summary = ai_handler.summarize(content)
+        if not summary:
+            return jsonify({
+                'success': False,
+                'error': 'Failed to generate summary'
+            })
+
+        # Generate script
+        script = ai_handler.generate_script(summary, custom_prompt)
+        if not script:
+            return jsonify({
+                'success': False,
+                'error': 'Failed to generate script'
+            })
+
+        return jsonify({
+            'success': True,
+            'summary': summary,
+            'script': script
+        })
+
+    except Exception as e:
+        print(f"Error processing request: {str(e)}") # Debug log
         return jsonify({
             'success': False,
             'error': str(e)
