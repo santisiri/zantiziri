@@ -1258,3 +1258,95 @@ button:disabled {
     background-color: var(--surface-color);
     cursor: wait;
 }
+
+/* Theme Variables */
+:root {
+    /* Light theme (default) */
+    --bg-primary: #ffffff;
+    --bg-secondary: #f9fafb;
+    --text-color: #111827;
+    --text-secondary: #6b7280;
+    --primary-color: #10b981;
+    --primary-hover: #059669;
+    --primary-active: #047857;
+    --border-color: #e5e7eb;
+    --surface-color: #f3f4f6;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --modal-bg: rgba(0, 0, 0, 0.75);
+}
+
+[data-theme="dark"] {
+    /* Dark theme */
+    --bg-primary: #111827;
+    --bg-secondary: #1f2937;
+    --text-color: #f9fafb;
+    --text-secondary: #9ca3af;
+    --primary-color: #10b981;
+    --primary-hover: #34d399;
+    --primary-active: #6ee7b7;
+    --border-color: #374151;
+    --surface-color: #1f2937;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+    --modal-bg: rgba(0, 0, 0, 0.9);
+}
+
+/* Make sure all text elements use the theme colors */
+body {
+    color: var(--text-color);
+    background-color: var(--bg-primary);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-color);
+}
+
+p, span, label, input, textarea, select {
+    color: var(--text-color);
+}
+
+.modal-title h3 {
+    color: var(--text-color);
+}
+
+.api-key-info p {
+    color: var(--text-secondary);
+}
+
+/* Add any other text elements that need color adjustment */
+
+/* Theme Switch Styles */
+.theme-switch-wrapper {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 100;
+}
+
+.theme-switch {
+    background: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    transition: all 0.3s ease;
+}
+
+.theme-switch:hover {
+    background: var(--bg-secondary);
+}
+
+.theme-switch svg {
+    width: 20px;
+    height: 20px;
+    color: var(--text-color);
+}
+
+/* Hide the checkbox */
+.theme-switch input {
+    display: none;
+}
